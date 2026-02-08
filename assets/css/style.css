@@ -4,37 +4,37 @@
    ==================================== */
 
 :root {
-  /* Color Palette - Professional & Trustworthy */
-  --primary: hsl(210, 100%, 50%);
-  --primary-dark: hsl(210, 100%, 40%);
-  --primary-light: hsl(210, 100%, 95%);
+  /* Color Palette - Soo Edu Brand (Teal/Green) */
+  --primary: hsl(175, 45%, 45%);
+  --primary-dark: hsl(175, 50%, 35%);
+  --primary-light: hsl(175, 40%, 95%);
   --accent: hsl(45, 100%, 55%);
   --accent-dark: hsl(45, 100%, 45%);
-  
+
   --text-primary: hsl(220, 20%, 20%);
   --text-secondary: hsl(220, 10%, 45%);
   --text-muted: hsl(220, 5%, 65%);
-  
+
   --bg-primary: hsl(0, 0%, 100%);
   --bg-secondary: hsl(220, 20%, 98%);
   --bg-tertiary: hsl(220, 15%, 96%);
-  
+
   --border-color: hsl(220, 10%, 90%);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
-  
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Outfit', 'Inter', sans-serif;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2.5rem;
   --spacing-xl: 4rem;
-  
+
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
@@ -517,6 +517,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -524,9 +525,12 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
@@ -537,38 +541,38 @@ body {
   .brand {
     font-size: 2.5rem;
   }
-  
+
   .tagline {
     font-size: 1.2rem;
   }
-  
+
   .intro {
     font-size: 1rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .cta-container {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .cta-button {
     width: 100%;
     justify-content: center;
   }
-  
+
   .site-nav {
     gap: var(--spacing-sm);
     font-size: 0.85rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -576,6 +580,7 @@ body {
 
 /* Print Styles */
 @media print {
+
   .site-header,
   .site-footer,
   .cta-container {
