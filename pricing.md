@@ -59,4 +59,4 @@ description: "Soo Edu 화상영어 가격 및 포함 내역. 주 2회 월 72,000
 ## 🚀 지금 바로 시작하세요
 가장 합리적인 가격으로 검증된 원어민 1:1 영어를 경험해보세요.
 
-👉 [무료 상담 및 체험 신청 (카카오톡)](javascript:openKakaoChat())
+👉 [무료 상담 및 체험 신청 (카카오톡)](javascript:window.open('https://pf.kakao.com/_AxgExexj/chat','_blank'))

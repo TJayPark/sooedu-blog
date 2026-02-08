@@ -340,13 +340,14 @@ description: "하루 10분, 원어민과 1:1 화상영어 수업. AI 기반 초�
 <!-- KakaoTalk Integration Script -->
 <script>
   function openKakaoChat() {
-    const channelId = '_your_channel_id'; // TODO: Replace with your actual channel ID
+    const channelId = '_AxgExexj'; // Soo Edu Official Channel ID
 
     if (typeof Kakao !== 'undefined' && Kakao.Channel) {
       Kakao.Channel.chat({
         channelPublicId: channelId
       });
     } else {
+      // Fallback: Open in new window
       window.open('https://pf.kakao.com/' + channelId + '/chat', '_blank');
     }
 

@@ -81,4 +81,4 @@ A. **아니요!** 모든 디지털 교재와 영상 자료, 뉴스 기사는 **�
 ## 🚀 지금 바로 1:1 맞춤 커리큘럼 체험하기
 나만을 위한 세상에 단 하나뿐인 영어 수업을 경험해보세요.
 
-👉 [무료 체험 수업 신청 (카카오톡)](javascript:openKakaoChat())
+👉 [무료 체험 수업 신청 (카카오톡)](javascript:window.open('https://pf.kakao.com/_AxgExexj/chat','_blank'))

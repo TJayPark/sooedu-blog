@@ -35,7 +35,7 @@ description: "AI 기반 초개인맞춤형 화상영어 Soo Edu 브랜드 소개
 2. **결과 분석**: AI가 분석한 리포트와 추천 커리큘럼 확인
 3. **수업 시작**: 원하는 시간에 수업 예약
 
-👉 [무료 테스트 신청하기 (카카오톡)](javascript:openKakaoChat())
+👉 [무료 테스트 신청하기 (카카오톡)](javascript:window.open('https://pf.kakao.com/_AxgExexj/chat','_blank'))
 
 ---
 

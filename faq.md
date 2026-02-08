@@ -100,4 +100,4 @@ Neo4j 그래프 기술을 활용하여, 학생이 자주 틀리는 문법이나 
 ## 🚀 궁금증이 해결되셨나요?
 지금 바로 무료 체험 수업으로 Soo Edu를 직접 경험해보세요!
 
-👉 [무료 상담 및 체험 신청 (카카오톡)](javascript:openKakaoChat())
+👉 [무료 상담 및 체험 신청 (카카오톡)](javascript:window.open('https://pf.kakao.com/_AxgExexj/chat','_blank'))
