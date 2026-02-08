@@ -1,0 +1,187 @@
+/* ====================================
+   Blog Post Styling (Readability Focused)
+   ==================================== */
+
+.post {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-title {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    /* Large title */
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+    .post-title {
+        font-size: 2.8rem;
+    }
+}
+
+.post-date {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Content Typography */
+.post-content {
+    font-size: 1.125rem;
+    /* ~18px for better readability */
+    line-height: 1.8;
+    /* Airy line height */
+    color: var(--text-primary);
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Headings within Post */
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--primary-dark);
+}
+
+.post-content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+    font-size: 1.75rem;
+    margin-top: 3.5rem;
+    /* More space above headings */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.post-content h3 {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Dialogue & Blockquotes */
+.post-content blockquote {
+    background: var(--bg-tertiary);
+    border-left: 5px solid var(--primary);
+    margin: 2.5rem 0;
+    padding: 1.5rem 2rem;
+    border-radius: 0 12px 12px 0;
+    font-style: normal;
+    /* Override standard italic */
+}
+
+.post-content blockquote p {
+    margin-bottom: 1rem;
+}
+
+.post-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Dialogue Speaker */
+.post-content blockquote strong {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/* Dialogue Translation (Italic in markdown) */
+.post-content blockquote em {
+    display: block;
+    font-style: normal;
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin-top: 0.2rem;
+}
+
+/* Lists */
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+/* Inline Code / Pronunciation */
+.post-content code {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    background-color: var(--bg-secondary);
+    color: var(--accent-dark);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Strong Emphasis */
+.post-content strong {
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+/* Horizontal Rule */
+.post-content hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 4rem 0;
+}
+
+/* KakaoTalk CTA Button inside Post */
+.post-content a[href*="pf.kakao.com"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7E600;
+    /* Kakao Yellow */
+    color: #3A1D1D;
+    /* Kakao Brown */
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 1rem 0;
+}
+
+.post-content a[href*="pf.kakao.com"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Generated Footer */
+.post-content em:last-child,
+.post-content p:last-child em {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 4rem;
+    font-style: normal;
+}
