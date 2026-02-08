@@ -41,8 +41,8 @@
   --transition-slow: 400ms ease-in-out;
 }
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
+/* Google Fonts Import - Including IPA character support */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&family=Noto+Sans:wght@400;500;600&display=swap');
 
 /* Reset & Base Styles */
 * {
@@ -334,6 +334,8 @@ body {
   color: var(--text-secondary);
   font-style: italic;
   margin-bottom: var(--spacing-sm);
+  font-family: 'Noto Sans', var(--font-primary);
+  font-size: 1.05rem;
 }
 
 .english-meaning {
