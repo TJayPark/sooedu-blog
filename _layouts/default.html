@@ -97,12 +97,15 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"
+          style="max-height: 40px; vertical-align: middle;">
+      </a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">홈</a>
-        <a href="#features">서비스 특징</a>
-        <a href="#pricing">수강료</a>
-        <a href="#daily-english">오늘의 영어</a>
+        <a href="{{ '/#features' | relative_url }}">서비스 특징</a>
+        <a href="{{ '/#pricing' | relative_url }}">수강료</a>
+        <a href="{{ '/#daily-english' | relative_url }}">오늘의 영어</a>
       </nav>
     </div>
   </header>
@@ -114,11 +117,16 @@
   <footer class="site-footer">
     <div class="container">
       <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <a href="/about/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">소개 (About)</a>
-        <a href="/pricing/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">가격 (Pricing)</a>
-        <a href="/curriculum/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">커리큘럼</a>
-        <a href="/policy/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">운영 정책 & 환불</a>
-        <a href="/faq/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">자주 묻는 질문 (FAQ)</a>
+        <a href="{{ '/about/' | relative_url }}"
+          style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">소개 (About)</a>
+        <a href="{{ '/pricing/' | relative_url }}"
+          style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">가격 (Pricing)</a>
+        <a href="{{ '/curriculum/' | relative_url }}"
+          style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">커리큘럼</a>
+        <a href="{{ '/policy/' | relative_url }}"
+          style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">운영 정책 & 환불</a>
+        <a href="{{ '/faq/' | relative_url }}" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">자주
+          묻는 질문 (FAQ)</a>
       </div>
       <p class="muted">
         © {{ "now" | date: "%Y" }} Soo Edu · 1:1 원어민 화상영어 & AI 맞춤 학습
