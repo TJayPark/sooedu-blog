@@ -45,7 +45,7 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
               {{ post.title }}
             </h2>
             <p class="post-excerpt"
-              style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
               {{ post.excerpt | strip_html | truncate: 100 }}
             </p>
             <div class="post-footer"
