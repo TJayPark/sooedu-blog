@@ -1,364 +1,92 @@
 ---
 layout: default
-title: "Home"
-description: "하루 10분, 원어민과 1:1 화상영어 수업. AI 기반 초개인맞춤형 커리큘럼으로 영어회화 실력을 키우세요. 무료 체험 수업 신청 가능."
+title: "블로그 (Blog)"
+permalink: /
+description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 10분, 꾸준한 학습으로 영어 실력을 키우세요."
 ---
 
-<!-- Daily English Section - TOP OF FUNNEL -->
-<section class="daily-english" id="daily-english">
+<!-- Blog Hero & Search -->
+<section class="blog-hero"
+  style="background: var(--bg-secondary); padding: 4rem 1rem; text-align: center; border-radius: 20px; margin-bottom: 3rem;">
   <div class="container">
-    <h2 class="section-title">📚 오늘의 영어 표현</h2>
-    <p class="section-subtitle">
-      매일 업데이트되는 실용 영어 표현으로 꾸준히 학습하세요
+    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--primary-dark);">📚 오늘의 영어 학습</h1>
+    <p
+      style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+      매일 새로운 표현을 배우며 꾸준히 성장하세요.<br>
+      하루 딱 5분 투자로 영어가 달라집니다.
     </p>
 
-    {% if site.posts and site.posts.size > 0 %}
-    {% assign latest_post = site.posts.first %}
-    <div class="english-card">
-      <h3 class="english-word">{{ latest_post.word | default: "Opportunity" }}</h3>
-      <p class="english-pronunciation">{{ latest_post.pronunciation | default: "/ˌɑːpərˈtuːnəti/" }}</p>
-      <p class="english-meaning">{{ latest_post.meaning | default: "기회" }}</p>
-      <div class="english-example">
-        <strong>Example:</strong> {{ latest_post.example | default: "This is a great opportunity to improve your English
-        skills." }}
-        <br>
-        <em>{{ latest_post.example_kr | default: "이것은 영어 실력을 향상시킬 좋은 기회입니다." }}</em>
-      </div>
-    </div>
-    {% else %}
-    <div class="english-card">
-      <h3 class="english-word">Opportunity</h3>
-      <p class="english-pronunciation">/ˌɑːpərˈtuːnəti/</p>
-      <p class="english-meaning">기회</p>
-      <div class="english-example">
-        <strong>Example:</strong> This is a great opportunity to improve your English skills.
-        <br>
-        <em>이것은 영어 실력을 향상시킬 좋은 기회입니다.</em>
-      </div>
-    </div>
-    {% endif %}
-
-    <div class="text-center mt-lg">
-      <a href="#posts" class="cta-button cta-secondary">더 많은 영어 표현 보기 →</a>
-    </div>
-  </div>
-</section>
-
-<!-- Hero Section - BRAND INTRODUCTION -->
-<section class="hero">
-  <div class="container">
-    <h1 class="brand">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Soo Edu" style="max-width: 250px; height: auto;">
-      <span class="sr-only">Soo Edu</span>
-    </h1>
-    <p class="tagline">1:1 원어민 화상영어</p>
-    <p class="intro">
-      검증된 원어민 강사와 매일 대화하세요.<br>
-      <strong style="color: var(--accent);">여기에 더해, AI가 당신의 학습을 분석하여 맞춤 커리큘럼을 제공합니다.</strong>
-    </p>
-
-    <div class="cta-container">
-      <a href="javascript:void(0)" onclick="openKakaoChat()" class="cta-button cta-primary">
-        💬 무료 테스트 수업 신청
-      </a>
-      <a href="#features" class="cta-button cta-secondary">
-        ✨ 차별점 알아보기
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Social Proof -->
-<section class="social-proof">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <span class="stat-number">1,200+</span>
-        <span class="stat-label">만족한 수강생</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">98%</span>
-        <span class="stat-label">수업 만족도</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">1:1</span>
-        <span class="stat-label">원어민 화상 수업</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">72,000원~</span>
-        <span class="stat-label">월 수강료</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AI Personalized Service - KEY DIFFERENTIATOR -->
-<section class="features" id="ai-personalized"
-  style="background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-primary) 100%);">
-  <div class="container">
-    <h2 class="section-title">💎 Soo Edu만의 특별함</h2>
-    <p class="section-subtitle" style="font-size: 1.2rem; font-weight: 500;">
-      1:1 원어민 수업에 <strong style="color: var(--primary);">AI 맞춤 학습이 더해집니다</strong>
-    </p>
-
-    <div class="ai-feature-highlight"
-      style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-lg); margin: 2rem auto; max-width: 900px;">
-      <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--primary); text-align: center;">
-        👨‍🏫 원어민 강사 1:1 수업 + 🤖 AI 학습 분석
-      </h3>
-
-      <!-- Simple explanation -->
-      <p style="font-size: 1.15rem; margin-bottom: 2rem; text-align: center; color: var(--text-secondary);">
-        <strong>기본은 원어민과의 1:1 대화 수업</strong>입니다.<br>
-        여기에 더해, <strong style="color: var(--primary);">AI가 매 수업을 분석하여 당신만의 맞춤 커리큘럼을 설계</strong>합니다.
-      </p>
-
-      <!-- Visual explanation with icons -->
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 2rem 0;">
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">👨‍🏫</div>
-          <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary);">1. 원어민 1:1 수업</h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary);">
-            TESOL 자격의 원어민 강사와 25분 실전 대화
-          </p>
-        </div>
-
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">📊</div>
-          <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary);">2. AI 실시간 분석</h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary);">
-            수업 중 발음, 문법, 어휘를 AI가 자동 분석
-          </p>
-        </div>
-
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎯</div>
-          <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary);">3. 맞춤형 다음 수업</h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary);">
-            AI가 분석한 약점을 보완하는 맞춤 커리큘럼
-          </p>
-        </div>
-      </div>
-
-      <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 12px; margin-top: 2rem;">
-        <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary);">구체적으로 어떻게 다를까요?</h4>
-        <ul style="list-style: none; padding: 0; text-align: left;">
-          <li style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color);">
-            ✅ <strong>취약점 집중 공략</strong>: "과거형을 자주 틀리시네요" → 과거형 문장 연습 집중
-          </li>
-          <li style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color);">
-            ✅ <strong>관련 내용 연결</strong>: "Travel 단어를 배웠으니 다음엔 Airport 표현을 배워볼까요?"
-          </li>
-          <li style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color);">
-            ✅ <strong>난이도 자동 조절</strong>: 너무 쉬우면 더 어렵게, 어려우면 단계를 낮춰서
-          </li>
-          <li style="padding: 0.8rem 0;">
-            ✅ <strong>복습 타이밍 최적화</strong>: "3일 전 배운 단어, 잊기 전에 복습하세요!"
-          </li>
-        </ul>
-      </div>
-
-      <p
-        style="margin-top: 2rem; font-size: 1.05rem; text-align: center; color: var(--text-secondary); font-style: italic;">
-        "<strong style="color: var(--primary);">원어민과의 실전 대화</strong> + <strong style="color: var(--primary);">AI 맞춤
-          커리큘럼</strong> = 가장 효율적인 영어 학습"
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section class="features" id="features">
-  <div class="container">
-    <h2 class="section-title">왜 Soo Edu인가?</h2>
-
-    <div class="features-grid">
-      <div class="feature-card">
-        <span class="feature-icon">💰</span>
-        <h3 class="feature-title">합리적인 가격</h3>
-        <p class="feature-description">
-          과도한 마케팅 비용 없이 합리적인 가격으로 제공합니다.
-          주 2회 72,000원부터 시작.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">🎓</span>
-        <h3 class="feature-title">검증된 원어민 강사</h3>
-        <p class="feature-description">
-          TESOL/TEFL 자격을 보유한 원어민 강사진이
-          AI 분석 기반 맞춤 수업을 진행합니다.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">⏰</span>
-        <h3 class="feature-title">자유로운 스케줄</h3>
-        <p class="feature-description">
-          새벽부터 밤까지, 원하는 시간에 수업 예약 가능.
-          바쁜 직장인, 학생 모두에게 최적화.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">📱</span>
-        <h3 class="feature-title">PC·모바일 모두</h3>
-        <p class="feature-description">
-          별도 앱 설치 없이 웹브라우저로 간편하게.
-          어디서나 수강 가능.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">📊</span>
-        <h3 class="feature-title">실시간 학습 분석</h3>
-        <p class="feature-description">
-          AI가 매 수업마다 진도를 분석하여
-          다음 수업 내용을 자동으로 최적화합니다.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">🎁</span>
-        <h3 class="feature-title">무료 테스트 수업</h3>
-        <p class="feature-description">
-          부담 없이 시작해보세요. 25분 무료 테스트 수업으로
-          먼저 경험 후 결정하세요.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Pricing Section - REAL PRICES -->
-<section class="pricing" id="pricing">
-  <div class="container">
-    <h2 class="section-title">투명한 가격 정책</h2>
-    <p class="section-subtitle">
-      1:1 원어민 수업, 합리적인 가격으로 시작하세요
-    </p>
-
-    <div
-      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-      <!-- 주 2회 -->
-      <div class="pricing-card" style="background: white; color: var(--text-primary); padding: 2rem;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">주 2회</h3>
-        <div class="price-tag" style="color: var(--primary);">72,000원</div>
-        <p class="price-description">25분 수업 × 8회/월</p>
-        <ul class="pricing-features" style="color: var(--text-primary);">
-          <li>원어민 1:1 화상 수업</li>
-          <li>AI 맞춤 커리큘럼</li>
-          <li>수업 자료 무료 제공</li>
-          <li>수업 녹화본 제공</li>
-        </ul>
-      </div>
-
-      <!-- 주 3회 - 인기 -->
-      <div class="pricing-card"
-        style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); position: relative;">
-        <div
-          style="position: absolute; top: -15px; right: 20px; background: var(--accent); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
-          ⭐ 인기
-        </div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">주 3회</h3>
-        <div class="price-tag">79,000원</div>
-        <p class="price-description">25분 수업 × 12회/월</p>
-        <ul class="pricing-features">
-          <li>원어민 1:1 화상 수업</li>
-          <li>AI 맞춤 커리큘럼</li>
-          <li>수업 자료 무료 제공</li>
-          <li>수업 녹화본 제공</li>
-          <li>학습 리포트 제공</li>
-        </ul>
-      </div>
-
-      <!-- 주 5회 -->
-      <div class="pricing-card" style="background: white; color: var(--text-primary); padding: 2rem;">
-        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">주 5회</h3>
-        <div class="price-tag" style="color: var(--primary);">89,000원</div>
-        <p class="price-description">25분 수업 × 20회/월</p>
-        <ul class="pricing-features" style="color: var(--text-primary);">
-          <li>원어민 1:1 화상 수업</li>
-          <li>AI 맞춤 커리큘럼</li>
-          <li>수업 자료 무료 제공</li>
-          <li>수업 녹화본 제공</li>
-          <li>학습 리포트 제공</li>
-          <li>1:1 상담 서비스</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="text-center mt-lg">
-      <a href="javascript:void(0)" onclick="openKakaoChat()" class="cta-button cta-primary"
-        style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">
-        💬 무료 테스트 수업 신청하기
-      </a>
-      <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">
-        * 모든 플랜에 무료 레벨테스트 포함 |
-        <a href="https://soo-edu.com/?page_id=5024" target="_blank" style="color: var(--primary);">자세한 가격 정책 보기 →</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- Posts Archive Section -->
-<section class="posts" id="posts">
-  <div class="container">
-    <h2 class="section-title">영어 학습 아카이브</h2>
-    <p class="section-subtitle">매일 업데이트되는 실용 영어 표현</p>
-    {% if site.posts and site.posts.size > 0 %}
-    <ul class="post-list">
-      {% for post in site.posts limit: 14 %}
-      <li class="post-item">
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p class="muted text-center">곧 유용한 영어 학습 자료가 업데이트됩니다.</p>
-    {% endif %}
-  </div>
-</section>
-
-<!-- Final CTA Section -->
-<section class="hero" style="padding: 3rem 0;">
-  <div class="container">
-    <h2 class="section-title" style="color: white; margin-bottom: 1rem;">지금 바로 시작하세요</h2>
-    <p class="intro" style="margin-bottom: 2rem;">
-      AI가 분석한 당신만의 학습 경로로<br>
-      효율적으로 영어 실력을 향상시켜보세요
-    </p>
-    <a href="javascript:void(0)" onclick="openKakaoChat()" class="cta-button cta-primary"
-      style="font-size: 1.2rem; padding: 1.2rem 2.5rem; animation: pulse 2s infinite;">
-      💬 무료 테스트 수업 | 카카오톡 상담
+    <!-- CTA to Info Page -->
+    <a href="{{ '/info/' | relative_url }}" class="cta-button cta-primary"
+      style="display: inline-block; padding: 0.8rem 1.5rem; font-size: 1rem; border-radius: 50px; text-decoration: none; box-shadow: var(--shadow-md);">
+      💎 Soo Edu 1:1 화상영어 알아보기 →
     </a>
-    <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.9;">
-      ✓ 1:1 원어민 수업 ✓ AI 초개인맞춤 ✓ 실시간 학습 분석
-    </p>
   </div>
 </section>
 
-<!-- KakaoTalk Integration Script -->
-<script>
-  function openKakaoChat() {
-    const channelId = '_AxgExexj'; // Soo Edu Official Channel ID
+<!-- Blog Post List -->
+<section class="blog-posts">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+    <div class="posts-grid"
+      style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+      {% for post in site.posts %}
+      <article class="post-card"
+        style="background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <a href="{{ post.url | relative_url }}"
+          style="text-decoration: none; color: inherit; display: block; height: 100%;">
+          <div class="post-content" style="padding: 1.5rem;">
+            <span class="post-date"
+              style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+              {{ post.date | date: "%Y년 %m월 %d일" }}
+            </span>
+            <h2 class="post-title"
+              style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.8rem; color: var(--text-primary); line-height: 1.3;">
+              {{ post.title }}
+            </h2>
+            <p class="post-excerpt"
+              style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              {{ post.excerpt | strip_html | truncate: 100 }}
+            </p>
+            <div class="post-footer"
+              style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">더 읽기 →</span>
+              <span class="read-time" style="font-size: 0.8rem; color: var(--text-muted);">⏱️ 3 min read</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state" style="text-align: center; padding: 4rem 1rem;">
+      <p style="font-size: 1.2rem; color: var(--text-muted);">아직 작성된 포스트가 없습니다.</p>
+      <p style="color: var(--text-secondary);">곧 유용한 영어 학습 자료가 업데이트됩니다.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
 
-    if (typeof Kakao !== 'undefined' && Kakao.Channel) {
-      Kakao.Channel.chat({
-        channelPublicId: channelId
-      });
-    } else {
-      // Fallback: Open in new window
-      window.open('https://pf.kakao.com/' + channelId + '/chat', '_blank');
-    }
+<!-- Additional Banner -->
+<section class="info-banner"
+  style="margin-top: 4rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 3rem 1rem; text-align: center; border-radius: 20px;">
+  <div class="container">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">혼자 공부하기 힘드신가요?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">
+      AI가 분석하고 원어민 선생님이 이끌어주는<br>
+      Soo Edu만의 1:1 맞춤형 수업을 경험해보세요.
+    </p>
+    <a href="{{ '/info/' | relative_url }}" class="cta-button"
+      style="background: white; color: var(--primary-dark); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: transform 0.2s ease;">
+      🚀 Soo Edu 프로그램 자세히 보기
+    </a>
+  </div>
+</section>
 
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'click', {
-        'event_category': 'CTA',
-        'event_label': 'KakaoTalk Free Test Lesson'
-      });
-    }
+<!-- Custom CSS for Blog Grid Interaction -->
+<style>
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg) !important;
   }
-</script>
+</style>

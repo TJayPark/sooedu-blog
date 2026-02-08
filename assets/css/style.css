@@ -589,3 +589,18 @@ body {
     display: none;
   }
 }
+/* Logo Visibility Fix */
+.site-title img {
+  background-color: #1e293b; /* Dark background for header logo */
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.hero .brand img {
+  background-color: rgba(255, 255, 255, 0.95); /* White background for hero logo */
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
