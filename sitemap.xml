@@ -23,13 +23,15 @@ layout: null
   
   <!-- Static pages -->
   {% for page in site.pages %}
-    {% if page.url contains '.html' %}
+    {% if page.url contains '.html' or page.permalink %}
+      {% unless page.url contains 'sitemap.xml' or page.url contains 'robots.txt' or page.url contains 'feed.xml' %}
   <url>
     <loc>{{ page.url | absolute_url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
+      {% endunless %}
     {% endif %}
   {% endfor %}
 </urlset>

@@ -1,59 +1,65 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'ko' }}">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- SEO Meta Tags -->
-    <title>
-      {% if page.title and page.title != "Home" %}
-        {{ page.title }} · {{ site.title }}
-      {% else %}
-        {{ site.title }} - 저렴한 화상영어 | 가성비 최고 온라인 영어회화
-      {% endif %}
-    </title>
-    
-    {% if page.description %}
-      <meta name="description" content="{{ page.description | escape }}" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Meta Tags -->
+  <title>
+    {% if page.title and page.title != "Home" %}
+    {{ page.title }} · {{ site.title }}
     {% else %}
-      <meta name="description" content="하루 10분, 원어민과 1:1 화상영어 수업. 합리적인 가격으로 영어회화 실력을 키우세요. 무료 체험 수업 신청 가능. Soo Edu - 당신의 영어 학습 파트너" />
+    {{ site.title }} - 저렴한 화상영어 | 가성비 최고 온라인 영어회화
     {% endif %}
-    
-    <meta name="keywords" content="화상영어, 저렴한 화상영어, 온라인 영어, 영어회화, 원어민 영어, 1대1 영어, 가성비 영어, 영어 공부, 영어 학습, 무료 체험, Soo Edu" />
-    <meta name="author" content="Soo Edu" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} - 저렴한 화상영어{% endif %}" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}하루 10분, 원어민과 1:1 화상영어 수업. 합리적인 가격으로 영어회화 실력을 키우세요.{% endif %}" />
-    <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}" />
-    <meta property="og:locale" content="ko_KR" />
-    <meta property="og:site_name" content="Soo Edu" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} - 저렴한 화상영어{% endif %}" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}하루 10분, 원어민과 1:1 화상영어 수업{% endif %}" />
-    <meta name="twitter:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ page.url | absolute_url }}" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
-    
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-    
-    <!-- Structured Data (Schema.org) for SEO -->
-    <script type="application/ld+json">
+  </title>
+
+  {% if page.description %}
+  <meta name="description" content="{{ page.description | escape }}" />
+  {% else %}
+  <meta name="description"
+    content="하루 10분, 원어민과 1:1 화상영어 수업. 합리적인 가격으로 영어회화 실력을 키우세요. 무료 체험 수업 신청 가능. Soo Edu - 당신의 영어 학습 파트너" />
+  {% endif %}
+
+  <meta name="keywords" content="화상영어, 저렴한 화상영어, 온라인 영어, 영어회화, 원어민 영어, 1대1 영어, 가성비 영어, 영어 공부, 영어 학습, 무료 체험, Soo Edu" />
+  <meta name="author" content="Soo Edu" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:title"
+    content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} - 저렴한 화상영어{% endif %}" />
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description | escape }}{% else %}하루 10분, 원어민과 1:1 화상영어 수업. 합리적인 가격으로 영어회화 실력을 키우세요.{% endif %}" />
+  <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="Soo Edu" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} - 저렴한 화상영어{% endif %}" />
+  <meta name="twitter:description"
+    content="{% if page.description %}{{ page.description | escape }}{% else %}하루 10분, 원어민과 1:1 화상영어 수업{% endif %}" />
+  <meta name="twitter:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+
+  <!-- Structured Data (Schema.org) for SEO -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
@@ -76,40 +82,49 @@
       }
     }
     </script>
-    
-    <!-- KakaoTalk SDK -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-      // Initialize Kakao SDK with your JavaScript key
-      // Replace 'YOUR_JAVASCRIPT_KEY' with actual key from https://developers.kakao.com/
-      if (typeof Kakao !== 'undefined') {
-        Kakao.init('YOUR_JAVASCRIPT_KEY'); // TODO: Replace with actual key
-      }
-    </script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <nav class="site-nav">
-          <a href="{{ '/' | relative_url }}">홈</a>
-          <a href="#features">서비스 특징</a>
-          <a href="#pricing">수강료</a>
-          <a href="#daily-english">오늘의 영어</a>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      {{ content }}
-    </main>
+  <!-- KakaoTalk SDK -->
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    // Initialize Kakao SDK with your JavaScript key
+    // Replace 'YOUR_JAVASCRIPT_KEY' with actual key from https://developers.kakao.com/
+    if (typeof Kakao !== 'undefined') {
+      Kakao.init('YOUR_JAVASCRIPT_KEY'); // TODO: Replace with actual key
+    }
+  </script>
+</head>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p class="muted">
-          © {{ "now" | date: "%Y" }} Soo Edu · 저렴하고 전문적인 화상영어 플랫폼
-        </p>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">홈</a>
+        <a href="#features">서비스 특징</a>
+        <a href="#pricing">수강료</a>
+        <a href="#daily-english">오늘의 영어</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <a href="/about/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">소개 (About)</a>
+        <a href="/pricing/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">가격 (Pricing)</a>
+        <a href="/curriculum/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">커리큘럼</a>
+        <a href="/policy/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">운영 정책 & 환불</a>
+        <a href="/faq/" style="color: var(--bg-primary); text-decoration: none; opacity: 0.8;">자주 묻는 질문 (FAQ)</a>
       </div>
-    </footer>
-  </body>
+      <p class="muted">
+        © {{ "now" | date: "%Y" }} Soo Edu · 1:1 원어민 화상영어 & AI 맞춤 학습
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
