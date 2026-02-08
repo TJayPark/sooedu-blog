@@ -1,0 +1,20 @@
+title: "Soo Edu"
+description: "하루 한 문장, 매일 조금 더 선명하게."
+lang: "ko"
+timezone: "Asia/Seoul"
+
+# Project Pages로 배포 시(예: https://username.github.io/repo-name) baseurl을 "/repo-name"로 설정
+baseurl: "/sooedu-blog"
+url: "https://tjaypark.github.io"
+
+markdown: kramdown
+theme: null
+
+permalink: /:categories/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

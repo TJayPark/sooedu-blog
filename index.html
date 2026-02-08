@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Home"
+---
+
+<section class="hero">
+  <h1 class="brand">Soo Edu</h1>
+  <p class="tagline">하루 한 문장, 매일 조금 더 선명하게.</p>
+  <p class="intro">
+    짧은 문장 하나를 고르고, 오늘의 감정과 생각을 정리합니다.
+    과하게 꾸미지 않고, 텍스트에 집중합니다.
+  </p>
+</section>
+
+<section class="posts">
+  <h2>오늘의 문장</h2>
+  {% if site.posts and site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts limit: 14 %}
+        <li class="post-item">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">아직 포스팅이 없습니다. 첫 글을 생성해볼까요?</p>
+    <p><code>python3 scripts/generate_todays_sentence.py</code></p>
+  {% endif %}
+</section>
+

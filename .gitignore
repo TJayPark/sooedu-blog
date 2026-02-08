@@ -1,0 +1,9 @@
+._*
+.DS_Store
+.jekyll-cache/
+_site/
+*.log
+__pycache__/
+.pytest_cache/
+.venv/
+
