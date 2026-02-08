@@ -2,8 +2,8 @@
 """
 Generate daily English learning content for Soo Edu blog
 - Prevents duplicate words
-- Human-like content generation
-- SEO optimized
+- Human-like content generation (Idioms, Phrasal Verbs, Expressions)
+- SEO optimized with richer content structure
 """
 import argparse
 import datetime as dt
@@ -78,7 +78,7 @@ def _call_ollama(base_url: str, model: str, prompt: str) -> str:
         "prompt": prompt.strip(),
         "stream": False,
         "format": "json",
-        "options": {"temperature": 0.8},  # Higher for more variety
+        "options": {"temperature": 0.8},
     }
     result = _http_json(f"{base_url}/api/generate", payload=payload, timeout_s=90)
     return (result.get("response") or "").strip()
@@ -132,7 +132,7 @@ def _slugify(text: str) -> str:
 
 
 def get_used_words(posts_dir: str) -> Set[str]:
-    """Extract all words already used in previous posts"""
+    """Extract all words/expressions already used in previous posts"""
     used_words = set()
     posts_path = Path(posts_dir)
     
@@ -155,69 +155,70 @@ def get_used_words(posts_dir: str) -> Set[str]:
 
 
 def generate_human_like_prompt(date: dt.date, used_words: Set[str]) -> str:
-    """Generate a more natural, human-like prompt that varies by day"""
+    """Generate a prompt for richer, practical English expressions"""
     
-    # Different prompt styles to rotate through
     day_of_week = date.weekday()
     
     # Exclude already used words
     exclude_clause = ""
     if used_words:
-        exclude_list = ", ".join(list(used_words)[:50])  # Limit to 50 for prompt length
-        exclude_clause = f"\n\nIMPORTANT: Do NOT use any of these words that have already been covered:\n{exclude_list}\n"
+        exclude_list = ", ".join(list(used_words)[:50])
+        exclude_clause = f"\n\nIMPORTANT: Do NOT use any of these expressions that have already been covered:\n{exclude_list}\n"
     
-    # Vary the tone and focus based on day of week
-    if day_of_week == 0:  # Monday - Professional/Business
-        focus = "Focus on business English or professional communication words"
-        example_context = "workplace meetings, emails, presentations"
-    elif day_of_week == 1:  # Tuesday - Daily conversation
-        focus = "Focus on everyday conversation words that native speakers use frequently"
-        example_context = "casual conversations, shopping, daily routines"
-    elif day_of_week == 2:  # Wednesday - Academic/Learning
-        focus = "Focus on words useful for academic or learning contexts"
-        example_context = "studying, reading, discussing ideas"
-    elif day_of_week == 3:  # Thursday - Travel/Culture
-        focus = "Focus on travel, food, or cultural topics"
-        example_context = "traveling, ordering food, cultural experiences"
-    elif day_of_week == 4:  # Friday - Emotions/Expressions
-        focus = "Focus on emotional expressions or idiomatic phrases"
-        example_context = "describing feelings, reactions, opinions"
-    elif day_of_week == 5:  # Saturday - Lifestyle/Hobbies
-        focus = "Focus on hobbies, lifestyle, or entertainment"
-        example_context = "hobbies, entertainment, leisure activities"
-    else:  # Sunday - Review/Practical
-        focus = "Focus on highly practical words for Korean English learners"
-        example_context = "real-life situations, practical communication"
+    # Daily Themes for better variety
+    if day_of_week == 0:  # Monday - Business/Professional
+        focus = "Theme: Business English & Professional Communication"
+        example_context = "emails, meetings, office interactions"
+    elif day_of_week == 1:  # Tuesday - Daily Conversation
+        focus = "Theme: Casual Daily Conversation (Phrasal Verbs/Idioms)"
+        example_context = "chatting with friends, daily routines, coffee shop"
+    elif day_of_week == 2:  # Wednesday - Travel & Culture
+        focus = "Theme: Travel, Dining, and Cultural Nuances"
+        example_context = "airports, restaurants, asking for directions"
+    elif day_of_week == 3:  # Thursday - Emotions & Relationships
+        focus = "Theme: Expressing Feelings, Opinions, and Relationships"
+        example_context = "giving advice, sharing feelings, disagreements"
+    elif day_of_week == 4:  # Friday - Slang & Trendy Expressions
+        focus = "Theme: Modern Slang, Social Media, and Trends"
+        example_context = "texting, internet, casual parties"
+    else:  # Weekend - Review & Essential Patterns
+        focus = "Theme: Must-know Essential Sentence Patterns"
+        example_context = "very common situations everyone faces"
     
-    prompt = f"""You are a friendly, experienced English teacher creating daily content for Korean learners.
+    prompt = f"""You are a professional English teacher at Soo Edu, creating a daily blog post for Korean students.
+Your goal is to teach a **highly practical English expression, idiom, or phrasal verb** (NOT just a simple word) that native speakers actually use.
 
 {focus}
 
-Write naturally as if you're teaching a friend. Choose an intermediate-level English word that:
-- Is PRACTICAL and useful for {example_context}
-- Korean learners would genuinely benefit from knowing
-- Can be used in everyday situations
-- Is not too basic (avoid: happy, sad, good, bad) and not too advanced
+Please choose an expression that:
+- Is NATURAL and used in real {example_context}
+- Is something Korean learners might not know or often misuse (e.g., Konglish correction)
+- Has a clear context for use
+- Is NOT too basic (avoid: "Thank you", "Hello")
 
 {exclude_clause}
 
-Respond ONLY with valid JSON (no markdown, no code blocks):
+Respond ONLY with valid JSON structure (no markdown, no code blocks):
 
 {{
-  "word": "choose an appropriate word",
-  "pronunciation": "IPA pronunciation",
-  "part_of_speech": "noun/verb/adjective/adverb/etc",
-  "meaning_kr": "natural Korean translation (1-3 words)",
-  "definition_en": "clear, simple English definition (one sentence)",
-  "example_en": "natural example sentence a native speaker would actually say",
-  "example_kr": "natural Korean translation (not word-for-word, but what a Korean speaker would say)",
-  "usage_tip": "helpful practical tip in Korean (2-3 sentences) - when/how to use this word effectively, common mistakes to avoid, or nuances Korean speakers should know",
-  "synonyms": ["2-3 common synonyms"],
-  "tags": ["영어단어", "비즈니스영어" or "일상영어" or "여행영어" etc, one more relevant tag]
+  "expression": "the English expression (e.g., 'Call it a day', 'Touch base', 'Play it by ear')",
+  "pronunciation": "IPA or easy pronunciation guide (e.g., [kol-it-uh-day])",
+  "meaning_kr": "natural Korean meaning (e.g., '하던 일을 멈추다', '퇴근하다')",
+  "definition_en": "simple English definition",
+  "dialogue": [
+    {{"role": "A", "text": "English sentence", "trans": "Korean translation"}},
+    {{"role": "B", "text": "English sentence using the expression", "trans": "Korean translation"}}
+  ],
+  "variations": [
+    {{"en": "Another example sentence 1", "kr": "Korean translation 1"}},
+    {{"en": "Another example sentence 2", "kr": "Korean translation 2"}}
+  ],
+  "pro_tip": "A specific tip about nuance, formality, or when NOT to use it. Make this really helpful for Koreans.",
+  "tags": ["영어회화", "직장인영어", "유용한표현", "idiom"]
 }}
 
 Today's date: {date.isoformat()}
-Make it feel personal and helpful, not like an automated dictionary entry!"""
+Make the content high-quality, encouraging, and perfect for a daily 5-minute study session."""
 
     return prompt
 
@@ -231,7 +232,7 @@ def generate_english_content(date: dt.date, posts_dir: str,
     
     # Get already used words to avoid duplicates
     used_words = get_used_words(posts_dir)
-    print(f"📚 Found {len(used_words)} previously used words", file=sys.stderr)
+    print(f"📚 Found {len(used_words)} previously used expressions", file=sys.stderr)
     
     # Generate human-like prompt
     prompt = generate_human_like_prompt(date, used_words)
@@ -254,36 +255,40 @@ def generate_english_content(date: dt.date, posts_dir: str,
                 raise RuntimeError(f"Failed to parse JSON")
             
             # Validate and extract
-            word = str(data.get("word", "")).strip()
-            
+            expression = str(data.get("expression", "")).strip()
+            if not expression: # Fallback for old prompt structure
+                expression = str(data.get("word", "")).strip()
+
             # Check for duplicate
-            if word.lower() in used_words:
-                print(f"⚠️  Attempt {attempt + 1}: Word '{word}' already used, retrying...", file=sys.stderr)
+            if expression.lower() in used_words:
+                print(f"⚠️  Attempt {attempt + 1}: Expression '{expression}' already used, retrying...", file=sys.stderr)
                 continue
             
             pronunciation = str(data.get("pronunciation", "")).strip()
-            part_of_speech = str(data.get("part_of_speech", "")).strip()
             meaning_kr = str(data.get("meaning_kr", "")).strip()
             definition_en = str(data.get("definition_en", "")).strip()
-            example_en = str(data.get("example_en", "")).strip()
-            example_kr = str(data.get("example_kr", "")).strip()
-            usage_tip = str(data.get("usage_tip", "")).strip()
-            synonyms = data.get("synonyms", [])
+            pro_tip = str(data.get("pro_tip", "")).strip()
+            if not pro_tip:
+                pro_tip = str(data.get("usage_tip", "")).strip()
+
+            dialogue = data.get("dialogue", [])
+            variations = data.get("variations", [])
             tags = data.get("tags", [])
             
-            if not isinstance(synonyms, list):
-                synonyms = []
-            if not isinstance(tags, list):
-                tags = []
-            
+            if not isinstance(dialogue, list) or len(dialogue) < 2:
+                # Fallback if dialogue is missing
+                example_en = str(data.get("example_en", "")).strip()
+                example_kr = str(data.get("example_kr", "")).strip()
+                dialogue = [
+                    {"role": "A", "text": f"Have you heard about this?", "trans": "이거 들어봤어?"},
+                    {"role": "B", "text": example_en, "trans": example_kr}
+                ]
+                
             if not tags:
-                tags = ["영어단어", "영어회화", "영어공부"]
-            
-            if not word or not meaning_kr:
-                raise RuntimeError("Missing required fields")
+                tags = ["영어회화", "오늘의표현"]
             
             # Success!
-            print(f"✅ Generated: {word} ({meaning_kr})", file=sys.stderr)
+            print(f"✅ Generated: {expression} ({meaning_kr})", file=sys.stderr)
             break
             
         except Exception as e:
@@ -291,18 +296,9 @@ def generate_english_content(date: dt.date, posts_dir: str,
                 raise RuntimeError(f"Failed after {max_retries} attempts: {e}") from e
             print(f"⚠️  Attempt {attempt + 1} failed: {e}, retrying...", file=sys.stderr)
     
-    # Build post with human-like variation
-    title = f"오늘의 영어 단어 — {word} ({date.strftime('%Y.%m.%d')})"
-    slug = _slugify(f"english-{word}")
-    
-    # Vary the intro style
-    day = date.day
-    if day % 3 == 0:
-        intro_style = f"오늘 배울 단어는 **{word}**입니다."
-    elif day % 3 == 1:
-        intro_style = f"오늘은 실용적인 단어 **{word}**를 알아보겠습니다."
-    else:
-        intro_style = f"**{word}**, 자주 쓰이는 유용한 표현입니다."
+    # Build post with rich content
+    slug = _slugify(expression)
+    title = f"[오늘의 영어] {expression} - {meaning_kr}"
     
     front_matter = "\n".join([
         "---",
@@ -311,58 +307,59 @@ def generate_english_content(date: dt.date, posts_dir: str,
         "categories: [english-learning]",
         "tags:",
         *[f"  - {str(t).strip()}" for t in tags if str(t).strip()],
-        f'word: "{word}"',
-        f'pronunciation: "{pronunciation}"',
+        f'word: "{expression}"',
         f'meaning: "{meaning_kr}"',
-        f'example: "{example_en}"',
-        f'example_kr: "{example_kr}"',
-        f'description: "{word} 뜻과 사용법 - {meaning_kr}. 실용 영어 표현을 매일 배우세요."',
+        f'description: "\'{expression}\' 무슨 뜻일까요? 원어민이 자주 쓰는 이 표현을 대화문과 함께 배워보세요. (Soo Edu 하루 5분 영어)"',
         "---",
         "",
     ])
     
+    # Dialogue Section Formatter
+    dialogue_md = ""
+    for line in dialogue:
+        role = line.get("role", "A")
+        text = line.get("text", "")
+        trans = line.get("trans", "")
+        dialogue_md += f"> **{role}:** {text}  \n> *({trans})*  \n\n"
+
+    # Variations Section Formatter
+    variations_md = ""
+    for var in variations:
+        en = var.get("en", "")
+        kr = var.get("kr", "")
+        if en:
+            variations_md += f"- **{en}**  \n  *({kr})*\n"
+
     body_parts = [
-        intro_style,
+        f"안녕하세요! 오늘은 원어민들이 정말 자주 쓰는 표현, **{expression}**에 대해 알아보겠습니다.",
         "",
-        f"# 📚 {word}",
+        f"# 💡 오늘의 표현: {expression}",
         "",
-        f"**발음:** {pronunciation}  ",
-        f"**품사:** {part_of_speech}  ",
-        f"**뜻:** {meaning_kr}",
+        f"**발음:** `{pronunciation}`  ",
+        f"**의미:** {meaning_kr}",
         "",
         "---",
         "",
-        "## 📖 Definition",
-        f"> {definition_en}",
+        "## 📖 Definition (뜻 & 뉘앙스)",
+        f"{definition_en}",
         "",
-        "## 💬 Example",
-        f'**English:** "{example_en}"',
+        "## 🗣️ Real Dialogue (실전 대화)",
+        dialogue_md,
+        "## 🔄 Variations (응용하기)",
+        variations_md,
         "",
-        f'**한글:** "{example_kr}"',
+        "## 🎓 Pro Tip (원어민 뉘앙스)",
+        f"{pro_tip}",
         "",
-        "## 💡 Usage Tip",
-        usage_tip,
-        "",
-    ]
-    
-    if synonyms:
-        body_parts.extend([
-            "## 🔄 Synonyms",
-            ", ".join([f"`{s}`" for s in synonyms]),
-            "",
-        ])
-    
-    body_parts.extend([
         "---",
         "",
-        "## 🎓 Soo Edu와 함께 영어 실력을 키우세요",
+        "## 🚀 Soo Edu와 함께 영어 실력을 키우세요",
         "",
-        "매일 이렇게 유용한 영어 표현을 배우고 계신가요? **Soo Edu**의 1:1 원어민 화상영어로 더 빠르게 실력을 향상시켜보세요!",
+        "오늘 배운 표현을 원어민 강사와 직접 써먹어보고 싶다면? **Soo Edu**에서 시작하세요!",
         "",
-        "- ✅ **원어민 강사**와 실시간 대화 연습",
-        "- ✅ **합리적인 가격** (월 99,000원~)",
-        "- ✅ **맞춤형 커리큘럼**",
-        "- ✅ **무료 체험 수업** 제공",
+        "- ✅ **검증된 원어민 강사**와 1:1 수업",
+        "- ✅ **AI 실시간 분석**으로 내 영어 진단",
+        "- ✅ **100% 환불 보장** (불만족 시)",
         "",
         "👉 **[카카오톡으로 1분만에 무료 상담받기](https://pf.kakao.com/_AxgExexj/chat)**",
         "",
@@ -370,7 +367,7 @@ def generate_english_content(date: dt.date, posts_dir: str,
         "",
         f"_Generated on {date.isoformat()} · Soo Edu English Learning_",
         "",
-    ])
+    ]
     
     body = "\n".join(body_parts)
     filename = f"{date.isoformat()}-{slug}.md"
@@ -379,14 +376,14 @@ def generate_english_content(date: dt.date, posts_dir: str,
         "front_matter": front_matter,
         "body": body,
         "title": title,
-        "word": word,
+        "word": expression,
         "meaning": meaning_kr
     }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description='Generate daily English learning content (duplicate-safe, human-like)'
+        description='Generate daily English learning content (duplicate-safe, rich format)'
     )
     parser.add_argument("--date", help="YYYY-MM-DD (default: today)", default=None)
     parser.add_argument("--output-dir", default="_posts", 
@@ -453,7 +450,7 @@ def main() -> int:
         f.write(content["body"])
     
     print(f"✅ Generated: {out_path}")
-    print(f"   Word: {content['word']} ({content['meaning']})")
+    print(f"   Expression: {content['word']} ({content['meaning']})")
     return 0
 
 
