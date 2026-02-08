@@ -154,3 +154,20 @@ a:hover{ text-decoration: underline; }
 
 .muted{ color: var(--muted); }
 
+.page{
+  padding: 22px 0 44px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(154,209,255,.14);
+  border: 1px solid rgba(154,209,255,.35);
+  color: var(--text);
+  text-decoration: none;
+}
+.btn:hover{
+  background: rgba(154,209,255,.20);
+  text-decoration: none;
+}
