@@ -51,7 +51,10 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
             <div class="post-footer"
               style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: space-between;">
               <span style="font-size: 0.9rem; font-weight: 600; color: var(--primary);">더 읽기 →</span>
-              <span class="read-time" style="font-size: 0.8rem; color: var(--text-muted);">⏱️ 3 min read</span>
+              {% assign words = post.content | strip_html | number_of_words %}
+              {% assign read_time = words | divided_by: 180 | plus: 1 %}
+              <span class="read-time" style="font-size: 0.8rem; color: var(--text-muted);">⏱️ {{ read_time }} min
+                read</span>
             </div>
           </div>
         </a>
