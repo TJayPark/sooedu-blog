@@ -24,6 +24,31 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
   </div>
 </section>
 
+<!-- Soo Edu Second Brain - Knowledge Graph Visualization -->
+<section class="knowledge-graph-section"
+  style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 1rem; margin-bottom: 3rem; border-radius: 20px;">
+  <div class="container">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; color: white; text-align: center;">
+      🧠 Soo Edu 세컨드 브레인
+    </h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); text-align: center;">
+      AI가 학습하는 우리 학생들의 성장 네트워크 · 매일 업데이트
+    </p>
+
+    <!-- Graph Metadata -->
+    <div id="graph-metadata" style="text-align: center; margin-bottom: 1.5rem; color: white;"></div>
+
+    <!-- Graph Container -->
+    <div id="knowledge-graph-container"
+      style="width: 100%; height: 500px; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.8); text-align: center;">
+      💡 각 노드를 클릭하여 상세 정보를 확인하세요 | 드래그로 그래프 탐색 가능
+    </p>
+  </div>
+</section>
+
 <!-- Blog Post List -->
 <section class="blog-posts">
   <div class="container">
@@ -92,4 +117,35 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg) !important;
   }
+
+  /* Knowledge Graph Styling */
+  .graph-loading,
+  .graph-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.1rem;
+    color: #666;
+  }
+
+  .graph-stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
 </style>
+
+<!-- Initialize Knowledge Graph -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Only initialize on homepage
+    const graphContainer = document.getElementById('knowledge-graph-container');
+    if (graphContainer) {
+      const viewer = new KnowledgeGraphViewer('knowledge-graph-container');
+      viewer.init();
+    }
+  });
+</script>

@@ -85,7 +85,7 @@ def _call_ollama(base_url: str, model: str, prompt: str) -> str:
 
 
 def _pick_ollama_model(ollama_base_url: str) -> str:
-    """Pick an available Ollama model"""
+    """Pick an available Ollama model, preferring Exaone"""
     env_model = os.environ.get("OLLAMA_MODEL")
     if env_model:
         return env_model
@@ -95,9 +95,18 @@ def _pick_ollama_model(ollama_base_url: str) -> str:
     if not models:
         raise RuntimeError("No Ollama models found. Set OLLAMA_MODEL or run `ollama pull <model>`.")
     
+    # Prefer Exaone model if available
+    for model in models:
+        name = model.get("name", "")
+        if "exaone" in name.lower():
+            print(f"✅ Using Exaone model: {name}", file=sys.stderr)
+            return name
+    
+    # Fallback to first available model
     name = models[0].get("name")
     if not name:
         raise RuntimeError("Ollama returned tags without model name.")
+    print(f"⚠️  Using fallback model: {name}", file=sys.stderr)
     return name
 
 
@@ -155,7 +164,7 @@ def get_used_words(posts_dir: str) -> Set[str]:
 
 
 def generate_human_like_prompt(date: dt.date, used_words: Set[str]) -> str:
-    """Generate a prompt for richer, practical English expressions"""
+    """Generate a prompt for parent-friendly, educational English content"""
     
     day_of_week = date.weekday()
     
@@ -166,60 +175,76 @@ def generate_human_like_prompt(date: dt.date, used_words: Set[str]) -> str:
         exclude_clause = f"\n\nIMPORTANT: Do NOT use any of these expressions that have already been covered:\n{exclude_list}\n"
     
     # Daily Themes for better variety
-    if day_of_week == 0:  # Monday - Business/Professional
-        focus = "Theme: Business English & Professional Communication"
-        example_context = "emails, meetings, office interactions"
+    if day_of_week == 0:  # Monday - School & Study
+        focus = "Theme: School Life & Study Skills"
+        example_context = "classroom situations, homework, study groups"
+        parent_benefit = "학교생활에서 자주 쓰이는 필수 표현"
     elif day_of_week == 1:  # Tuesday - Daily Conversation
-        focus = "Theme: Casual Daily Conversation (Phrasal Verbs/Idioms)"
-        example_context = "chatting with friends, daily routines, coffee shop"
-    elif day_of_week == 2:  # Wednesday - Travel & Culture
-        focus = "Theme: Travel, Dining, and Cultural Nuances"
-        example_context = "airports, restaurants, asking for directions"
-    elif day_of_week == 3:  # Thursday - Emotions & Relationships
-        focus = "Theme: Expressing Feelings, Opinions, and Relationships"
-        example_context = "giving advice, sharing feelings, disagreements"
-    elif day_of_week == 4:  # Friday - Slang & Trendy Expressions
-        focus = "Theme: Modern Slang, Social Media, and Trends"
-        example_context = "texting, internet, casual parties"
-    else:  # Weekend - Review & Essential Patterns
-        focus = "Theme: Must-know Essential Sentence Patterns"
-        example_context = "very common situations everyone faces"
+        focus = "Theme: Everyday Conversation & Social Skills"
+        example_context = "making friends, asking questions, daily activities"
+        parent_benefit = "일상 대화에서 자연스럽게 쓰는 표현"
+    elif day_of_week == 2:  # Wednesday - Reading & Writing
+        focus = "Theme: Reading Comprehension & Writing"
+        example_context = "reading books, writing essays, understanding texts"
+        parent_benefit = "읽기/쓰기 실력 향상에 도움되는 표현"
+    elif day_of_week == 3:  # Thursday - Problem Solving
+        focus = "Theme: Critical Thinking & Problem Solving"
+        example_context = "discussing ideas, solving problems, giving opinions"
+        parent_benefit = "사고력과 의사표현 능력을 키우는 표현"
+    elif day_of_week == 4:  # Friday - Fun & Entertainment
+        focus = "Theme: Hobbies, Entertainment & Popular Culture"
+        example_context = "talking about movies, games, hobbies, interests"
+        parent_benefit = "흥미 유발과 동기부여에 좋은 표현"
+    else:  # Weekend - Review & Practical Skills
+        focus = "Theme: Real-world Practical Skills"
+        example_context = "shopping, traveling, helping at home"
+        parent_benefit = "실생활에서 바로 쓸 수 있는 실용 표현"
     
-    prompt = f"""You are a professional English teacher at Soo Edu, creating a daily blog post for Korean students.
-Your goal is to teach a **highly practical English expression, idiom, or phrasal verb** (NOT just a simple word) that native speakers actually use.
+    prompt = f"""You are a professional English teacher at Soo Edu, creating educational content for parents of elementary and middle school students.
+
+CRITICAL: Your primary audience is PARENTS who want their children to learn practical, useful English. Write content that:
+1. Explains WHY this expression matters for their child's English education
+2. Shows how it will help in real-life situations (school, tests, conversations)
+3. Provides clear examples that children can understand and use
+4. Gives parents confidence that this is valuable learning
 
 {focus}
+Educational Value: {parent_benefit}
 
 Please choose an expression that:
+- Is appropriate for elementary/middle school students (ages 10-15)
 - Is NATURAL and used in real {example_context}
-- Is something Korean learners might not know or often misuse (e.g., Konglish correction)
-- Has a clear context for use
-- Is NOT too basic (avoid: "Thank you", "Hello")
+- Helps build practical communication skills
+- Is something that appears in textbooks, tests, or real conversations
+- Is NOT slang or inappropriate
 
 {exclude_clause}
 
 Respond ONLY with valid JSON structure (no markdown, no code blocks):
 
 {{
-  "expression": "the English expression (e.g., 'Call it a day', 'Touch base', 'Play it by ear')",
-  "pronunciation": "IPA or easy pronunciation guide (e.g., [kol-it-uh-day])",
-  "meaning_kr": "natural Korean meaning (e.g., '하던 일을 멈추다', '퇴근하다')",
-  "definition_en": "simple English definition",
+  "expression": "the English expression (e.g., 'figure out', 'work on', 'look forward to')",
+  "pronunciation": "easy pronunciation guide for Korean speakers (e.g., [피거 아웃])",
+  "meaning_kr": "natural Korean meaning (e.g., '알아내다', '해결하다')",
+  "definition_en": "simple English definition suitable for students",
+  "educational_value": "Why this expression is important for students - explain the learning benefit for PARENTS (2-3 sentences in Korean)",
   "dialogue": [
-    {{"role": "A", "text": "English sentence", "trans": "Korean translation"}},
-    {{"role": "B", "text": "English sentence using the expression", "trans": "Korean translation"}}
+    {{"role": "Student", "text": "English sentence (student-appropriate)", "trans": "Korean translation"}},
+    {{"role": "Teacher", "text": "English response using the expression", "trans": "Korean translation"}}
   ],
   "variations": [
-    {{"en": "Another example sentence 1", "kr": "Korean translation 1"}},
-    {{"en": "Another example sentence 2", "kr": "Korean translation 2"}}
+    {{"en": "Example sentence 1 (simple, clear)", "kr": "Korean translation 1"}},
+    {{"en": "Example sentence 2 (slightly different context)", "kr": "Korean translation 2"}},
+    {{"en": "Example sentence 3 (real-world usage)", "kr": "Korean translation 3"}}
   ],
-  "pro_tip": "A specific tip about nuance, formality, or when NOT to use it. Make this really helpful for Koreans.",
-  "tags": ["영어회화", "직장인영어", "유용한표현", "idiom"]
+  "learning_tip": "Practical tip for parents: how to help children remember and use this expression (in Korean, 2-3 sentences)",
+  "pro_tip": "Language learning insight: nuance, formality, or common mistakes Korean learners make (in Korean)",
+  "tags": ["초등영어", "중등영어", "필수표현", "영어회화", "실용영어"]
 }}
 
 Today's date: {date.isoformat()}
-Make the content high-quality, encouraging, and perfect for a daily 5-minute study session."""
-
+Remember: Parents are reading this to decide if Soo Edu is right for their child. Make it educational, practical, and valuable!"""
+    
     return prompt
 
 
@@ -267,6 +292,8 @@ def generate_english_content(date: dt.date, posts_dir: str,
             pronunciation = str(data.get("pronunciation", "")).strip()
             meaning_kr = str(data.get("meaning_kr", "")).strip()
             definition_en = str(data.get("definition_en", "")).strip()
+            educational_value = str(data.get("educational_value", "")).strip()
+            learning_tip = str(data.get("learning_tip", "")).strip()
             pro_tip = str(data.get("pro_tip", "")).strip()
             if not pro_tip:
                 pro_tip = str(data.get("usage_tip", "")).strip()
@@ -331,41 +358,60 @@ def generate_english_content(date: dt.date, posts_dir: str,
             variations_md += f"- **{en}**  \n  *({kr})*\n"
 
     body_parts = [
-        f"안녕하세요! 오늘은 원어민들이 정말 자주 쓰는 표현, **{expression}**에 대해 알아보겠습니다.",
+        f"## 👋 학부모님께",
         "",
-        f"# 💡 오늘의 표현: {expression}",
+        f"오늘은 자녀분이 꼭 배워야 할 영어 표현, **{expression}**를 소개합니다.",
+        "",
+        f"### 🎯 왜 이 표현이 중요한가요?",
+        f"{educational_value}",
+        "",
+        f"# 📚 오늘의 표현: {expression}",
         "",
         f"**발음:** `{pronunciation}`  ",
         f"**의미:** {meaning_kr}",
         "",
         "---",
         "",
-        "## 📖 Definition (뜻 & 뉘앙스)",
+        "## 📖 Definition (영어 정의)",
         f"{definition_en}",
         "",
-        "## 🗣️ Real Dialogue (실전 대화)",
+        "## 🗣️ 실전 대화 예시",
         dialogue_md,
-        "## 🔄 Variations (응용하기)",
+        "## 🔄 다양한 활용 (응용하기)",
         variations_md,
         "",
-        "## 🎓 Pro Tip (원어민 뉘앙스)",
+        "## 💡 학부모 가이드",
+        f"{learning_tip if learning_tip else '자녀가 이 표현을 다양한 상황에서 사용해볼 수 있도록 격려해주세요. 일상 대화에서 자연스럽게 노출될수록 더 잘 기억합니다.'}",
+        "",
+        "## 🎓 원어민 표현 팁",
         f"{pro_tip}",
         "",
         "---",
         "",
         "## 🚀 Soo Edu와 함께 영어 실력을 키우세요",
         "",
-        "오늘 배운 표현을 원어민 강사와 직접 써먹어보고 싶다면? **Soo Edu**에서 시작하세요!",
+        "오늘 배운 표현을 원어민 강사와 직접 연습하고 싶다면? **Soo Edu**가 함께합니다!",
         "",
-        "- ✅ **검증된 원어민 강사**와 1:1 수업",
-        "- ✅ **AI 실시간 분석**으로 내 영어 진단",
+        "### 왜 Soo Edu인가요?",
+        "",
+        "- ✅ **검증된 원어민 강사**와 1:1 맞춤 수업",
+        "- ✅ **AI 실시간 분석**으로 우리 아이 영어 실력 정확히 진단",
+        "- ✅ **초중등생 특화** 커리큘럼 (레벨별, 흥미별 맞춤)",
+        "- ✅ **합리적인 가격** - 주 2회 72,000원부터",
         "- ✅ **100% 환불 보장** (불만족 시)",
         "",
-        "👉 **[카카오톡으로 1분만에 무료 상담받기](https://pf.kakao.com/_AxgExexj/chat)**",
+        "### 우리 아이 영어 교육, 고민이신가요?",
+        "",
+        "- 🤔 \"학원은 비싸고, 집에서는 영어 공부를 안 해요\"",
+        "- 🤔 \"영어 시험 점수는 괜찮은데 말하기가 너무 약해요\"",
+        "- 🤔 \"우리 아이 수준에 맞는 수업을 찾고 싶어요\"",
+        "",
+        "👉 **[카카오톡으로 1분만에 무료 상담받기](https://pf.kakao.com/_AxgExexj/chat)**  ",
+        "👉 **[무료 레벨 테스트 신청하기](https://pf.kakao.com/_AxgExexj/chat)**",
         "",
         "---",
         "",
-        f"_Generated on {date.isoformat()} · Soo Edu English Learning_",
+        f"_Generated on {date.isoformat()} · Soo Edu English Learning for Kids_",
         "",
     ]
     

@@ -1,6 +1,25 @@
 User-agent: *
 Allow: /
 
+# AI Search Engine Crawlers - Allow all for AI search optimization
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 # Allow all search engines to crawl
 Sitemap: https://soo-edu.com/sitemap.xml
 

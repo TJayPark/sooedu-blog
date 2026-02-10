@@ -1,0 +1,370 @@
+{
+  "checks": [
+    {
+      "date": "2026-02-09",
+      "time": "20:19:11",
+      "total_checks": 10,
+      "mentioned_count": 0,
+      "results": [
+        {
+          "platform": "ChatGPT",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Mock ChatGPT response for: 화상영어 추천해줘",
+          "timestamp": "2026-02-09T20:19:11.812252"
+        },
+        {
+          "platform": "Gemini",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Mock Gemini response for: 화상영어 추천해줘",
+          "timestamp": "2026-02-09T20:19:11.812258"
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Mock ChatGPT response for: 저렴한 화상영어",
+          "timestamp": "2026-02-09T20:19:11.812260"
+        },
+        {
+          "platform": "Gemini",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Mock Gemini response for: 저렴한 화상영어",
+          "timestamp": "2026-02-09T20:19:11.812262"
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Mock ChatGPT response for: AI 기반 영어 학습",
+          "timestamp": "2026-02-09T20:19:11.812263"
+        },
+        {
+          "platform": "Gemini",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Mock Gemini response for: AI 기반 영어 학습",
+          "timestamp": "2026-02-09T20:19:11.812264"
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Mock ChatGPT response for: 온라인 영어회화 초등학생",
+          "timestamp": "2026-02-09T20:19:11.812266"
+        },
+        {
+          "platform": "Gemini",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Mock Gemini response for: 온라인 영어회화 초등학생",
+          "timestamp": "2026-02-09T20:19:11.812267"
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Mock ChatGPT response for: 어린이 화상영어 추천",
+          "timestamp": "2026-02-09T20:19:11.812268"
+        },
+        {
+          "platform": "Gemini",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Mock Gemini response for: 어린이 화상영어 추천",
+          "timestamp": "2026-02-09T20:19:11.812269"
+        }
+      ],
+      "recommendations": [
+        "❌ Soo Edu가 AI 검색 결과에 전혀 노출되지 않고 있습니다",
+        "💡 SEO 최적화 콘텐츠를 더 많이 발행하세요",
+        "💡 FAQ 페이지를 추가하세요",
+        "💡 가격 비교 콘텐츠를 작성하세요"
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "time": "23:24:03",
+      "total_checks": 10,
+      "mentioned_count": 0,
+      "results": [
+        {
+          "platform": "ChatGPT",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n화상영어 추천해줘\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ef",
+          "timestamp": "2026-02-09T23:21:49.125940",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nMeet Gemini, your personal AI assistant\nWrite\nPlan\nResearch\nLearn\n\n화상영어 추천해줘\n\nTools\nFast\n\nGoogle Terms\nOpens in a new win",
+          "timestamp": "2026-02-09T23:22:04.349504",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n저렴한 화상영어\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing eff",
+          "timestamp": "2026-02-09T23:22:18.598548",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nMeet Gemini, your personal AI assistant\nWrite\nPlan\nResearch\nLearn\n\n저렴한 화상영어\n\nTools\nFast\n\nGoogle Terms\nOpens in a new wind",
+          "timestamp": "2026-02-09T23:22:33.680310",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\nAI 기반 영어 학습\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ",
+          "timestamp": "2026-02-09T23:22:48.290796",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nMeet Gemini, your personal AI assistant\nWrite\nPlan\nResearch\nLearn\n\nAI 기반 영어 학습\n\nTools\nFast\n\nGoogle Terms\nOpens in a new w",
+          "timestamp": "2026-02-09T23:23:03.900321",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n온라인 영어회화 초등학생\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketin",
+          "timestamp": "2026-02-09T23:23:18.308112",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nMeet Gemini, your personal AI assistant\nWrite\nPlan\nResearch\nLearn\n\n온라인 영어회화 초등학생\n\nTools\nFast\n\nGoogle Terms\nOpens in a new",
+          "timestamp": "2026-02-09T23:23:33.735884",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n어린이 화상영어 추천\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ",
+          "timestamp": "2026-02-09T23:23:48.297357",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nMeet Gemini, your personal AI assistant\nWrite\nPlan\nResearch\nLearn\n\n어린이 화상영어 추천\n\nTools\nFast\n\nGoogle Terms\nOpens in a new w",
+          "timestamp": "2026-02-09T23:24:03.477051",
+          "success": true
+        }
+      ],
+      "recommendations": [
+        "❌ Soo Edu가 AI 검색 결과에 전혀 노출되지 않고 있습니다",
+        "💡 SEO 최적화 콘텐츠를 더 많이 발행하세요",
+        "💡 FAQ 페이지를 추가하세요",
+        "💡 가격 비교 콘텐츠를 작성하세요"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "time": "20:23:26",
+      "total_checks": 10,
+      "mentioned_count": 0,
+      "results": [
+        {
+          "platform": "ChatGPT",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n화상영어 추천해줘\n\n\nChatGPT said:\n\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing efforts. Visit Manage Cookies to ch",
+          "timestamp": "2026-02-10T20:21:12.863934",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n화상영어 추천해줘\n\n\n\n\nTools\nFast\n\nGemini is AI and can make mistakes, including about people. Your privacy & Gemini\nOpe",
+          "timestamp": "2026-02-10T20:21:28.323885",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n저렴한 화상영어\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing eff",
+          "timestamp": "2026-02-10T20:21:42.563359",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n저렴한 화상영어\n\nGemini said\n\n2026년 현재 기준으로 가성비가 가장 뛰어난 화상영어 플랫폼들을 정리해 드립니다.\n\n저렴한 화상영어를 찾으실 때는 '필리핀 강사' 중심의 가성비 플랫폼이나,",
+          "timestamp": "2026-02-10T20:21:57.907539",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\nAI 기반 영어 학습\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ",
+          "timestamp": "2026-02-10T20:22:11.941195",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\nAI 기반 영어 학습\n\n\n\n\nTools\nFast\n\nGemini is AI and can make mistakes, including about people. Your privacy & Gemini\nO",
+          "timestamp": "2026-02-10T20:22:27.249966",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n온라인 영어회화 초등학생\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketin",
+          "timestamp": "2026-02-10T20:22:41.284998",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n온라인 영어회화 초등학생\n\nGemini said\n\n초등학생 자녀를 위한 온라인 영어회화 선택은 정말 고민이 많으실 부분이에요. 단순히 '말하기'를 넘어 아이가 영어를 **'즐거운 놀이'나 '소통의 도",
+          "timestamp": "2026-02-10T20:22:56.875475",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n어린이 화상영어 추천\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ",
+          "timestamp": "2026-02-10T20:23:10.954809",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n어린이 화상영어 추천\n\nGemini said\n\n어린이 화상영어는 아이의 성향(MBTI), 현재 영어 레벨, 그리고 부모님의 교육 가치관에 따라 최적의 선택이 달라집니다. 2026년 현재 가장 평판이 ",
+          "timestamp": "2026-02-10T20:23:26.199798",
+          "success": true
+        }
+      ],
+      "recommendations": [
+        "❌ Soo Edu가 AI 검색 결과에 전혀 노출되지 않고 있습니다",
+        "💡 SEO 최적화 콘텐츠를 더 많이 발행하세요",
+        "💡 FAQ 페이지를 추가하세요",
+        "💡 가격 비교 콘텐츠를 작성하세요"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "time": "20:24:15",
+      "total_checks": 10,
+      "mentioned_count": 0,
+      "results": [
+        {
+          "platform": "ChatGPT",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n화상영어 추천해줘\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ef",
+          "timestamp": "2026-02-10T20:22:02.224081",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "화상영어 추천해줘",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n화상영어 추천해줘\n\nGemini said\n\n화상영어 서비스는 워낙 다양해서 **'학습 목적(가성비, 고급 회화, 초등 교육 등)'**에 따라 선택지가 완전히 달라집니다. 2026년 기준, 사용자 만족",
+          "timestamp": "2026-02-10T20:22:17.728241",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n저렴한 화상영어\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing eff",
+          "timestamp": "2026-02-10T20:22:31.948007",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "저렴한 화상영어",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n저렴한 화상영어\n\n\n\n\nTools\nFast\n\nGemini is AI and can make mistakes, including about people. Your privacy & Gemini\nOpen",
+          "timestamp": "2026-02-10T20:22:47.558567",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\nAI 기반 영어 학습\n\n\nChatGPT said:\n\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing efforts. Visit Manage Cookies to ",
+          "timestamp": "2026-02-10T20:23:01.618554",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "AI 기반 영어 학습",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\nAI 기반 영어 학습\n\n\n\n\nTools\nFast\n\nGemini is AI and can make mistakes, including about people. Your privacy & Gemini\nO",
+          "timestamp": "2026-02-10T20:23:16.853586",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n온라인 영어회화 초등학생\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketin",
+          "timestamp": "2026-02-10T20:23:30.907933",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "온라인 영어회화 초등학생",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n온라인 영어회화 초등학생\n\nGemini said\n\n초등학생 자녀를 위한 온라인 영어회화를 찾고 계시군요! 요즘은 단순히 화상 통화만 하는 게 아니라, 게임형 학습이나 원어민 교사의 성향에 따라 선택지",
+          "timestamp": "2026-02-10T20:23:46.468360",
+          "success": true
+        },
+        {
+          "platform": "ChatGPT",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Skip to content\nChatGPT\nLog in\nSign up for free\nYou said:\n어린이 화상영어 추천\n\n\nChatGPT said:\n\nAttach\nSearch\nStudy\nCreate image\nChatGPT can make mistakes. Check important info. See Cookie Preferences.\nWe use cookies\n\nWe use cookies to help this site function, understand service usage, and support marketing ",
+          "timestamp": "2026-02-10T20:24:00.577006",
+          "success": true
+        },
+        {
+          "platform": "Gemini",
+          "query": "어린이 화상영어 추천",
+          "mentioned": false,
+          "response_snippet": "Sign in\nGemini\nAbout Gemini\nOpens in a new window\nGemini App\nOpens in a new window\nSubscriptions\nOpens in a new window\nFor Business\nOpens in a new window\nConversation with Gemini\nYou said\n\n어린이 화상영어 추천\n\n\n\n\nTools\nFast\n\nGemini is AI and can make mistakes, including about people. Your privacy & Gemini\nO",
+          "timestamp": "2026-02-10T20:24:15.952467",
+          "success": true
+        }
+      ],
+      "recommendations": [
+        "❌ Soo Edu가 AI 검색 결과에 전혀 노출되지 않고 있습니다",
+        "💡 SEO 최적화 콘텐츠를 더 많이 발행하세요",
+        "💡 FAQ 페이지를 추가하세요",
+        "💡 가격 비교 콘텐츠를 작성하세요"
+      ]
+    }
+  ]
+}
