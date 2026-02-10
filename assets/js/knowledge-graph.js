@@ -13,7 +13,13 @@ class KnowledgeGraphViewer {
 
     async loadData() {
         try {
-            const response = await fetch('/assets/data/knowledge-graph-latest.json');
+            // Use relative path that works with Jekyll's baseurl
+            const baseUrl = document.querySelector('base')?.href || window.location.origin + window.location.pathname.split('/').slice(0, -1).join('/');
+            const jsonPath = baseUrl.includes('sooedu-blog')
+                ? '/sooedu-blog/assets/data/knowledge-graph-latest.json'
+                : '/assets/data/knowledge-graph-latest.json';
+
+            const response = await fetch(jsonPath);
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}`);
             }
