@@ -50,7 +50,7 @@ def get_graph_snapshot():
     MATCH (s:Student)-[:HAS_LESSON]->(lesson:Lesson)
     WHERE lesson.date >= toString(cutoffDate)
     WITH DISTINCT s
-    LIMIT 50
+    LIMIT 25
     
     // Get their connected nodes
     MATCH (s)-[r]-(connected)
@@ -71,7 +71,7 @@ def get_graph_snapshot():
     MATCH (s:Student)-[:HAS_LESSON]->(lesson:Lesson)
     WHERE lesson.date >= toString(cutoffDate)
     WITH DISTINCT s
-    LIMIT 50
+    LIMIT 25
     
     // Get their relationships with learning materials
     MATCH (s)-[r]-(other)
@@ -81,7 +81,7 @@ def get_graph_snapshot():
         id(other) as to,
         type(r) as type,
         properties(r) as properties
-    LIMIT 300
+    LIMIT 150
     """
     
     print("📊 Querying Neo4j for graph data...")

@@ -82,19 +82,26 @@ class KnowledgeGraphViewer {
             },
             physics: {
                 enabled: true,
-                barnesHut: {
-                    gravitationalConstant: -8000,
-                    centralGravity: 0.3,
-                    springLength: 150,
-                    springConstant: 0.04,
-                    damping: 0.09,
-                    avoidOverlap: 0.1
+                forceAtlas2Based: {
+                    gravitationalConstant: -50,
+                    centralGravity: 0.01,
+                    springConstant: 0.08,
+                    springLength: 100,
+                    damping: 0.4,
+                    avoidOverlap: 0
                 },
+                maxVelocity: 50,
+                minVelocity: 0.1,
+                solver: 'forceAtlas2Based',
                 stabilization: {
                     enabled: true,
-                    iterations: 200,
-                    updateInterval: 25
-                }
+                    iterations: 1000,
+                    updateInterval: 100,
+                    onlyDynamicEdges: false,
+                    fit: true
+                },
+                timestep: 0.5,
+                adaptiveTimestep: true
             },
             interaction: {
                 hover: true,
@@ -102,7 +109,9 @@ class KnowledgeGraphViewer {
                 navigationButtons: true,
                 keyboard: true,
                 zoomView: true,
-                dragView: true
+                dragView: true,
+                hideEdgesOnDrag: true,
+                hideNodesOnDrag: false
             },
             layout: {
                 improvedLayout: true,
@@ -145,6 +154,17 @@ class KnowledgeGraphViewer {
         // Stabilization done
         this.network.on('stabilizationIterationsDone', () => {
             this.hideLoading();
+            this.network.setOptions({ physics: { enabled: false } }); // Stop physics after load to save CPU
+        });
+
+        // Re-enable physics on drag start so nodes move naturally
+        this.network.on("dragStart", (params) => {
+            this.network.setOptions({ physics: { enabled: true } });
+        });
+
+        // Disable physics again on drag end
+        this.network.on("dragEnd", (params) => {
+            this.network.setOptions({ physics: { enabled: false } });
         });
     }
 
