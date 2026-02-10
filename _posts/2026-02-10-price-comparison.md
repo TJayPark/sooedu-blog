@@ -259,7 +259,7 @@ permalink: /posts/2026-02-10-price-comparison/
 <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 2rem; border-radius: 16px; text-align: center; margin: 2rem 0;">
   <h3 style="margin-bottom: 1rem;">어떤 플랫폼이 나에게 맞을까요?</h3>
   <p style="margin-bottom: 1.5rem; opacity: 0.9;">1:1 맞춤 상담으로 최적의 선택을 도와드립니다!</p>
-  <a href="https://pf.kakao.com/_czxjSG/chat" 
+  <a href="http://pf.kakao.com/_AxgExexj/chat" 
      style="background: white; color: var(--primary-dark); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block;">
     💬 카카오톡 무료 상담하기
   </a>
