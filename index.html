@@ -52,10 +52,10 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
 <!-- Blog Post List -->
 <section class="blog-posts">
   <div class="container">
-    {% if site.posts.size > 0 %}
+    {% if paginator.posts.size > 0 %}
     <div class="posts-grid"
       style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
       <article class="post-card"
         style="background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <a href="{{ post.url | relative_url }}"
@@ -86,6 +86,61 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
       </article>
       {% endfor %}
     </div>
+
+    <!-- Pagination Controls -->
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination"
+      style="margin-top: 4rem; display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+      <!-- Previous Button -->
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn pagination-prev"
+        style="padding: 0.75rem 1.25rem; background: var(--primary); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s ease;">
+        ← 이전
+      </a>
+      {% else %}
+      <span class="pagination-btn pagination-disabled"
+        style="padding: 0.75rem 1.25rem; background: #e0e0e0; color: #999; border-radius: 8px; font-weight: 600; cursor: not-allowed;">
+        ← 이전
+      </span>
+      {% endif %}
+
+      <!-- Page Numbers -->
+      <div class="pagination-numbers" style="display: flex; gap: 0.25rem;">
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <span class="pagination-number pagination-current"
+          style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: var(--primary); color: white; border-radius: 8px; font-weight: 700;">
+          {{ page }}
+        </span>
+        {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}" class="pagination-number"
+          style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: white; color: var(--text-primary); border: 2px solid var(--primary); border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s ease;">
+          {{ page }}
+        </a>
+        {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="pagination-number"
+          style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; background: white; color: var(--text-primary); border: 2px solid var(--primary); border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s ease;">
+          {{ page }}
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Next Button -->
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn pagination-next"
+        style="padding: 0.75rem 1.25rem; background: var(--primary); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s ease;">
+        다음 →
+      </a>
+      {% else %}
+      <span class="pagination-btn pagination-disabled"
+        style="padding: 0.75rem 1.25rem; background: #e0e0e0; color: #999; border-radius: 8px; font-weight: 600; cursor: not-allowed;">
+        다음 →
+      </span>
+      {% endif %}
+    </nav>
+    {% endif %}
+
     {% else %}
     <div class="empty-state" style="text-align: center; padding: 4rem 1rem;">
       <p style="font-size: 1.2rem; color: var(--text-muted);">아직 작성된 포스트가 없습니다.</p>
@@ -135,6 +190,38 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
     justify-content: center;
     flex-wrap: wrap;
     font-size: 0.95rem;
+  }
+
+  /* Pagination Hover Effects */
+  .pagination-btn:hover:not(.pagination-disabled) {
+    background: var(--primary-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .pagination-number:hover {
+    background: var(--primary) !important;
+    color: white !important;
+    transform: scale(1.1);
+  }
+
+  .pagination-current {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive Pagination */
+  @media (max-width: 640px) {
+    .pagination {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pagination-numbers {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
   }
 </style>
 
