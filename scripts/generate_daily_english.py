@@ -332,9 +332,9 @@ def generate_english_content(date: dt.date, posts_dir: str,
     slug = _slugify(expression)
     title = f"[오늘의 영어] {expression} - {meaning_kr}"
     
-    # Use current datetime to avoid future dates
+    # Use current datetime in KST timezone to avoid future dates
     now = dt.datetime.now()
-    datetime_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    datetime_str = now.strftime("%Y-%m-%d %H:%M:%S +0900")
     
     front_matter = "\n".join([
         "---",

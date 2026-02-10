@@ -1,6 +1,6 @@
 ---
 title: "[오늘의 영어] make inferences - 추론하다, 짐작하다"
-date: 2026-02-11 08:15:00
+date: 2026-02-11 08:15:00 +0900
 categories: [english-learning]
 tags:
   - 초등영어
