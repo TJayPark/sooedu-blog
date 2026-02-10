@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Alice (초급)",
+      "title": "Student: Alice",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 25,
+      "properties": {
+        "name": "Alice",
+        "level": "Beginner",
+        "lessons_completed": 15
+      }
+    },
+    {
+      "id": 2,
+      "label": "Bob (중급)",
+      "title": "Student: Bob",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 25,
+      "properties": {
+        "name": "Bob",
+        "level": "Intermediate",
+        "lessons_completed": 42
+      }
+    },
+    {
+      "id": 3,
+      "label": "Carol (고급)",
+      "title": "Student: Carol",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 25,
+      "properties": {
+        "name": "Carol",
+        "level": "Advanced",
+        "lessons_completed": 89
+      }
+    },
+    {
+      "id": 10,
+      "label": "Basic English",
+      "title": "Curriculum: Basic English",
+      "group": "Curriculum",
+      "color": "#2196F3",
+      "shape": "box",
+      "size": 20,
+      "properties": {
+        "title": "Basic English",
+        "level": "Beginner",
+        "duration_weeks": 8
+      }
+    },
+    {
+      "id": 11,
+      "label": "Business English",
+      "title": "Curriculum: Business English",
+      "group": "Curriculum",
+      "color": "#2196F3",
+      "shape": "box",
+      "size": 20,
+      "properties": {
+        "title": "Business English",
+        "level": "Intermediate",
+        "duration_weeks": 12
+      }
+    },
+    {
+      "id": 12,
+      "label": "Advanced Conversation",
+      "title": "Curriculum: Advanced Conversation",
+      "group": "Curriculum",
+      "color": "#2196F3",
+      "shape": "box",
+      "size": 20,
+      "properties": {
+        "title": "Advanced Conversation",
+        "level": "Advanced",
+        "duration_weeks": 16
+      }
+    },
+    {
+      "id": 20,
+      "label": "게임",
+      "title": "Interest: Games",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "diamond",
+      "size": 18,
+      "properties": {
+        "name": "Games"
+      }
+    },
+    {
+      "id": 21,
+      "label": "여행",
+      "title": "Interest: Travel",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "diamond",
+      "size": 18,
+      "properties": {
+        "name": "Travel"
+      }
+    },
+    {
+      "id": 22,
+      "label": "비즈니스",
+      "title": "Interest: Business",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "diamond",
+      "size": 18,
+      "properties": {
+        "name": "Business"
+      }
+    },
+    {
+      "id": 30,
+      "label": "초급",
+      "title": "Level: Beginner",
+      "group": "Level",
+      "color": "#9C27B0",
+      "shape": "star",
+      "size": 15,
+      "properties": {
+        "name": "Beginner"
+      }
+    },
+    {
+      "id": 31,
+      "label": "중급",
+      "title": "Level: Intermediate",
+      "group": "Level",
+      "color": "#9C27B0",
+      "shape": "star",
+      "size": 15,
+      "properties": {
+        "name": "Intermediate"
+      }
+    },
+    {
+      "id": 32,
+      "label": "고급",
+      "title": "Level: Advanced",
+      "group": "Level",
+      "color": "#9C27B0",
+      "shape": "star",
+      "size": 15,
+      "properties": {
+        "name": "Advanced"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 10,
+      "label": "STUDYING",
+      "title": "학습 중",
+      "arrows": "to"
+    },
+    {
+      "from": 1,
+      "to": 30,
+      "label": "AT_LEVEL",
+      "title": "레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 1,
+      "to": 20,
+      "label": "INTERESTED_IN",
+      "title": "관심사",
+      "arrows": "to"
+    },
+    {
+      "from": 2,
+      "to": 11,
+      "label": "STUDYING",
+      "title": "학습 중",
+      "arrows": "to"
+    },
+    {
+      "from": 2,
+      "to": 31,
+      "label": "AT_LEVEL",
+      "title": "레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 2,
+      "to": 22,
+      "label": "INTERESTED_IN",
+      "title": "관심사",
+      "arrows": "to"
+    },
+    {
+      "from": 3,
+      "to": 12,
+      "label": "STUDYING",
+      "title": "학습 중",
+      "arrows": "to"
+    },
+    {
+      "from": 3,
+      "to": 32,
+      "label": "AT_LEVEL",
+      "title": "레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 3,
+      "to": 21,
+      "label": "INTERESTED_IN",
+      "title": "관심사",
+      "arrows": "to"
+    },
+    {
+      "from": 10,
+      "to": 30,
+      "label": "FOR_LEVEL",
+      "title": "대상 레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 10,
+      "to": 20,
+      "label": "MATCHES_INTEREST",
+      "title": "관련 관심사",
+      "arrows": "to"
+    },
+    {
+      "from": 11,
+      "to": 31,
+      "label": "FOR_LEVEL",
+      "title": "대상 레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 11,
+      "to": 22,
+      "label": "MATCHES_INTEREST",
+      "title": "관련 관심사",
+      "arrows": "to"
+    },
+    {
+      "from": 12,
+      "to": 32,
+      "label": "FOR_LEVEL",
+      "title": "대상 레벨",
+      "arrows": "to"
+    },
+    {
+      "from": 12,
+      "to": 21,
+      "label": "MATCHES_INTEREST",
+      "title": "관련 관심사",
+      "arrows": "to"
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-10T20:53:00+09:00",
+    "node_count": 12,
+    "edge_count": 15,
+    "description": "Soo Edu Knowledge Graph - Demo Data (학생 3명, 커리큘럼 3개, 관심사 3개, 레벨 3개)"
+  }
+}
