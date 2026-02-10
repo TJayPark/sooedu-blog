@@ -42,30 +42,34 @@ def query_neo4j(query: str, params: dict = None):
 def get_graph_snapshot():
     """Get complete graph snapshot from Neo4j"""
     
-    # Query for nodes
+    # Query for nodes - ALL types including Lesson, Sentence, Word, Book
     nodes_query = """
-    // Get all nodes: Students, Curriculum, Interests, Levels
+    // Get diverse sample of nodes
     MATCH (n)
-    WHERE n:Student OR n:Curriculum OR n:Interest OR n:Level
+    WHERE n:Student OR n:Lesson OR n:Sentence OR n:Word OR n:Book OR n:NextLesson
+    WITH n, rand() as r
+    ORDER BY r
+    LIMIT 300
     RETURN 
         id(n) as id,
         labels(n) as labels,
         properties(n) as properties
-    LIMIT 200
     """
     
     # Query for relationships
     relationships_query = """
-    // Get all relationships
+    // Get relationships for the sampled nodes
     MATCH (a)-[r]->(b)
-    WHERE (a:Student OR a:Curriculum OR a:Interest OR a:Level)
-      AND (b:Student OR b:Curriculum OR b:Interest OR b:Level)
+    WHERE (a:Student OR a:Lesson OR a:Sentence OR a:Word OR a:Book OR a:NextLesson)
+      AND (b:Student OR b:Lesson OR b:Sentence OR b:Word OR b:Book OR b:NextLesson)
+    WITH a, r, b, rand() as random
+    ORDER BY random
+    LIMIT 400
     RETURN 
         id(a) as from,
         id(b) as to,
         type(r) as type,
         properties(r) as properties
-    LIMIT 300
     """
     
     print("📊 Querying Neo4j for graph data...")
@@ -78,6 +82,8 @@ def get_graph_snapshot():
     
     # Transform to vis.js format
     nodes = []
+    student_counter = {}  # For anonymization
+    
     for node in nodes_data:
         node_id = node.get("id")
         labels = node.get("labels", [])
@@ -89,21 +95,44 @@ def get_graph_snapshot():
         # Color coding by type
         color_map = {
             "Student": "#4CAF50",      # Green
-            "Curriculum": "#2196F3",   # Blue
-            "Interest": "#FF9800",     # Orange
-            "Level": "#9C27B0"         # Purple
+            "Lesson": "#2196F3",       # Blue
+            "Sentence": "#FF9800",     # Orange
+            "Word": "#9C27B0",         # Purple
+            "Book": "#F44336",         # Red
+            "NextLesson": "#00BCD4"    # Cyan
         }
         
         # Icon/shape by type
         shape_map = {
             "Student": "dot",
-            "Curriculum": "box",
-            "Interest": "diamond",
-            "Level": "star"
+            "Lesson": "box",
+            "Sentence": "ellipse",
+            "Word": "diamond",
+            "Book": "star",
+            "NextLesson": "triangle"
         }
         
-        # Label text
-        label_text = props.get("name") or props.get("title") or f"{label_type} {node_id}"
+        # Anonymize student names
+        if label_type == "Student":
+            original_name = props.get("name", "Unknown")
+            if original_name not in student_counter:
+                student_counter[original_name] = len(student_counter) + 1
+            label_text = f"Student {student_counter[original_name]}"
+            # Remove sensitive properties
+            props = {"student_number": student_counter[original_name]}
+        elif label_type == "Lesson":
+            label_text = props.get("date", "Lesson")
+        elif label_type == "Sentence":
+            sentence = props.get("name", "")
+            label_text = sentence[:30] + "..." if len(sentence) > 30 else sentence
+        elif label_type == "Word":
+            label_text = props.get("name", "Word")
+        elif label_type == "Book":
+            label_text = props.get("name", "Book")[:20]
+        elif label_type == "NextLesson":
+            label_text = props.get("name", "Next")[:20]
+        else:
+            label_text = props.get("name") or props.get("title") or f"{label_type} {node_id}"
         
         nodes.append({
             "id": node_id,
@@ -112,9 +141,44 @@ def get_graph_snapshot():
             "group": label_type,
             "color": color_map.get(label_type, "#757575"),
             "shape": shape_map.get(label_type, "dot"),
-            "size": 20 if label_type == "Student" else 15,
+            "size": 15 if label_type == "Student" else 10,
             "properties": props
         })
+    
+    edges = []
+    for rel in relationships_data:
+        rel_type = rel.get("type", "CONNECTED")
+        props = rel.get("properties", {})
+        
+        # Friendly relationship labels
+        label_map = {
+            "HAS_LESSON": "수업",
+            "LEARNED_SENTENCE": "학습",
+            "LEARNED_WORD": "단어",
+            "USED_BOOK": "교재",
+            "HAS_NEXT_LESSON": "다음",
+            "HAD_CORRECTION": "교정"
+        }
+        
+        edges.append({
+            "from": rel.get("from"),
+            "to": rel.get("to"),
+            "label": label_map.get(rel_type, rel_type),
+            "title": rel_type,  # Tooltip
+            "arrows": "to",
+            "properties": props
+        })
+    
+    return {
+        "nodes": nodes,
+        "edges": edges,
+        "metadata": {
+            "generated_at": datetime.now().isoformat(),
+            "node_count": len(nodes),
+            "edge_count": len(edges),
+            "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
+        }
+    }
     
     edges = []
     for rel in relationships_data:
