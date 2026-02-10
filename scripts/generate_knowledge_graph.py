@@ -42,33 +42,46 @@ def query_neo4j(query: str, params: dict = None):
 def get_graph_snapshot():
     """Get complete graph snapshot from Neo4j"""
     
-    # Query for nodes - Student, Word, Book, Interest, Level only
+    # Query for nodes - Students active in last 30 days
     nodes_query = """
-    // Get students and their related nodes
-    MATCH (s:Student)
-    OPTIONAL MATCH (s)-[r]-(connected)
+    // Get students who had lessons in the last 30 days
+    // Date is stored as string, so calculate 30 days ago
+    WITH date() - duration({days: 30}) as cutoffDate
+    MATCH (s:Student)-[:HAS_LESSON]->(lesson:Lesson)
+    WHERE lesson.date >= toString(cutoffDate)
+    WITH DISTINCT s
+    LIMIT 50
+    
+    // Get their connected nodes
+    MATCH (s)-[r]-(connected)
     WHERE connected:Word OR connected:Book OR connected:Interest OR connected:Level
     WITH s, collect(DISTINCT connected) as related
     UNWIND [s] + related as nodes
     WITH DISTINCT nodes
-    LIMIT 150
     RETURN 
         id(nodes) as id,
         labels(nodes) as labels,
         properties(nodes) as properties
     """
     
-    # Query for relationships - only between Student and other nodes
+    # Query for relationships - only for active students
     relationships_query = """
-    // Get relationships involving students
-    MATCH (s:Student)-[r]-(other)
+    // Get students who had lessons in the last 30 days
+    WITH date() - duration({days: 30}) as cutoffDate
+    MATCH (s:Student)-[:HAS_LESSON]->(lesson:Lesson)
+    WHERE lesson.date >= toString(cutoffDate)
+    WITH DISTINCT s
+    LIMIT 50
+    
+    // Get their relationships with learning materials
+    MATCH (s)-[r]-(other)
     WHERE other:Word OR other:Book OR other:Interest OR other:Level
     RETURN DISTINCT
         id(s) as from,
         id(other) as to,
         type(r) as type,
         properties(r) as properties
-    LIMIT 200
+    LIMIT 300
     """
     
     print("📊 Querying Neo4j for graph data...")
