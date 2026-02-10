@@ -140,15 +140,17 @@ def _slugify(text: str) -> str:
     return text or "daily-english"
 
 
-def get_used_words(posts_dir: str) -> Set[str]:
-    """Extract all words/expressions already used in previous posts"""
-    used_words = set()
+def get_used_words(posts_dir: str) -> list[str]:
+    """Extract all words/expressions already used in previous posts, sorted by date (newest first)"""
+    used_words = []
     posts_path = Path(posts_dir)
     
     if not posts_path.exists():
         return used_words
     
-    for post_file in posts_path.glob("*.md"):
+    # Sort files by name (descending) to get newest posts first
+    # Filenames are typically YYYY-MM-DD-slug.md
+    for post_file in sorted(posts_path.glob("*.md"), reverse=True):
         try:
             with open(post_file, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -156,23 +158,26 @@ def get_used_words(posts_dir: str) -> Set[str]:
                 match = re.search(r'^word:\s*["\']?([^"\'\n]+)["\']?', content, re.MULTILINE)
                 if match:
                     word = match.group(1).strip().lower()
-                    used_words.add(word)
+                    if word not in used_words:
+                        used_words.append(word)
         except Exception as e:
             print(f"Warning: Could not read {post_file}: {e}", file=sys.stderr)
     
     return used_words
 
 
-def generate_human_like_prompt(date: dt.date, used_words: Set[str]) -> str:
+def generate_human_like_prompt(date: dt.date, used_words: list[str]) -> str:
     """Generate a prompt for parent-friendly, educational English content"""
     
     day_of_week = date.weekday()
     
-    # Exclude already used words
+    # Exclude already used words (Pass up to 300 recent words to avoid collisions)
     exclude_clause = ""
     if used_words:
-        exclude_list = ", ".join(list(used_words)[:50])
-        exclude_clause = f"\n\nIMPORTANT: Do NOT use any of these expressions that have already been covered:\n{exclude_list}\n"
+        # Take up to 300 most recent words
+        recent_words = used_words[:300]
+        exclude_list = ", ".join(recent_words)
+        exclude_clause = f"\n\nIMPORTANT: Do NOT use any of these expressions that have already been covered (I will reject them):\n{exclude_list}\n"
     
     # Daily Themes for better variety
     if day_of_week == 0:  # Monday - School & Study
@@ -327,10 +332,14 @@ def generate_english_content(date: dt.date, posts_dir: str,
     slug = _slugify(expression)
     title = f"[오늘의 영어] {expression} - {meaning_kr}"
     
+    # Use current datetime to avoid future dates
+    now = dt.datetime.now()
+    datetime_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    
     front_matter = "\n".join([
         "---",
         f'title: "{title}"',
-        f'date: {date.isoformat()} 09:00:00',
+        f'date: {datetime_str}',
         "categories: [english-learning]",
         "tags:",
         *[f"  - {str(t).strip()}" for t in tags if str(t).strip()],
