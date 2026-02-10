@@ -42,34 +42,33 @@ def query_neo4j(query: str, params: dict = None):
 def get_graph_snapshot():
     """Get complete graph snapshot from Neo4j"""
     
-    # Query for nodes - ALL types including Lesson, Sentence, Word, Book
+    # Query for nodes - Student, Word, Book, Interest, Level only
     nodes_query = """
-    // Get diverse sample of nodes
-    MATCH (n)
-    WHERE n:Student OR n:Lesson OR n:Sentence OR n:Word OR n:Book OR n:NextLesson
-    WITH n, rand() as r
-    ORDER BY r
-    LIMIT 300
+    // Get students and their related nodes
+    MATCH (s:Student)
+    OPTIONAL MATCH (s)-[r]-(connected)
+    WHERE connected:Word OR connected:Book OR connected:Interest OR connected:Level
+    WITH s, collect(DISTINCT connected) as related
+    UNWIND [s] + related as nodes
+    WITH DISTINCT nodes
+    LIMIT 150
     RETURN 
-        id(n) as id,
-        labels(n) as labels,
-        properties(n) as properties
+        id(nodes) as id,
+        labels(nodes) as labels,
+        properties(nodes) as properties
     """
     
-    # Query for relationships
+    # Query for relationships - only between Student and other nodes
     relationships_query = """
-    // Get relationships for the sampled nodes
-    MATCH (a)-[r]->(b)
-    WHERE (a:Student OR a:Lesson OR a:Sentence OR a:Word OR a:Book OR a:NextLesson)
-      AND (b:Student OR b:Lesson OR b:Sentence OR b:Word OR b:Book OR b:NextLesson)
-    WITH a, r, b, rand() as random
-    ORDER BY random
-    LIMIT 400
-    RETURN 
-        id(a) as from,
-        id(b) as to,
+    // Get relationships involving students
+    MATCH (s:Student)-[r]-(other)
+    WHERE other:Word OR other:Book OR other:Interest OR other:Level
+    RETURN DISTINCT
+        id(s) as from,
+        id(other) as to,
         type(r) as type,
         properties(r) as properties
+    LIMIT 200
     """
     
     print("📊 Querying Neo4j for graph data...")
@@ -95,21 +94,19 @@ def get_graph_snapshot():
         # Color coding by type
         color_map = {
             "Student": "#4CAF50",      # Green
-            "Lesson": "#2196F3",       # Blue
-            "Sentence": "#FF9800",     # Orange
             "Word": "#9C27B0",         # Purple
             "Book": "#F44336",         # Red
-            "NextLesson": "#00BCD4"    # Cyan
+            "Interest": "#FF9800",     # Orange
+            "Level": "#2196F3"         # Blue
         }
         
         # Icon/shape by type
         shape_map = {
             "Student": "dot",
-            "Lesson": "box",
-            "Sentence": "ellipse",
             "Word": "diamond",
             "Book": "star",
-            "NextLesson": "triangle"
+            "Interest": "box",
+            "Level": "triangle"
         }
         
         # Anonymize student names
@@ -120,17 +117,15 @@ def get_graph_snapshot():
             label_text = f"Student {student_counter[original_name]}"
             # Remove sensitive properties
             props = {"student_number": student_counter[original_name]}
-        elif label_type == "Lesson":
-            label_text = props.get("date", "Lesson")
-        elif label_type == "Sentence":
-            sentence = props.get("name", "")
-            label_text = sentence[:30] + "..." if len(sentence) > 30 else sentence
         elif label_type == "Word":
             label_text = props.get("name", "Word")
         elif label_type == "Book":
-            label_text = props.get("name", "Book")[:20]
-        elif label_type == "NextLesson":
-            label_text = props.get("name", "Next")[:20]
+            book_name = props.get("name", "Book")
+            label_text = book_name[:25] + "..." if len(book_name) > 25 else book_name
+        elif label_type == "Interest":
+            label_text = props.get("name", "Interest")
+        elif label_type == "Level":
+            label_text = props.get("name", "Level")
         else:
             label_text = props.get("name") or props.get("title") or f"{label_type} {node_id}"
         
@@ -141,7 +136,7 @@ def get_graph_snapshot():
             "group": label_type,
             "color": color_map.get(label_type, "#757575"),
             "shape": shape_map.get(label_type, "dot"),
-            "size": 15 if label_type == "Student" else 10,
+            "size": 20 if label_type == "Student" else 12,
             "properties": props
         })
     
@@ -152,18 +147,18 @@ def get_graph_snapshot():
         
         # Friendly relationship labels
         label_map = {
-            "HAS_LESSON": "수업",
-            "LEARNED_SENTENCE": "학습",
             "LEARNED_WORD": "단어",
             "USED_BOOK": "교재",
-            "HAS_NEXT_LESSON": "다음",
-            "HAD_CORRECTION": "교정"
+            "INTERESTED_IN": "관심",
+            "AT_LEVEL": "레벨",
+            "HAS_INTEREST": "관심",
+            "HAS_LEVEL": "레벨"
         }
         
         edges.append({
             "from": rel.get("from"),
             "to": rel.get("to"),
-            "label": label_map.get(rel_type, rel_type),
+            "label": label_map.get(rel_type, ""),
             "title": rel_type,  # Tooltip
             "arrows": "to",
             "properties": props
