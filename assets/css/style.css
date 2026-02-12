@@ -3,6 +3,9 @@
    Modern, SEO-optimized, conversion-focused design
    ==================================== */
 
+/* Google Fonts Import - Including IPA character support */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&family=Noto+Sans:wght@400;500;600&display=swap');
+
 :root {
   /* Color Palette - Soo Edu Brand (Teal/Green) */
   --primary: hsl(175, 45%, 45%);
@@ -40,9 +43,6 @@
   --transition-base: 250ms ease-in-out;
   --transition-slow: 400ms ease-in-out;
 }
-
-/* Google Fonts Import - Including IPA character support */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&family=Noto+Sans:wght@400;500;600&display=swap');
 
 /* Reset & Base Styles */
 * {
@@ -589,18 +589,20 @@ body {
     display: none;
   }
 }
+
 /* Logo Visibility Fix */
 .site-title img {
-  background-color: #1e293b; /* Dark background for header logo */
+  background-color: #1e293b;
+  /* Dark background for header logo */
   padding: 5px 10px;
   border-radius: 6px;
 }
 
 .hero .brand img {
-  background-color: rgba(255, 255, 255, 0.95); /* White background for hero logo */
+  background-color: rgba(255, 255, 255, 0.95);
+  /* White background for hero logo */
   padding: 1.5rem 2rem;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
-

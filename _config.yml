@@ -12,12 +12,7 @@ theme: null
 
 permalink: /:categories/:year/:month/:day/:title/
 
-# Pagination
-plugins:
-  - jekyll-paginate
-
-paginate: 6
-paginate_path: "/sooedu-blog/page:num/"
+# Removed pagination - showing latest 6 posts only
 
 defaults:
   - scope:
