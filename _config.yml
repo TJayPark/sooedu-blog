@@ -17,7 +17,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 6
-paginate_path: "page:num/"
+paginate_path: "/sooedu-blog/page:num/"
 
 defaults:
   - scope:
