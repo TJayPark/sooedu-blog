@@ -16,7 +16,7 @@ permalink: /:categories/:year/:month/:day/:title/
 plugins:
   - jekyll-paginate
 
-paginate: 10
+paginate: 6
 paginate_path: "/page:num/"
 
 defaults:
