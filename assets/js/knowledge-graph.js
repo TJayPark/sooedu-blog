@@ -1,14 +1,16 @@
 /**
- * Soo Edu Knowledge Graph Visualization
- * Interactive visualization of the Soo Edu second brain
- * Powered by vis.js and daily Neo4j snapshots
+ * Soo Edu Knowledge Graph Visualization (3D Version)
+ * Interactive 3D visualization of the Soo Edu second brain
+ * Powered by 3d-force-graph
  */
 
 class KnowledgeGraphViewer {
     constructor(containerId) {
+        this.containerId = containerId;
         this.container = document.getElementById(containerId);
-        this.network = null;
+        this.graph = null;
         this.data = null;
+        this.isRotationActive = true;
     }
 
     async loadData() {
@@ -38,152 +40,121 @@ class KnowledgeGraphViewer {
             return;
         }
 
-        // vis.js network options
-        const options = {
-            nodes: {
-                font: {
-                    size: 14,
-                    face: 'Inter, -apple-system, sans-serif',
-                    color: '#ffffff'
-                },
-                borderWidth: 2,
-                borderWidthSelected: 4,
-                shadow: {
-                    enabled: true,
-                    color: 'rgba(0,0,0,0.2)',
-                    size: 10,
-                    x: 0,
-                    y: 0
-                }
-            },
-            edges: {
-                font: {
-                    size: 12,
-                    align: 'middle',
-                    color: '#666666',
-                    background: 'rgba(255,255,255,0.8)'
-                },
-                color: {
-                    color: '#848484',
-                    highlight: '#2196F3',
-                    hover: '#2196F3'
-                },
-                width: 2,
-                smooth: {
-                    type: 'continuous',
-                    roundness: 0.5
-                },
-                arrows: {
-                    to: {
-                        enabled: true,
-                        scaleFactor: 0.5
-                    }
-                }
-            },
-            physics: {
-                enabled: true,
-                forceAtlas2Based: {
-                    gravitationalConstant: -50,
-                    centralGravity: 0.01,
-                    springConstant: 0.08,
-                    springLength: 100,
-                    damping: 0.4,
-                    avoidOverlap: 0
-                },
-                maxVelocity: 50,
-                minVelocity: 0.1,
-                solver: 'forceAtlas2Based',
-                stabilization: {
-                    enabled: true,
-                    iterations: 1000,
-                    updateInterval: 100,
-                    onlyDynamicEdges: false,
-                    fit: true
-                },
-                timestep: 0.5,
-                adaptiveTimestep: true
-            },
-            interaction: {
-                hover: true,
-                tooltipDelay: 100,
-                navigationButtons: true,
-                keyboard: true,
-                zoomView: true,
-                dragView: true,
-                hideEdgesOnDrag: true,
-                hideNodesOnDrag: false
-            },
-            layout: {
-                improvedLayout: true,
-                randomSeed: 42
-            }
+        // Color mapping
+        const colorMap = {
+            "Student": "#4CAF50",      // Green
+            "Word": "#9C27B0",         // Purple
+            "Book": "#F44336",         // Red
+            "Interest": "#FF9800",     // Orange
+            "Level": "#2196F3",        // Blue
+            "Lesson": "#00BCD4"        // Cyan
         };
 
-        // Create network
-        this.network = new vis.Network(
-            this.container,
-            {
-                nodes: new vis.DataSet(this.data.nodes),
-                edges: new vis.DataSet(this.data.edges)
-            },
-            options
-        );
+        // Prepare data for 3d-force-graph
+        const gData = {
+            nodes: this.data.nodes.map(node => ({
+                id: node.id,
+                name: node.label,
+                group: node.group,
+                val: (node.size || 10) * 0.5, // adjust size scale
+                color: colorMap[node.group] || "#ffffff",
+                ...node.properties
+            })),
+            links: this.data.edges.map(edge => ({
+                source: edge.from,
+                target: edge.to,
+                label: edge.label,
+                ...edge.properties
+            }))
+        };
 
-        // Event listeners
-        this.setupEventListeners();
+        // Initialize 3D Graph
+        this.graph = ForceGraph3D()
+            (this.container)
+            .graphData(gData)
+            .backgroundColor('#000011') // Deep space blue/black
+            .nodeLabel('name')
+            .nodeColor('color')
+            .nodeResolution(16) // Sphere smoothness
+            .linkColor(() => 'rgba(255, 255, 255, 0.2)') // Faint white lines
+            .linkWidth(1)
+            .linkDirectionalParticles(2) // Flowing particles for "active" look
+            .linkDirectionalParticleWidth(1.5)
+            .linkDirectionalParticleSpeed(0.005)
+            .nodeThreeObjectExtend(true) // Extend node object with custom geometry if needed, but here we stick to default spheres
+
+            // Interaction
+            .onNodeClick(node => {
+                // Focus on node
+                const distance = 40;
+                const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+
+                this.graph.cameraPosition(
+                    { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, // new position
+                    node, // lookAt ({ x, y, z })
+                    3000  // ms transition duration
+                );
+
+                this.showNodeDetails(node);
+
+                // Pause rotation on interaction
+                this.isRotationActive = false;
+            })
+            .onNodeHover(node => {
+                this.container.style.cursor = node ? 'pointer' : null;
+                this.isRotationActive = !node; // Pause rotation when hovering a node
+            });
+
+        // Add auto-rotation
+        this.videoRotate();
+
+        // Adjust canvas size to match container
+        this.resize();
+        window.addEventListener('resize', () => this.resize());
 
         // Show metadata
         this.showMetadata();
+        this.hideLoading();
     }
 
-    setupEventListeners() {
-        // Node click event
-        this.network.on('click', (params) => {
-            if (params.nodes.length > 0) {
-                const nodeId = params.nodes[0];
-                this.showNodeDetails(nodeId);
+    videoRotate() {
+        // Slow rotation relative to the camera
+        let angle = 0;
+        setInterval(() => {
+            if (this.graph && this.isRotationActive) {
+                angle += 0.001; // Rotation speed
+                this.graph.cameraPosition({
+                    x: 200 * Math.sin(angle),
+                    z: 200 * Math.cos(angle)
+                });
             }
-        });
-
-        // Stabilization progress
-        this.network.on('stabilizationProgress', (params) => {
-            const progress = Math.round((params.iterations / params.total) * 100);
-            this.updateLoadingProgress(progress);
-        });
-
-        // Stabilization done
-        this.network.on('stabilizationIterationsDone', () => {
-            this.hideLoading();
-            this.network.setOptions({ physics: { enabled: false } }); // Stop physics after load to save CPU
-        });
-
-        // Re-enable physics on drag start so nodes move naturally
-        this.network.on("dragStart", (params) => {
-            this.network.setOptions({ physics: { enabled: true } });
-        });
-
-        // Disable physics again on drag end
-        this.network.on("dragEnd", (params) => {
-            this.network.setOptions({ physics: { enabled: false } });
-        });
+        }, 10);
     }
 
-    showNodeDetails(nodeId) {
-        const node = this.data.nodes.find(n => n.id === nodeId);
-        if (!node) return;
+    resize() {
+        if (this.graph) {
+            // Get dimensions from parent container or window
+            const width = this.container.clientWidth || window.innerWidth;
+            const height = this.container.clientHeight || 500; // Default height if 0
+            this.graph.width(width);
+            this.graph.height(height);
+        }
+    }
 
-        const detailsHtml = `
-            <div class="node-details-popup">
-                <h4>${node.label}</h4>
-                <p><strong>유형:</strong> ${node.group}</p>
-                ${Object.entries(node.properties || {})
-                .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
-                .join('')}
-            </div>
-        `;
+    showNodeDetails(node) {
+        // Simple console log for now, can be expanded to UI overlay
+        console.log('Node Selected:', node);
+        // You would update a DOM element here with node details
 
-        // Show in tooltip or modal
-        console.log('Node details:', node);
+        // Example fallback: show simple alert or update a specific div if it exists
+        const detailContainer = document.querySelector('.node-details-popup');
+        if (detailContainer) {
+            detailContainer.innerHTML = `
+                <h4>${node.name}</h4>
+                <p>Type: ${node.group}</p>
+            `;
+            detailContainer.style.display = 'block';
+        }
     }
 
     showMetadata() {
@@ -191,11 +162,13 @@ class KnowledgeGraphViewer {
         const metaElement = document.getElementById('graph-metadata');
 
         if (metaElement) {
+            // Updated style for dark background
+            metaElement.style.color = '#cccccc';
             metaElement.innerHTML = `
                 <div class="graph-stats">
-                    <span><strong>노드:</strong> ${meta.node_count}개</span>
-                    <span><strong>연결:</strong> ${meta.edge_count}개</span>
-                    <span><strong>마지막 업데이트:</strong> ${new Date(meta.generated_at).toLocaleDateString('ko-KR')}</span>
+                    <span style="margin-right: 10px;"><strong>Nodes:</strong> ${meta.node_count}</span>
+                    <span style="margin-right: 10px;"><strong>Links:</strong> ${meta.edge_count}</span>
+                    <span><strong>Updated:</strong> ${new Date(meta.generated_at).toLocaleDateString('ko-KR')}</span>
                 </div>
             `;
         }
@@ -203,9 +176,9 @@ class KnowledgeGraphViewer {
 
     showError(message) {
         this.container.innerHTML = `
-            <div class="graph-error">
+            <div class="graph-error" style="color: white; text-align: center; padding-top: 50px;">
                 <p>⚠️ ${message}</p>
-                <p style="font-size: 0.9rem; color: #666;">Neo4j 데이터가 아직 생성되지 않았거나 프록시 서버가 실행 중이지 않습니다.</p>
+                <p style="font-size: 0.9rem; opacity: 0.7;">데이터 로드 실패</p>
             </div>
         `;
     }
@@ -213,7 +186,7 @@ class KnowledgeGraphViewer {
     updateLoadingProgress(progress) {
         const loadingElement = document.getElementById('graph-loading');
         if (loadingElement) {
-            loadingElement.innerHTML = `<p>그래프 생성 중... ${progress}%</p>`;
+            loadingElement.innerHTML = `<p>Loading Cosmic Brain... ${progress}%</p>`;
         }
     }
 
@@ -227,8 +200,8 @@ class KnowledgeGraphViewer {
     async init() {
         // Show loading
         this.container.innerHTML = `
-            <div id="graph-loading" class="graph-loading">
-                <p>지식 그래프 로딩 중...</p>
+            <div id="graph-loading" class="graph-loading" style="color: white; display: flex; justify-content: center; align-items: center; height: 100%; font-family: monospace;">
+                <p>🧠 Initializing Soo Edu Neural Network...</p>
             </div>
         `;
 
@@ -236,11 +209,13 @@ class KnowledgeGraphViewer {
         const success = await this.loadData();
 
         if (success) {
+            // Clear loading text
+            this.container.innerHTML = '';
             // Render graph
             this.render();
         }
     }
 }
 
-// Auto-initialize when vis.js is loaded
+// Auto-initialize
 window.KnowledgeGraphViewer = KnowledgeGraphViewer;
