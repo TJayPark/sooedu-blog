@@ -50,6 +50,14 @@ class KnowledgeGraphViewer {
             "Lesson": "#00BCD4"        // Cyan
         };
 
+        // Create a set of valid node IDs for quick lookup
+        const validNodeIds = new Set(this.data.nodes.map(n => String(n.id)));
+
+        // Filter edges to ensure both source and target exist
+        const validEdges = this.data.edges.filter(edge =>
+            validNodeIds.has(String(edge.from)) && validNodeIds.has(String(edge.to))
+        );
+
         // Prepare data for 3d-force-graph
         // Ensure IDs are strings to avoid any type mismatch issues in d3-force
         const gData = {
@@ -61,7 +69,7 @@ class KnowledgeGraphViewer {
                 color: colorMap[node.group] || "#ffffff",
                 ...node.properties
             })),
-            links: this.data.edges.map(edge => ({
+            links: validEdges.map(edge => ({
                 source: String(edge.from),
                 target: String(edge.to),
                 label: edge.label,
