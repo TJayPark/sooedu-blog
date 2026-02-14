@@ -51,9 +51,10 @@ class KnowledgeGraphViewer {
         };
 
         // Prepare data for 3d-force-graph
+        // Ensure IDs are strings to avoid any type mismatch issues in d3-force
         const gData = {
             nodes: this.data.nodes.map(node => ({
-                id: node.id,
+                id: String(node.id),
                 name: node.label,
                 group: node.group,
                 val: (node.size || 10) * 0.5, // adjust size scale
@@ -61,8 +62,8 @@ class KnowledgeGraphViewer {
                 ...node.properties
             })),
             links: this.data.edges.map(edge => ({
-                source: edge.from,
-                target: edge.to,
+                source: String(edge.from),
+                target: String(edge.to),
                 label: edge.label,
                 ...edge.properties
             }))
@@ -104,6 +105,13 @@ class KnowledgeGraphViewer {
                 this.container.style.cursor = node ? 'pointer' : null;
                 this.isRotationActive = !node; // Pause rotation when hovering a node
             });
+
+        // Force zoom to fit after a short delay to allow physics to settle slightly
+        setTimeout(() => {
+            if (this.graph) {
+                this.graph.zoomToFit(1000, 100); // duration, padding
+            }
+        }, 1000);
 
         // Add auto-rotation
         this.videoRotate();
