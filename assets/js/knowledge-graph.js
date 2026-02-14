@@ -62,12 +62,12 @@ class KnowledgeGraphViewer {
         // Ensure IDs are strings to avoid any type mismatch issues in d3-force
         const gData = {
             nodes: this.data.nodes.map(node => ({
+                ...node.properties, // Spread properties FIRST so they don't overwrite the main ID
                 id: String(node.id),
                 name: node.label,
                 group: node.group,
                 val: (node.size || 10) * 0.5, // adjust size scale
-                color: colorMap[node.group] || "#ffffff",
-                ...node.properties
+                color: colorMap[node.group] || "#ffffff"
             })),
             links: validEdges.map(edge => ({
                 source: String(edge.from),
