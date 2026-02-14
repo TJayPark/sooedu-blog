@@ -17,9 +17,9 @@ class KnowledgeGraphViewer {
         try {
             // Use relative path that works with Jekyll's baseurl
             const baseUrl = document.querySelector('base')?.href || window.location.origin + window.location.pathname.split('/').slice(0, -1).join('/');
-            const jsonPath = baseUrl.includes('sooedu-blog')
+            const jsonPath = (baseUrl.includes('sooedu-blog')
                 ? '/sooedu-blog/assets/data/knowledge-graph-latest.json'
-                : '/assets/data/knowledge-graph-latest.json';
+                : '/assets/data/knowledge-graph-latest.json') + '?v=' + new Date().getTime();
 
             const response = await fetch(jsonPath);
             if (!response.ok) {
@@ -130,7 +130,6 @@ class KnowledgeGraphViewer {
 
         // Show metadata
         this.showMetadata();
-        this.hideLoading();
     }
 
     videoRotate() {
@@ -190,6 +189,61 @@ class KnowledgeGraphViewer {
         }
     }
 
+    createLegend() {
+        // Check if legend already exists
+        if (this.container.querySelector('.graph-legend')) return;
+
+        const legendDiv = document.createElement('div');
+        legendDiv.className = 'graph-legend';
+        legendDiv.style.cssText = `
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            background: rgba(0, 10, 30, 0.8); 
+            padding: 15px; 
+            border-radius: 12px; 
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            color: white; 
+            backdrop-filter: blur(5px); 
+            user-select: none;
+            z-index: 1000;
+            pointer-events: none;
+        `;
+
+        legendDiv.innerHTML = `
+            <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px;">Network Legend</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 12px; height: 12px; background: #4CAF50; border-radius: 50%; box-shadow: 0 0 8px #4CAF50;"></span>
+                <span>학생 (Student)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 12px; height: 12px; background: #9C27B0; border-radius: 50%; box-shadow: 0 0 8px #9C27B0;"></span>
+                <span>학습 단어 (Word)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 12px; height: 12px; background: #F44336; border-radius: 50%; box-shadow: 0 0 8px #F44336;"></span>
+                <span>사용 교재 (Book)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 12px; height: 12px; background: #FF9800; border-radius: 50%; box-shadow: 0 0 8px #FF9800;"></span>
+                <span>관심사 (Interest)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 12px; height: 12px; background: #2196F3; border-radius: 50%; box-shadow: 0 0 8px #2196F3;"></span>
+                <span>레벨 (Level)</span>
+              </div>
+            </div>
+        `;
+
+        // Ensure relative positioning
+        if (getComputedStyle(this.container).position === 'static') {
+            this.container.style.position = 'relative';
+        }
+
+        this.container.appendChild(legendDiv);
+    }
+
     showError(message) {
         this.container.innerHTML = `
             <div class="graph-error" style="color: white; text-align: center; padding-top: 50px;">
@@ -209,14 +263,14 @@ class KnowledgeGraphViewer {
     hideLoading() {
         const loadingElement = document.getElementById('graph-loading');
         if (loadingElement) {
-            loadingElement.style.display = 'none';
+            loadingElement.remove();
         }
     }
 
     async init() {
         // Show loading
         this.container.innerHTML = `
-            <div id="graph-loading" class="graph-loading" style="color: white; display: flex; justify-content: center; align-items: center; height: 100%; font-family: monospace;">
+            <div id="graph-loading" class="graph-loading" style="color: white; display: flex; justify-content: center; align-items: center; height: 100%; font-family: monospace; position: absolute; width: 100%; top: 0; z-index: 2000;">
                 <p>🧠 Initializing Soo Edu Neural Network...</p>
             </div>
         `;
@@ -225,10 +279,14 @@ class KnowledgeGraphViewer {
         const success = await this.loadData();
 
         if (success) {
-            // Clear loading text
-            this.container.innerHTML = '';
-            // Render graph
+            // Render graph first
             this.render();
+
+            // Add Legend
+            this.createLegend();
+
+            // Hide loading
+            this.hideLoading();
         }
     }
 }

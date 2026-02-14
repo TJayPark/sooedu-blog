@@ -210,8 +210,14 @@ description: "매일 업데이트되는 실용 영어 표현 블로그. 하루 1
     // Only initialize on homepage
     const graphContainer = document.getElementById('knowledge-graph-container');
     if (graphContainer) {
-      const viewer = new KnowledgeGraphViewer('knowledge-graph-container');
-      viewer.init();
+      // Dynamic script loading with cache busting
+      const script = document.createElement('script');
+      script.src = "{{ '/assets/js/knowledge-graph.js' | relative_url }}?v=" + new Date().getTime();
+      script.onload = function () {
+        const viewer = new KnowledgeGraphViewer('knowledge-graph-container');
+        viewer.init();
+      };
+      document.body.appendChild(script);
     }
   });
 </script>
