@@ -2273,7 +2273,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "10",
         "name": "Word 1"
       }
     },
@@ -2286,7 +2286,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "9",
+        "id": "11",
         "name": "Word 2"
       }
     },
@@ -5625,7 +5625,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-20T09:00:26.385806",
+    "generated_at": "2026-02-20T09:45:52.049426",
     "node_count": 197,
     "edge_count": 361,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
