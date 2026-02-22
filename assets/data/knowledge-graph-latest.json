@@ -77,7 +77,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1000",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -91,7 +91,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1000",
         "name": "Art",
         "intensity": 2
       }
@@ -797,7 +797,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1002",
+        "id": "interest_movies_1003",
         "name": "Movies",
         "intensity": 2
       }
@@ -811,7 +811,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1002",
         "name": "Reading",
         "intensity": 2
       }
@@ -5533,6 +5533,30 @@
     },
     {
       "from": 10454,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5861,9 +5885,9 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-22T11:31:37.692775",
+    "generated_at": "2026-02-22T20:02:48.448128",
     "node_count": 198,
-    "edge_count": 389,
+    "edge_count": 392,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
 }
