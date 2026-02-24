@@ -35,9 +35,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1004",
+        "id": "interest_food_1002",
         "name": "Food",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -63,7 +63,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1004",
         "name": "Technology",
         "intensity": 2
       }
@@ -91,7 +91,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1000",
         "name": "Art",
         "intensity": 2
       }
@@ -723,6 +723,20 @@
       }
     },
     {
+      "id": 44529,
+      "label": "Games",
+      "title": "Interest: Games",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_games_1000",
+        "name": "Games",
+        "intensity": 1
+      }
+    },
+    {
       "id": 39,
       "label": "Book Name",
       "title": "Book: Book Name",
@@ -731,7 +745,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "3",
+        "id": "2",
         "name": "Book Name"
       }
     },
@@ -761,20 +775,6 @@
       }
     },
     {
-      "id": 44529,
-      "label": "Games",
-      "title": "Interest: Games",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_games_1001",
-        "name": "Games",
-        "intensity": 2
-      }
-    },
-    {
       "id": 44530,
       "label": "Animals",
       "title": "Interest: Animals",
@@ -783,9 +783,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1004",
+        "id": "interest_animals_1001",
         "name": "Animals",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -864,6 +864,20 @@
       "properties": {
         "id": "2",
         "name": "Easy Link Starter 3"
+      }
+    },
+    {
+      "id": 44615,
+      "label": "Fashion",
+      "title": "Interest: Fashion",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_fashion_1003",
+        "name": "Fashion",
+        "intensity": 2
       }
     },
     {
@@ -1298,7 +1312,7 @@
       "properties": {
         "id": "2",
         "name": "STUDENT'S BOOK",
-        "url": "https://cdn.neungyule.com/up_cdn/neungyule/ebook/nw/viewer.html?zzzzzzzzzzzzzzzzzz=8EnjFguejJCBCvr2VPafVp2hzsEcDO2BjfKOm5TvFmX7HeZtTZzEfrMEKhHdWzE5FfJRatdFF0Dd5swOiVjodWSN3qQPPkKlpk2qD6V9XpcSIzxQkH5otO1m4H1KRCV7NOnhK8gxojgWIDCTay7ucYG6vyGd1raE6nMHmS5A2bmAFPjGdh0f5xcrVIvM0vhXITuVCpluqyUWd4shcjn7GpprYK4P6cCEVXqncCIt0tf4nybqHoneDDvseq7asAEenVspn0JdjP7xd9NLn1PRvb9zs6zLx4PKP802Yz68f4wi#"
+        "url": "https://drive.google.com/file/d/1SkrEPQZAaXPUeZ1IIOKHhv_9TsfE75oY/view"
       }
     },
     {
@@ -1362,20 +1376,6 @@
       "properties": {
         "id": "2",
         "name": "Conversation Questions"
-      }
-    },
-    {
-      "id": 44615,
-      "label": "Fashion",
-      "title": "Interest: Fashion",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_fashion_1004",
-        "name": "Fashion",
-        "intensity": 2
       }
     },
     {
@@ -1644,7 +1644,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "1",
+        "id": "2",
         "name": "Free Talk"
       }
     },
@@ -2273,7 +2273,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "19",
+        "id": "13",
         "name": "Word 1"
       }
     },
@@ -2286,7 +2286,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "20",
+        "id": "14",
         "name": "Word 2"
       }
     },
@@ -3213,6 +3213,22 @@
     },
     {
       "from": 54,
+      "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 54,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 54,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3422,6 +3438,14 @@
     {
       "from": 172,
       "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 172,
+      "to": 44615,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -3965,6 +3989,30 @@
     },
     {
       "from": 539,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 539,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 539,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 539,
       "to": 44514,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -4126,6 +4174,14 @@
     {
       "from": 1597,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1597,
+      "to": 44514,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4422,6 +4478,22 @@
     {
       "from": 1779,
       "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1779,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1779,
+      "to": 44513,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4974,6 +5046,14 @@
     {
       "from": 2477,
       "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2477,
+      "to": 44598,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5613,6 +5693,22 @@
     },
     {
       "from": 10699,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
+      "to": 44734,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5781,6 +5877,14 @@
     },
     {
       "from": 22749,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
       "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5814,6 +5918,14 @@
     {
       "from": 27619,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5885,9 +5997,9 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-23T09:00:38.175199",
+    "generated_at": "2026-02-24T09:00:14.005410",
     "node_count": 198,
-    "edge_count": 392,
+    "edge_count": 406,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
 }
