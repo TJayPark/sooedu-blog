@@ -21,7 +21,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1000",
+        "id": "interest_music_1001",
         "name": "Music",
         "intensity": 2
       }
@@ -35,7 +35,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1005",
+        "id": "interest_fashion_1007",
         "name": "Fashion",
         "intensity": 2
       }
@@ -49,7 +49,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1004",
+        "id": "interest_food_1003",
         "name": "Food",
         "intensity": 2
       }
@@ -63,7 +63,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1003",
+        "id": "interest_travel_1002",
         "name": "Travel",
         "intensity": 2
       }
@@ -745,7 +745,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1004",
         "name": "Reading",
         "intensity": 2
       }
@@ -813,7 +813,7 @@
       "properties": {
         "id": "interest_animals_1002",
         "name": "Animals",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -1310,9 +1310,9 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "1",
+        "id": "2",
         "name": "STUDENT'S BOOK",
-        "url": "https://engoo.com/app/lessons/vocabulary-phrasal-verbs-open-up-turn-to-talk-over-hold-on-check-out/OxVOvGeuEeeNsPM-K0fL_Q?category_id=9uTJSsYPEeixthfMCuukyg&course_id=TXdNVMYREeiWJqfT28GHTA"
+        "url": "https://cdn.neungyule.com/up_cdn/neungyule/ebook/nw/viewer.html?zzzzzzzzzzzzzzzzzz=zVY1JA2Dh3IiXtbORvnnbrQdKNZ2vjvV5kMFKE8SyG0m021HoeVpwCt7fiZBskmouZU4uSNSpD5gwXNK1z0o1jl6saxKkKZFzJATrdCHHxN3krEcQuqIECFWC3xNDmi2VJLdMeLkBoeMFIOm34VxxqkZjHDMTMFFlhJYlk8Nzcp4L3hFY22ljdbsKE5ugBZrJzgUJex8hN3TGbov3hGdkHvUcreiT4AstGd3LA2SdVBKWQ5QXCT7afScxWlgRLyahB4T2WB6H3HuJCax5Uu5Zc7mZitGURH2jCLcoc9W6GgF#"
       }
     },
     {
@@ -1738,7 +1738,7 @@
       }
     },
     {
-      "id": 2281,
+      "id": 2477,
       "label": "Student 24",
       "title": "Student: Student 24",
       "group": "Student",
@@ -1747,18 +1747,6 @@
       "size": 20,
       "properties": {
         "student_number": 24
-      }
-    },
-    {
-      "id": 2477,
-      "label": "Student 25",
-      "title": "Student: Student 25",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 25
       }
     },
     {
@@ -1906,6 +1894,18 @@
     },
     {
       "id": 2849,
+      "label": "Student 25",
+      "title": "Student: Student 25",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 25
+      }
+    },
+    {
+      "id": 2856,
       "label": "Student 26",
       "title": "Student: Student 26",
       "group": "Student",
@@ -1914,18 +1914,6 @@
       "size": 20,
       "properties": {
         "student_number": 26
-      }
-    },
-    {
-      "id": 2856,
-      "label": "Student 27",
-      "title": "Student: Student 27",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 27
       }
     },
     {
@@ -2060,14 +2048,14 @@
     },
     {
       "id": 4028,
-      "label": "Student 28",
-      "title": "Student: Student 28",
+      "label": "Student 27",
+      "title": "Student: Student 27",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 28
+        "student_number": 27
       }
     },
     {
@@ -2124,14 +2112,14 @@
     },
     {
       "id": 8323,
-      "label": "Student 29",
-      "title": "Student: Student 29",
+      "label": "Student 28",
+      "title": "Student: Student 28",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 29
+        "student_number": 28
       }
     },
     {
@@ -2234,7 +2222,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "7",
+        "id": "18",
         "name": "library"
       }
     },
@@ -2260,7 +2248,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "9",
         "name": "cafeteria"
       }
     },
@@ -2273,7 +2261,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "7",
+        "id": "20",
         "name": "Word 1"
       }
     },
@@ -2286,7 +2274,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "21",
         "name": "Word 2"
       }
     },
@@ -2305,14 +2293,14 @@
     },
     {
       "id": 10454,
-      "label": "Student 30",
-      "title": "Student: Student 30",
+      "label": "Student 29",
+      "title": "Student: Student 29",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 30
+        "student_number": 29
       }
     },
     {
@@ -2473,6 +2461,18 @@
     },
     {
       "id": 10699,
+      "label": "Student 30",
+      "title": "Student: Student 30",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 30
+      }
+    },
+    {
+      "id": 10932,
       "label": "Student 31",
       "title": "Student: Student 31",
       "group": "Student",
@@ -2484,7 +2484,7 @@
       }
     },
     {
-      "id": 10932,
+      "id": 21019,
       "label": "Student 32",
       "title": "Student: Student 32",
       "group": "Student",
@@ -2496,7 +2496,7 @@
       }
     },
     {
-      "id": 21019,
+      "id": 22749,
       "label": "Student 33",
       "title": "Student: Student 33",
       "group": "Student",
@@ -2508,7 +2508,7 @@
       }
     },
     {
-      "id": 22749,
+      "id": 27619,
       "label": "Student 34",
       "title": "Student: Student 34",
       "group": "Student",
@@ -2520,7 +2520,7 @@
       }
     },
     {
-      "id": 27619,
+      "id": 29793,
       "label": "Student 35",
       "title": "Student: Student 35",
       "group": "Student",
@@ -2532,7 +2532,7 @@
       }
     },
     {
-      "id": 29793,
+      "id": 42758,
       "label": "Student 36",
       "title": "Student: Student 36",
       "group": "Student",
@@ -2541,18 +2541,6 @@
       "size": 20,
       "properties": {
         "student_number": 36
-      }
-    },
-    {
-      "id": 42758,
-      "label": "Student 37",
-      "title": "Student: Student 37",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 37
       }
     }
   ],
@@ -3461,6 +3449,22 @@
     },
     {
       "from": 172,
+      "to": 44514,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 172,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 172,
       "to": 44528,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3846,6 +3850,14 @@
     {
       "from": 390,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 390,
+      "to": 44513,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4605,6 +4617,14 @@
     },
     {
       "from": 1790,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1790,
       "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5056,14 +5076,6 @@
       "to": 13761,
       "label": "",
       "title": "PRACTICE_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 2281,
-      "to": 39,
-      "label": "교재",
-      "title": "USED_BOOK",
       "arrows": "to",
       "properties": {}
     },
@@ -5981,6 +5993,14 @@
     },
     {
       "from": 27619,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 27619,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6085,9 +6105,9 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-26T09:00:53.947338",
-    "node_count": 198,
-    "edge_count": 417,
+    "generated_at": "2026-02-27T09:00:42.505178",
+    "node_count": 197,
+    "edge_count": 421,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
 }
