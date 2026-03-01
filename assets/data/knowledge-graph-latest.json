@@ -21,7 +21,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1001",
+        "id": "interest_music_1000",
         "name": "Music",
         "intensity": 2
       }
@@ -77,7 +77,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1004",
         "name": "Technology",
         "intensity": 2
       }
@@ -91,7 +91,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -105,7 +105,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 2
       }
@@ -745,7 +745,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1004",
+        "id": "interest_reading_1002",
         "name": "Reading",
         "intensity": 2
       }
@@ -759,7 +759,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1000",
+        "id": "interest_games_1001",
         "name": "Games",
         "intensity": 2
       }
@@ -773,7 +773,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "1",
         "name": "Book Name"
       }
     },
@@ -811,9 +811,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1002",
+        "id": "interest_animals_1001",
         "name": "Animals",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -825,7 +825,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1001",
+        "id": "interest_movies_1003",
         "name": "Movies",
         "intensity": 2
       }
@@ -1312,7 +1312,7 @@
       "properties": {
         "id": "2",
         "name": "STUDENT'S BOOK",
-        "url": "https://cdn.neungyule.com/up_cdn/neungyule/ebook/nw/viewer.html?zzzzzzzzzzzzzzzzzz=zVY1JA2Dh3IiXtbORvnnbrQdKNZ2vjvV5kMFKE8SyG0m021HoeVpwCt7fiZBskmouZU4uSNSpD5gwXNK1z0o1jl6saxKkKZFzJATrdCHHxN3krEcQuqIECFWC3xNDmi2VJLdMeLkBoeMFIOm34VxxqkZjHDMTMFFlhJYlk8Nzcp4L3hFY22ljdbsKE5ugBZrJzgUJex8hN3TGbov3hGdkHvUcreiT4AstGd3LA2SdVBKWQ5QXCT7afScxWlgRLyahB4T2WB6H3HuJCax5Uu5Zc7mZitGURH2jCLcoc9W6GgF#"
+        "url": "https://cdn.neungyule.com/up_cdn/neungyule/ebook/nw/viewer.html?zzzzzzzzzzzzzzzzzz=qRlG9qqwzFRmBQvlRbNQ3H2MAjsRrnRH43e4juqJ08VsOgDvhgcbN5Nef6VwjD4ew88Ftpfjn0C275ofcqhQmUVsRGP09J5vI312i7cwYEoVzC1CT8j5S4ozA3qADmWbfO3oL6KzAZl0rctbaC7TwljXeAnHMaJSOD6pzHOZw0QO29P3BMNYXXL2nZz0Z8IDBFT1dyQzoxegwTaYwNMkBocPeCF4Bey2KhUNFBdTYh0l109nEMy61AL53g0ulonWv7z0yCKnKAyBrxPWadS1EtXyANSM16ym3XdsqNF1e3sw#"
       }
     },
     {
@@ -1501,7 +1501,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "1",
         "name": "Reading Advantage 2"
       }
     },
@@ -2261,7 +2261,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "20",
+        "id": "10",
         "name": "Word 1"
       }
     },
@@ -2274,7 +2274,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "21",
+        "id": "11",
         "name": "Word 2"
       }
     },
@@ -4033,6 +4033,22 @@
     },
     {
       "from": 539,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 539,
+      "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 539,
       "to": 44615,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -4298,6 +4314,14 @@
     {
       "from": 1670,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1670,
+      "to": 44513,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6105,9 +6129,9 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-27T09:00:42.505178",
+    "generated_at": "2026-03-01T09:00:32.324674",
     "node_count": 197,
-    "edge_count": 421,
+    "edge_count": 424,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
 }
