@@ -27,6 +27,20 @@
       }
     },
     {
+      "id": 44529,
+      "label": "Games",
+      "title": "Interest: Games",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_games_1005",
+        "name": "Games",
+        "intensity": 2
+      }
+    },
+    {
       "id": 44513,
       "label": "Reading",
       "title": "Interest: Reading",
@@ -35,7 +49,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1001",
+        "id": "interest_reading_1004",
         "name": "Reading",
         "intensity": 2
       }
@@ -63,9 +77,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1004",
+        "id": "interest_fashion_1009",
         "name": "Fashion",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -77,7 +91,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1005",
+        "id": "interest_food_1006",
         "name": "Food",
         "intensity": 2
       }
@@ -91,9 +105,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1003",
+        "id": "interest_travel_1004",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -105,7 +119,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1003",
         "name": "Technology",
         "intensity": 2
       }
@@ -119,9 +133,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1000",
+        "id": "interest_science_1001",
         "name": "Science",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -149,6 +163,76 @@
       "properties": {
         "id": "word_Topsoil",
         "name": "Topsoil"
+      }
+    },
+    {
+      "id": 29475,
+      "label": "yolk",
+      "title": "Word: yolk",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "a35b8bc0-cce2-4a30-9fb8-985188b61b6d:3",
+        "chunk_index": 0,
+        "name": "yolk"
+      }
+    },
+    {
+      "id": 47864,
+      "label": "Tough",
+      "title": "Word: Tough",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "35a51252-a397-4a13-83a4-5910bb1dd898:8",
+        "chunk_index": 0,
+        "name": "Tough"
+      }
+    },
+    {
+      "id": 48904,
+      "label": "Over Easy",
+      "title": "Word: Over Easy",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "35a51252-a397-4a13-83a4-5910bb1dd898:9",
+        "chunk_index": 0,
+        "name": "Over Easy"
+      }
+    },
+    {
+      "id": 15677,
+      "label": "Stir",
+      "title": "Word: Stir",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "35a51252-a397-4a13-83a4-5910bb1dd898:5",
+        "chunk_index": 0,
+        "name": "Stir"
+      }
+    },
+    {
+      "id": 49629,
+      "label": "leisurely",
+      "title": "Word: leisurely",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "a35b8bc0-cce2-4a30-9fb8-985188b61b6d:4",
+        "chunk_index": 0,
+        "name": "leisurely"
       }
     },
     {
@@ -186,7 +270,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "4cfe7c95-13fc-45df-bb7d-3cb21178284a:2",
+        "id": "c89a1bbb-694d-4c7d-b94c-45ed3ac4e997:4",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -423,7 +507,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "5",
+        "id": "044ae862-ffaa-4d88-8fc4-b841fa12a0e2:5",
+        "chunk_index": 0,
         "name": "caused"
       }
     },
@@ -760,7 +845,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1001",
+        "id": "interest_animals_1003",
         "name": "Animals",
         "intensity": 1
       }
@@ -774,23 +859,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1001",
+        "id": "interest_movies_1003",
         "name": "Movies",
-        "intensity": 2
-      }
-    },
-    {
-      "id": 44529,
-      "label": "Games",
-      "title": "Interest: Games",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_games_1002",
-        "name": "Games",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -802,7 +873,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "d9866279-3648-4195-a268-b73098937e99:25",
+        "id": "4d36e53c-63d6-4988-9819-716772f35b5d:0",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -878,7 +949,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "49897410-1132-4354-bd2c-880efaf7a85f:0",
+        "id": "7f872f91-38dc-4205-94ec-bcc21c1f6197:0",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -917,7 +988,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "57e27e6c-f7b7-4fd7-a710-22b8e9aed7b0:1",
+        "id": "d46dc960-e226-45c6-a2d2-79911b5f556b:0",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -1328,7 +1399,8 @@
       "shape": "triangle",
       "size": 12,
       "properties": {
-        "id": "5",
+        "id": "1200582f-18f3-4ef5-a77e-52ee555bef0b:4",
+        "chunk_index": 0,
         "name": "Beginner 2"
       }
     },
@@ -1391,9 +1463,10 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "dc0d8fcc-1597-44db-89b3-9b8ada779296:0",
+        "chunk_index": 0,
         "name": "STUDENT'S BOOK",
-        "url": "https://www.netutor.co.kr/english/pages/book/view.asp?b_code=BA03020021"
+        "url": "https://drive.google.com/file/d/1SkrEPQZAaXPUeZ1IIOKHhv_9TsfE75oY/view"
       }
     },
     {
@@ -1544,7 +1617,8 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "bb373574-e0ba-4712-9ecf-65fdf16c8e25:0",
+        "chunk_index": 0,
         "name": "Let's Go Starter"
       }
     },
@@ -1582,7 +1656,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "99ee4b27-8a0b-4eee-a6a0-5aa2fd199330:0",
+        "id": "e27382c7-e379-484a-a32e-718f33ce7e23:0",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1610,7 +1684,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "13",
+        "id": "fb905c18-7578-49ef-8e26-75145284242d:14",
+        "chunk_index": 0,
         "name": "compare"
       }
     },
@@ -1714,7 +1789,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "b7790862-24cb-48f3-88aa-f8b0d8f74cea:0",
+        "id": "41e9e6cc-733e-4316-ae06-0b46df61b239:0",
         "chunk_index": 0,
         "name": "Free Talking"
       }
@@ -1728,7 +1803,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "b6badfb5-1e99-44cd-995a-2262d1873826:0",
+        "id": "355c9e04-3c46-4e9a-b1ad-6d046f3f3f8e:1",
         "chunk_index": 0,
         "name": "Free Talk"
       }
@@ -1894,7 +1969,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "30",
+        "id": "67f41c08-4b40-480a-b415-2af60f6c0adc:4",
+        "chunk_index": 0,
         "name": "enough"
       }
     },
@@ -2359,7 +2435,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "f98d1f76-31fe-4871-81eb-0548fcc050fb:10",
+        "id": "eeea4d81-2867-4e0e-8e4b-e76d8cd46d5c:17",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2373,7 +2449,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "f98d1f76-31fe-4871-81eb-0548fcc050fb:11",
+        "id": "eeea4d81-2867-4e0e-8e4b-e76d8cd46d5c:18",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -2534,6 +2610,20 @@
       }
     },
     {
+      "id": 50286,
+      "label": "Student Life and Trends",
+      "title": "Interest: Student Life and Trends",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_student_life_and_trends_1002",
+        "name": "Student Life and Trends",
+        "intensity": 2
+      }
+    },
+    {
       "id": 50243,
       "label": "Student Life",
       "title": "Interest: Student Life",
@@ -2658,6 +2748,20 @@
       }
     },
     {
+      "id": 12176,
+      "label": "daily life",
+      "title": "Interest: daily life",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_daily_life_1003",
+        "name": "daily life",
+        "intensity": 2
+      }
+    },
+    {
       "id": 49458,
       "label": "Daily Life",
       "title": "Interest: Daily Life",
@@ -2666,7 +2770,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_1003",
+        "id": "interest_daily_life_1002",
         "name": "Daily Life",
         "intensity": 2
       }
@@ -2744,12 +2848,70 @@
       "properties": {
         "student_number": 43
       }
+    },
+    {
+      "id": 51547,
+      "label": "Culture and Daily Life",
+      "title": "Interest: Culture and Daily Life",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_culture_and_daily_life_1001",
+        "name": "Culture and Daily Life",
+        "intensity": 2
+      }
+    },
+    {
+      "id": 48675,
+      "label": "Student 44",
+      "title": "Student: Student 44",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 44
+      }
+    },
+    {
+      "id": 48687,
+      "label": "Student 45",
+      "title": "Student: Student 45",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 45
+      }
+    },
+    {
+      "id": 51331,
+      "label": "Student 46",
+      "title": "Student: Student 46",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 46
+      }
     }
   ],
   "edges": [
     {
       "from": 9,
       "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -2822,6 +2984,46 @@
     {
       "from": 9,
       "to": 37340,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 29475,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 47864,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 48904,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 15677,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 49629,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -3427,6 +3629,14 @@
     },
     {
       "from": 54,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 54,
       "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3620,6 +3830,22 @@
     {
       "from": 91,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 91,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 91,
+      "to": 44528,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -3827,6 +4053,22 @@
     },
     {
       "from": 187,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 187,
+      "to": 44733,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 187,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3916,6 +4158,14 @@
     {
       "from": 260,
       "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 260,
+      "to": 44734,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4467,6 +4717,22 @@
     },
     {
       "from": 643,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
       "to": 645,
       "label": "레벨",
       "title": "HAS_LEVEL",
@@ -4500,6 +4766,22 @@
     {
       "from": 857,
       "to": 44733,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 857,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 857,
+      "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4652,6 +4934,14 @@
     {
       "from": 1597,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1597,
+      "to": 44734,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5283,6 +5573,14 @@
     },
     {
       "from": 1795,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1795,
       "to": 44514,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5379,6 +5677,14 @@
     },
     {
       "from": 1870,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1870,
       "to": 44549,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5444,6 +5750,14 @@
     {
       "from": 1891,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1891,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5947,6 +6261,30 @@
     },
     {
       "from": 2856,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
       "to": 44598,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6363,6 +6701,14 @@
     },
     {
       "from": 10454,
+      "to": 50286,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
       "to": 50243,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6444,6 +6790,22 @@
     {
       "from": 10699,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6728,219 +7090,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 49458,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 48833,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 39912,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 39912,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 46336,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 46336,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 46336,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-15T09:00:11.666902",
-    "node_count": 212,
+    "generated_at": "2026-03-22T09:00:18.089782",
+    "node_count": 223,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
