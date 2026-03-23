@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": 9,
+      "id": 0,
       "label": "Student 1",
       "title": "Student: Student 1",
       "group": "Student",
@@ -13,6 +13,20 @@
       }
     },
     {
+      "id": 44529,
+      "label": "Games",
+      "title": "Interest: Games",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_games_1004",
+        "name": "Games",
+        "intensity": 3
+      }
+    },
+    {
       "id": 44528,
       "label": "Music",
       "title": "Interest: Music",
@@ -21,9 +35,61 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1001",
+        "id": "interest_music_1000",
         "name": "Music",
         "intensity": 2
+      }
+    },
+    {
+      "id": 5,
+      "label": "phone",
+      "title": "Word: phone",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "11",
+        "name": "phone"
+      }
+    },
+    {
+      "id": 6,
+      "label": "smart",
+      "title": "Word: smart",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "f04cff93-7564-4010-9506-1f04c658723d:7",
+        "chunk_index": 0,
+        "name": "smart"
+      }
+    },
+    {
+      "id": 4,
+      "label": "test",
+      "title": "Word: test",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "6",
+        "name": "test"
+      }
+    },
+    {
+      "id": 9,
+      "label": "Student 2",
+      "title": "Student: Student 2",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 2
       }
     },
     {
@@ -35,7 +101,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 3
       }
@@ -51,7 +117,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -63,7 +129,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1004",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -77,7 +143,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1006",
+        "id": "interest_food_1008",
         "name": "Food",
         "intensity": 3
       }
@@ -91,7 +157,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1005",
+        "id": "interest_travel_1007",
         "name": "Travel",
         "intensity": 3
       }
@@ -105,9 +171,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1002",
         "name": "Technology",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -133,9 +199,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1000",
         "name": "Art",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -256,7 +322,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "4cfe7c95-13fc-45df-bb7d-3cb21178284a:2",
+        "id": "c89a1bbb-694d-4c7d-b94c-45ed3ac4e997:4",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -493,7 +559,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "5",
+        "id": "044ae862-ffaa-4d88-8fc4-b841fa12a0e2:5",
+        "chunk_index": 0,
         "name": "caused"
       }
     },
@@ -798,14 +865,14 @@
     },
     {
       "id": 54,
-      "label": "Student 2",
-      "title": "Student: Student 2",
+      "label": "Student 3",
+      "title": "Student: Student 3",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 2
+        "student_number": 3
       }
     },
     {
@@ -830,7 +897,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1004",
+        "id": "interest_animals_1006",
         "name": "Animals",
         "intensity": 3
       }
@@ -844,23 +911,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1003",
+        "id": "interest_movies_1005",
         "name": "Movies",
-        "intensity": 2
-      }
-    },
-    {
-      "id": 44529,
-      "label": "Games",
-      "title": "Interest: Games",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_games_1002",
-        "name": "Games",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -872,21 +925,21 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "d9866279-3648-4195-a268-b73098937e99:25",
+        "id": "23aeb167-ffe8-4781-b6b8-55af95abc46c:0",
         "chunk_index": 0,
         "name": "Book Name"
       }
     },
     {
       "id": 77,
-      "label": "Student 3",
-      "title": "Student: Student 3",
+      "label": "Student 4",
+      "title": "Student: Student 4",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 3
+        "student_number": 4
       }
     },
     {
@@ -904,18 +957,6 @@
     },
     {
       "id": 91,
-      "label": "Student 4",
-      "title": "Student: Student 4",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 4
-      }
-    },
-    {
-      "id": 172,
       "label": "Student 5",
       "title": "Student: Student 5",
       "group": "Student",
@@ -924,6 +965,18 @@
       "size": 20,
       "properties": {
         "student_number": 5
+      }
+    },
+    {
+      "id": 172,
+      "label": "Student 6",
+      "title": "Student: Student 6",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 6
       }
     },
     {
@@ -948,7 +1001,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "49897410-1132-4354-bd2c-880efaf7a85f:0",
+        "id": "7f872f91-38dc-4205-94ec-bcc21c1f6197:0",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -968,14 +1021,14 @@
     },
     {
       "id": 187,
-      "label": "Student 6",
-      "title": "Student: Student 6",
+      "label": "Student 7",
+      "title": "Student: Student 7",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 6
+        "student_number": 7
       }
     },
     {
@@ -987,21 +1040,21 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "57e27e6c-f7b7-4fd7-a710-22b8e9aed7b0:1",
+        "id": "d46dc960-e226-45c6-a2d2-79911b5f556b:0",
         "chunk_index": 0,
         "name": "engoo"
       }
     },
     {
       "id": 260,
-      "label": "Student 7",
-      "title": "Student: Student 7",
+      "label": "Student 8",
+      "title": "Student: Student 8",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 7
+        "student_number": 8
       }
     },
     {
@@ -1110,14 +1163,14 @@
     },
     {
       "id": 372,
-      "label": "Student 8",
-      "title": "Student: Student 8",
+      "label": "Student 9",
+      "title": "Student: Student 9",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 8
+        "student_number": 9
       }
     },
     {
@@ -1135,14 +1188,14 @@
     },
     {
       "id": 390,
-      "label": "Student 9",
-      "title": "Student: Student 9",
+      "label": "Student 10",
+      "title": "Student: Student 10",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 9
+        "student_number": 10
       }
     },
     {
@@ -1199,14 +1252,14 @@
     },
     {
       "id": 511,
-      "label": "Student 10",
-      "title": "Student: Student 10",
+      "label": "Student 11",
+      "title": "Student: Student 11",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 10
+        "student_number": 11
       }
     },
     {
@@ -1224,14 +1277,14 @@
     },
     {
       "id": 539,
-      "label": "Student 11",
-      "title": "Student: Student 11",
+      "label": "Student 12",
+      "title": "Student: Student 12",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 11
+        "student_number": 12
       }
     },
     {
@@ -1340,14 +1393,14 @@
     },
     {
       "id": 643,
-      "label": "Student 12",
-      "title": "Student: Student 12",
+      "label": "Student 13",
+      "title": "Student: Student 13",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 12
+        "student_number": 13
       }
     },
     {
@@ -1398,7 +1451,8 @@
       "shape": "triangle",
       "size": 12,
       "properties": {
-        "id": "5",
+        "id": "1200582f-18f3-4ef5-a77e-52ee555bef0b:4",
+        "chunk_index": 0,
         "name": "Beginner 2"
       }
     },
@@ -1417,14 +1471,14 @@
     },
     {
       "id": 857,
-      "label": "Student 13",
-      "title": "Student: Student 13",
+      "label": "Student 14",
+      "title": "Student: Student 14",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 13
+        "student_number": 14
       }
     },
     {
@@ -1442,14 +1496,14 @@
     },
     {
       "id": 973,
-      "label": "Student 14",
-      "title": "Student: Student 14",
+      "label": "Student 15",
+      "title": "Student: Student 15",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 14
+        "student_number": 15
       }
     },
     {
@@ -1461,21 +1515,22 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "dc0d8fcc-1597-44db-89b3-9b8ada779296:0",
+        "chunk_index": 0,
         "name": "STUDENT'S BOOK",
-        "url": "https://www.netutor.co.kr/english/pages/book/view.asp?b_code=BA03020021"
+        "url": "https://drive.google.com/file/d/1SkrEPQZAaXPUeZ1IIOKHhv_9TsfE75oY/view"
       }
     },
     {
       "id": 1597,
-      "label": "Student 15",
-      "title": "Student: Student 15",
+      "label": "Student 16",
+      "title": "Student: Student 16",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 15
+        "student_number": 16
       }
     },
     {
@@ -1494,18 +1549,6 @@
     },
     {
       "id": 1670,
-      "label": "Student 16",
-      "title": "Student: Student 16",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 16
-      }
-    },
-    {
-      "id": 1765,
       "label": "Student 17",
       "title": "Student: Student 17",
       "group": "Student",
@@ -1514,6 +1557,18 @@
       "size": 20,
       "properties": {
         "student_number": 17
+      }
+    },
+    {
+      "id": 1765,
+      "label": "Student 18",
+      "title": "Student: Student 18",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 18
       }
     },
     {
@@ -1544,14 +1599,14 @@
     },
     {
       "id": 1774,
-      "label": "Student 18",
-      "title": "Student: Student 18",
+      "label": "Student 19",
+      "title": "Student: Student 19",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 18
+        "student_number": 19
       }
     },
     {
@@ -1582,14 +1637,14 @@
     },
     {
       "id": 1779,
-      "label": "Student 19",
-      "title": "Student: Student 19",
+      "label": "Student 20",
+      "title": "Student: Student 20",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 19
+        "student_number": 20
       }
     },
     {
@@ -1614,7 +1669,8 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "bb373574-e0ba-4712-9ecf-65fdf16c8e25:0",
+        "chunk_index": 0,
         "name": "Let's Go Starter"
       }
     },
@@ -1633,14 +1689,14 @@
     },
     {
       "id": 1790,
-      "label": "Student 20",
-      "title": "Student: Student 20",
+      "label": "Student 21",
+      "title": "Student: Student 21",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 20
+        "student_number": 21
       }
     },
     {
@@ -1652,7 +1708,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "99ee4b27-8a0b-4eee-a6a0-5aa2fd199330:0",
+        "id": "e27382c7-e379-484a-a32e-718f33ce7e23:0",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1680,7 +1736,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "13",
+        "id": "fb905c18-7578-49ef-8e26-75145284242d:14",
+        "chunk_index": 0,
         "name": "compare"
       }
     },
@@ -1753,18 +1810,6 @@
     },
     {
       "id": 1795,
-      "label": "Student 21",
-      "title": "Student: Student 21",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 21
-      }
-    },
-    {
-      "id": 1870,
       "label": "Student 22",
       "title": "Student: Student 22",
       "group": "Student",
@@ -1776,6 +1821,18 @@
       }
     },
     {
+      "id": 1870,
+      "label": "Student 23",
+      "title": "Student: Student 23",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 23
+      }
+    },
+    {
       "id": 4097,
       "label": "Free Talking",
       "title": "Book: Free Talking",
@@ -1784,7 +1841,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "b7790862-24cb-48f3-88aa-f8b0d8f74cea:0",
+        "id": "41e9e6cc-733e-4316-ae06-0b46df61b239:0",
         "chunk_index": 0,
         "name": "Free Talking"
       }
@@ -1798,21 +1855,21 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "b6badfb5-1e99-44cd-995a-2262d1873826:0",
+        "id": "355c9e04-3c46-4e9a-b1ad-6d046f3f3f8e:1",
         "chunk_index": 0,
         "name": "Free Talk"
       }
     },
     {
       "id": 1891,
-      "label": "Student 23",
-      "title": "Student: Student 23",
+      "label": "Student 24",
+      "title": "Student: Student 24",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 23
+        "student_number": 24
       }
     },
     {
@@ -1830,14 +1887,14 @@
     },
     {
       "id": 1917,
-      "label": "Student 24",
-      "title": "Student: Student 24",
+      "label": "Student 25",
+      "title": "Student: Student 25",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 24
+        "student_number": 25
       }
     },
     {
@@ -1894,18 +1951,6 @@
     },
     {
       "id": 2281,
-      "label": "Student 25",
-      "title": "Student: Student 25",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 25
-      }
-    },
-    {
-      "id": 2477,
       "label": "Student 26",
       "title": "Student: Student 26",
       "group": "Student",
@@ -1914,6 +1959,18 @@
       "size": 20,
       "properties": {
         "student_number": 26
+      }
+    },
+    {
+      "id": 2477,
+      "label": "Student 27",
+      "title": "Student: Student 27",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 27
       }
     },
     {
@@ -1964,7 +2021,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "30",
+        "id": "67f41c08-4b40-480a-b415-2af60f6c0adc:4",
+        "chunk_index": 0,
         "name": "enough"
       }
     },
@@ -2061,18 +2119,6 @@
     },
     {
       "id": 2849,
-      "label": "Student 27",
-      "title": "Student: Student 27",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 27
-      }
-    },
-    {
-      "id": 2856,
       "label": "Student 28",
       "title": "Student: Student 28",
       "group": "Student",
@@ -2081,6 +2127,18 @@
       "size": 20,
       "properties": {
         "student_number": 28
+      }
+    },
+    {
+      "id": 2856,
+      "label": "Student 29",
+      "title": "Student: Student 29",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 29
       }
     },
     {
@@ -2215,14 +2273,14 @@
     },
     {
       "id": 4028,
-      "label": "Student 29",
-      "title": "Student: Student 29",
+      "label": "Student 30",
+      "title": "Student: Student 30",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 29
+        "student_number": 30
       }
     },
     {
@@ -2279,14 +2337,14 @@
     },
     {
       "id": 8323,
-      "label": "Student 30",
-      "title": "Student: Student 30",
+      "label": "Student 31",
+      "title": "Student: Student 31",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 30
+        "student_number": 31
       }
     },
     {
@@ -2429,7 +2487,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "17a2afee-3806-421a-b2e8-c883dbb533e9:18",
+        "id": "23aeb167-ffe8-4781-b6b8-55af95abc46c:5",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2443,7 +2501,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "17a2afee-3806-421a-b2e8-c883dbb533e9:19",
+        "id": "23aeb167-ffe8-4781-b6b8-55af95abc46c:6",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -2463,14 +2521,14 @@
     },
     {
       "id": 10454,
-      "label": "Student 31",
-      "title": "Student: Student 31",
+      "label": "Student 32",
+      "title": "Student: Student 32",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 31
+        "student_number": 32
       }
     },
     {
@@ -2659,18 +2717,6 @@
     },
     {
       "id": 10699,
-      "label": "Student 32",
-      "title": "Student: Student 32",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 32
-      }
-    },
-    {
-      "id": 10932,
       "label": "Student 33",
       "title": "Student: Student 33",
       "group": "Student",
@@ -2682,7 +2728,7 @@
       }
     },
     {
-      "id": 21019,
+      "id": 10932,
       "label": "Student 34",
       "title": "Student: Student 34",
       "group": "Student",
@@ -2694,7 +2740,7 @@
       }
     },
     {
-      "id": 22749,
+      "id": 21019,
       "label": "Student 35",
       "title": "Student: Student 35",
       "group": "Student",
@@ -2706,7 +2752,7 @@
       }
     },
     {
-      "id": 27619,
+      "id": 22749,
       "label": "Student 36",
       "title": "Student: Student 36",
       "group": "Student",
@@ -2718,7 +2764,7 @@
       }
     },
     {
-      "id": 29793,
+      "id": 27619,
       "label": "Student 37",
       "title": "Student: Student 37",
       "group": "Student",
@@ -2730,7 +2776,7 @@
       }
     },
     {
-      "id": 38224,
+      "id": 29793,
       "label": "Student 38",
       "title": "Student: Student 38",
       "group": "Student",
@@ -2742,6 +2788,32 @@
       }
     },
     {
+      "id": 38224,
+      "label": "Student 39",
+      "title": "Student: Student 39",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 39
+      }
+    },
+    {
+      "id": 12176,
+      "label": "daily life",
+      "title": "Interest: daily life",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_daily_life_1003",
+        "name": "daily life",
+        "intensity": 2
+      }
+    },
+    {
       "id": 49458,
       "label": "Daily Life",
       "title": "Interest: Daily Life",
@@ -2750,7 +2822,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_1003",
+        "id": "interest_daily_life_1002",
         "name": "Daily Life",
         "intensity": 2
       }
@@ -2771,18 +2843,6 @@
     },
     {
       "id": 39912,
-      "label": "Student 39",
-      "title": "Student: Student 39",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 39
-      }
-    },
-    {
-      "id": 42758,
       "label": "Student 40",
       "title": "Student: Student 40",
       "group": "Student",
@@ -2794,7 +2854,7 @@
       }
     },
     {
-      "id": 46336,
+      "id": 42758,
       "label": "Student 41",
       "title": "Student: Student 41",
       "group": "Student",
@@ -2806,7 +2866,7 @@
       }
     },
     {
-      "id": 47789,
+      "id": 46336,
       "label": "Student 42",
       "title": "Student: Student 42",
       "group": "Student",
@@ -2818,7 +2878,7 @@
       }
     },
     {
-      "id": 48402,
+      "id": 47789,
       "label": "Student 43",
       "title": "Student: Student 43",
       "group": "Student",
@@ -2828,12 +2888,122 @@
       "properties": {
         "student_number": 43
       }
+    },
+    {
+      "id": 48402,
+      "label": "Student 44",
+      "title": "Student: Student 44",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 44
+      }
+    },
+    {
+      "id": 51547,
+      "label": "Culture and Daily Life",
+      "title": "Interest: Culture and Daily Life",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_culture_and_daily_life_1001",
+        "name": "Culture and Daily Life",
+        "intensity": 2
+      }
+    },
+    {
+      "id": 48675,
+      "label": "Student 45",
+      "title": "Student: Student 45",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 45
+      }
+    },
+    {
+      "id": 48687,
+      "label": "Student 46",
+      "title": "Student: Student 46",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 46
+      }
+    },
+    {
+      "id": 51331,
+      "label": "Student 47",
+      "title": "Student: Student 47",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 47
+      }
     }
   ],
   "edges": [
     {
+      "from": 0,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 5,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 6,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 4,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
       "from": 9,
       "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -3551,6 +3721,14 @@
     },
     {
       "from": 54,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 54,
       "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3744,6 +3922,22 @@
     {
       "from": 91,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 91,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 91,
+      "to": 44528,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -3951,6 +4145,22 @@
     },
     {
       "from": 187,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 187,
+      "to": 44733,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 187,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -4040,6 +4250,14 @@
     {
       "from": 260,
       "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 260,
+      "to": 44734,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4591,6 +4809,22 @@
     },
     {
       "from": 643,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
       "to": 645,
       "label": "레벨",
       "title": "HAS_LEVEL",
@@ -4624,6 +4858,22 @@
     {
       "from": 857,
       "to": 44733,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 857,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 857,
+      "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4711,6 +4961,14 @@
     },
     {
       "from": 973,
+      "to": 44734,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 973,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -4776,6 +5034,14 @@
     {
       "from": 1597,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1597,
+      "to": 44734,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5407,6 +5673,14 @@
     },
     {
       "from": 1795,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1795,
       "to": 44514,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5503,6 +5777,14 @@
     },
     {
       "from": 1870,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1870,
       "to": 44549,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5568,6 +5850,14 @@
     {
       "from": 1891,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1891,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6071,6 +6361,30 @@
     },
     {
       "from": 2856,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2856,
       "to": 44598,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6487,6 +6801,30 @@
     },
     {
       "from": 10454,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
+      "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10454,
       "to": 50286,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6576,6 +6914,22 @@
     {
       "from": 10699,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 10699,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6788,243 +7142,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 21019,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 21019,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 27619,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 29793,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 49458,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 38224,
-      "to": 48833,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 39912,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 39912,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 42758,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-16T09:00:06.991070",
-    "node_count": 218,
+    "generated_at": "2026-03-23T09:00:07.263370",
+    "node_count": 227,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
