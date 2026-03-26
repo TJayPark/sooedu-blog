@@ -21,9 +21,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1004",
+        "id": "interest_games_1003",
         "name": "Games",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -76,7 +76,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "6",
+        "id": "2ad417f7-febb-4f00-a887-012d682cd982:6",
+        "chunk_index": 0,
         "name": "test"
       }
     },
@@ -101,9 +102,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1002",
         "name": "Reading",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -129,7 +130,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1006",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -143,9 +144,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1008",
+        "id": "interest_food_1007",
         "name": "Food",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -157,9 +158,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1007",
+        "id": "interest_travel_1006",
         "name": "Travel",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -187,7 +188,7 @@
       "properties": {
         "id": "interest_science_1001",
         "name": "Science",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -201,7 +202,7 @@
       "properties": {
         "id": "interest_art_1000",
         "name": "Art",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -898,7 +899,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1006",
+        "id": "interest_animals_1005",
         "name": "Animals",
         "intensity": 2
       }
@@ -912,9 +913,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1005",
+        "id": "interest_movies_1004",
         "name": "Movies",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -926,7 +927,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "e7f3b67c-f4af-4e92-8b58-1964e13de571:7",
+        "id": "9abd95be-d2e6-463d-807a-df922b99a96c:13",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1041,7 +1042,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "a486cb50-565d-4de0-b341-69751d9f2e7a:0",
+        "id": "60b933b2-55a9-4a04-b99d-b4d9d4b23b8a:6",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -1388,7 +1389,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "12",
+        "id": "116734c1-feb9-4f83-b6bc-c53f39b1bc0b:2",
+        "chunk_index": 0,
         "name": "Parents"
       }
     },
@@ -1709,7 +1711,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "8b8916c9-1d44-4a34-b781-16030b841a06:0",
+        "id": "0ded2ecb-0973-4215-974e-8f121ba01527:1",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1723,7 +1725,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "5d61ba3e-030f-4a69-a041-519cbb889750:12",
+        "id": "2ad417f7-febb-4f00-a887-012d682cd982:4",
         "chunk_index": 0,
         "name": "adventure"
       }
@@ -1737,7 +1739,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "69b9bf61-a49e-43d8-abb6-4d8bf6b0da80:13",
+        "id": "5466965f-362c-4174-94d8-1f747b130512:14",
         "chunk_index": 0,
         "name": "compare"
       }
@@ -1856,7 +1858,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "632f6ff2-6a43-4f9c-b166-dc39b23dfcaa:0",
+        "id": "16f99cc5-cc57-46bd-a377-2ff42c11c4be:5",
         "chunk_index": 0,
         "name": "Free Talk"
       }
@@ -2488,7 +2490,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "449ec59f-75e3-4ef2-b444-d64d134a82e3:38",
+        "id": "fbbcd078-2ab2-4ec8-a65e-999b6b227d1a:19",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2502,7 +2504,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "449ec59f-75e3-4ef2-b444-d64d134a82e3:39",
+        "id": "fbbcd078-2ab2-4ec8-a65e-999b6b227d1a:20",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -4864,6 +4866,14 @@
     },
     {
       "from": 643,
+      "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
       "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5281,6 +5291,14 @@
     {
       "from": 1765,
       "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1765,
+      "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6736,6 +6754,22 @@
     },
     {
       "from": 8323,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
+      "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
       "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -7125,42 +7159,10 @@
       "title": "HAS_BOOK",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10932,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10932,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10932,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10932,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-25T09:00:10.251556",
+    "generated_at": "2026-03-26T09:00:13.297221",
     "node_count": 228,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
