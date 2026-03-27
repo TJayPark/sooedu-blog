@@ -21,9 +21,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1003",
+        "id": "interest_games_1005",
         "name": "Games",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -102,9 +102,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1004",
         "name": "Reading",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -118,7 +118,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -130,7 +130,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1005",
+        "id": "interest_fashion_1007",
         "name": "Fashion",
         "intensity": 2
       }
@@ -144,9 +144,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1009",
         "name": "Food",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -158,9 +158,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1008",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -172,7 +172,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1003",
         "name": "Technology",
         "intensity": 3
       }
@@ -186,9 +186,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1002",
         "name": "Science",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -200,7 +200,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1000",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 3
       }
@@ -899,9 +899,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1005",
+        "id": "interest_animals_1007",
         "name": "Animals",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -913,9 +913,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1004",
+        "id": "interest_movies_1006",
         "name": "Movies",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -927,7 +927,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "9abd95be-d2e6-463d-807a-df922b99a96c:13",
+        "id": "37d7c6ca-adcc-4e75-a98e-c32c9e201b04:0",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1003,7 +1003,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "be258d29-ab8c-4906-bd30-7914ac971c7d:0",
+        "id": "fe239359-65f0-4f31-ad13-df0884bb8eaa:0",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -1042,7 +1042,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "60b933b2-55a9-4a04-b99d-b4d9d4b23b8a:6",
+        "id": "ca5d70ef-ac0b-4bcd-9ace-71ae6c1dae91:0",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -1739,7 +1739,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "5466965f-362c-4174-94d8-1f747b130512:14",
+        "id": "90e4b5fe-4ca3-496f-a7e5-b13c9456a587:18",
         "chunk_index": 0,
         "name": "compare"
       }
@@ -1858,7 +1858,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "16f99cc5-cc57-46bd-a377-2ff42c11c4be:5",
+        "id": "53807f7c-d085-41b8-a19d-18af64379dc5:4",
         "chunk_index": 0,
         "name": "Free Talk"
       }
@@ -2490,7 +2490,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "fbbcd078-2ab2-4ec8-a65e-999b6b227d1a:19",
+        "id": "1f4eb02e-822d-4a1a-8796-86991eb732cc:17",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2504,7 +2504,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "fbbcd078-2ab2-4ec8-a65e-999b6b227d1a:20",
+        "id": "1f4eb02e-822d-4a1a-8796-86991eb732cc:18",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -5298,6 +5298,14 @@
     },
     {
       "from": 1765,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1765,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5403,6 +5411,14 @@
     {
       "from": 1774,
       "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1774,
+      "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5763,6 +5779,14 @@
     {
       "from": 1795,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1795,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -7135,34 +7159,10 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 39,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-26T09:00:13.297221",
+    "generated_at": "2026-03-27T09:00:09.748349",
     "node_count": 228,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
