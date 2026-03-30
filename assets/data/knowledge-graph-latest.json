@@ -37,7 +37,7 @@
       "properties": {
         "id": "interest_music_1001",
         "name": "Music",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -130,7 +130,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1005",
+        "id": "interest_fashion_1003",
         "name": "Fashion",
         "intensity": 2
       }
@@ -144,7 +144,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1005",
         "name": "Food",
         "intensity": 2
       }
@@ -158,9 +158,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1003",
+        "id": "interest_travel_1004",
         "name": "Travel",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -172,9 +172,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1004",
         "name": "Technology",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -186,9 +186,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1003",
         "name": "Science",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -200,9 +200,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1000",
+        "id": "interest_art_1002",
         "name": "Art",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -899,7 +899,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1005",
+        "id": "interest_animals_1003",
         "name": "Animals",
         "intensity": 2
       }
@@ -913,9 +913,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1002",
+        "id": "interest_movies_1006",
         "name": "Movies",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -927,7 +927,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "a491a1fd-89e0-40bc-b6c0-985c6830120a:25",
+        "id": "490b634c-cd15-4cf7-868c-06272cc1ef1b:15",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1701,7 +1701,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "2ad417f7-febb-4f00-a887-012d682cd982:4",
+        "id": "9136262a-0904-4229-a1cc-c8e7c334d89c:11",
         "chunk_index": 0,
         "name": "adventure"
       }
@@ -7151,7 +7151,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-29T09:00:13.818336",
+    "generated_at": "2026-03-30T18:46:20.814974",
     "node_count": 227,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
