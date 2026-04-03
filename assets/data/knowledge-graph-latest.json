@@ -21,7 +21,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1005",
+        "id": "interest_games_1004",
         "name": "Games",
         "intensity": 2
       }
@@ -35,7 +35,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1000",
+        "id": "interest_music_1001",
         "name": "Music",
         "intensity": 2
       }
@@ -102,7 +102,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1004",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -130,7 +130,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1006",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -144,7 +144,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1009",
+        "id": "interest_food_1008",
         "name": "Food",
         "intensity": 2
       }
@@ -158,7 +158,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1008",
+        "id": "interest_travel_1007",
         "name": "Travel",
         "intensity": 2
       }
@@ -172,7 +172,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1003",
+        "id": "interest_technology_1002",
         "name": "Technology",
         "intensity": 2
       }
@@ -186,7 +186,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1002",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -200,7 +200,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1001",
+        "id": "interest_art_1000",
         "name": "Art",
         "intensity": 2
       }
@@ -899,7 +899,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1007",
+        "id": "interest_animals_1006",
         "name": "Animals",
         "intensity": 2
       }
@@ -913,7 +913,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1006",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -927,7 +927,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "68ecd138-7f99-4e40-b4e1-4334f14e4404:27",
+        "id": "47e9bf81-9f74-4213-955e-542a3102092c:54",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1004,7 +1004,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "537f88dc-fc70-4f33-b009-4a1f563b721c:1",
+        "id": "d43423bf-5ff8-4487-8780-56f230b27f31:1",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -1043,7 +1043,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "939908a6-8fbd-4aef-8ff4-383412a962be:0",
+        "id": "bd6f484f-1b6e-44e8-953c-ba6fb7333c34:0",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -1313,7 +1313,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "934fe815-c991-49a4-a94d-a5aa396656de:4",
+        "chunk_index": 0,
         "name": "Construction"
       }
     },
@@ -1687,7 +1688,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "5a75b468-5de1-44e3-a756-bae22ad7fa4f:1",
+        "id": "0884db16-515a-40a4-a68f-5b26509869c2:0",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1834,9 +1835,10 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "4388e2c5-0073-48d3-9515-cf4a19e3e182:5",
+        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:0",
         "chunk_index": 0,
-        "name": "Free Talk"
+        "name": "Free Talk",
+        "url": "https://www.gamestolearnenglish.com/vocab-game/#game"
       }
     },
     {
@@ -2480,7 +2482,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "fdb8e048-609d-472e-9db9-0e65f159cf3a:3",
+        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:5",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2494,7 +2496,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "fdb8e048-609d-472e-9db9-0e65f159cf3a:4",
+        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:6",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -4859,6 +4861,14 @@
     },
     {
       "from": 643,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
       "to": 44528,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -5524,6 +5534,14 @@
     {
       "from": 1779,
       "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1779,
+      "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6787,6 +6805,22 @@
     },
     {
       "from": 8323,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -7152,42 +7186,10 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44733,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-01T09:00:07.271924",
+    "generated_at": "2026-04-03T09:00:11.690097",
     "node_count": 230,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
