@@ -21,7 +21,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1004",
+        "id": "interest_games_1002",
         "name": "Games",
         "intensity": 2
       }
@@ -102,7 +102,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1000",
         "name": "Reading",
         "intensity": 2
       }
@@ -144,7 +144,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1008",
+        "id": "interest_food_1002",
         "name": "Food",
         "intensity": 2
       }
@@ -158,7 +158,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1007",
+        "id": "interest_travel_1001",
         "name": "Travel",
         "intensity": 2
       }
@@ -172,7 +172,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1000",
         "name": "Technology",
         "intensity": 2
       }
@@ -186,9 +186,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1000",
         "name": "Science",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -899,7 +899,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1006",
+        "id": "interest_animals_1003",
         "name": "Animals",
         "intensity": 2
       }
@@ -913,9 +913,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1005",
+        "id": "interest_movies_1007",
         "name": "Movies",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -927,7 +927,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "47e9bf81-9f74-4213-955e-542a3102092c:54",
+        "id": "6efb3f05-8bdb-454b-a52c-e1b91733f749:11",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1004,7 +1004,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "d43423bf-5ff8-4487-8780-56f230b27f31:1",
+        "id": "7913c2f6-e47b-4dbc-ab89-40465607c3bb:0",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -1688,7 +1688,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "0884db16-515a-40a4-a68f-5b26509869c2:0",
+        "id": "203f1bd3-e2da-482a-ab35-7ea94f03a2cf:0",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1835,10 +1835,10 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:0",
+        "id": "06fae802-92a3-43af-84ee-15dfa816eaac:8",
         "chunk_index": 0,
         "name": "Free Talk",
-        "url": "https://www.gamestolearnenglish.com/vocab-game/#game"
+        "url": "https://www.gamestolearnenglish.com/vocab-game/"
       }
     },
     {
@@ -2482,7 +2482,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:5",
+        "id": "5d2e589f-a883-449f-b449-49e897427b5c:5",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2496,7 +2496,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "214c1264-5f24-4542-9d20-d4d7dde87eb6:6",
+        "id": "5d2e589f-a883-449f-b449-49e897427b5c:6",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -7189,7 +7189,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-03T09:00:11.690097",
+    "generated_at": "2026-04-04T09:00:14.043204",
     "node_count": 230,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
