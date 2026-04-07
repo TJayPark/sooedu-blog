@@ -130,9 +130,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1009",
+        "id": "interest_fashion_1011",
         "name": "Fashion",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -160,7 +160,7 @@
       "properties": {
         "id": "interest_travel_1009",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 3
       }
     },
     {
@@ -835,7 +835,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "12",
+        "id": "45eeea4a-252b-4c8a-b947-5a067a2ce765:1",
+        "chunk_index": 0,
         "name": "kitchen"
       }
     },
@@ -927,7 +928,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "bb7b5a38-db5d-4dad-9583-27c33c91f80b:0",
+        "id": "767d77b0-9b94-4882-ae60-b260a7823402:11",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1004,7 +1005,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "537f88dc-fc70-4f33-b009-4a1f563b721c:1",
+        "id": "63663725-1dcb-44bf-ab95-0b0c8a46c875:0",
         "chunk_index": 0,
         "name": "Easy Link Starter 3"
       }
@@ -1043,7 +1044,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "f2ff5f86-7b25-4286-a481-1716de70d230:0",
+        "id": "9383b986-4bff-4e46-8dc2-32f3c3b19337:0",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -1147,7 +1148,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "13",
+        "id": "65e4ecaf-eef4-4368-9993-e8c1c6044754:12",
+        "chunk_index": 0,
         "name": "Freeze"
       }
     },
@@ -1160,7 +1162,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "10",
+        "id": "65e4ecaf-eef4-4368-9993-e8c1c6044754:11",
+        "chunk_index": 0,
         "name": "Ice"
       }
     },
@@ -1313,7 +1316,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "934fe815-c991-49a4-a94d-a5aa396656de:4",
+        "chunk_index": 0,
         "name": "Construction"
       }
     },
@@ -1494,7 +1498,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "dc0d8fcc-1597-44db-89b3-9b8ada779296:0",
+        "id": "d781005d-b9a0-4407-9a91-3a5fb2bf14bf:0",
         "chunk_index": 0,
         "name": "STUDENT'S BOOK",
         "url": "https://drive.google.com/file/d/1SkrEPQZAaXPUeZ1IIOKHhv_9TsfE75oY/view"
@@ -1687,7 +1691,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "5a75b468-5de1-44e3-a756-bae22ad7fa4f:1",
+        "id": "825f1688-6b74-4e19-8b20-e195cbf87acd:0",
         "chunk_index": 0,
         "name": "Reading Advantage 2"
       }
@@ -1834,9 +1838,10 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "4388e2c5-0073-48d3-9515-cf4a19e3e182:5",
+        "id": "06fae802-92a3-43af-84ee-15dfa816eaac:8",
         "chunk_index": 0,
-        "name": "Free Talk"
+        "name": "Free Talk",
+        "url": "https://www.gamestolearnenglish.com/vocab-game/"
       }
     },
     {
@@ -2129,7 +2134,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1003",
+        "id": "interest_daily_life_and_culture_1002",
         "name": "daily life and culture",
         "intensity": 2
       }
@@ -2480,7 +2485,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "f4c2ff0f-de97-4b7e-9a80-7818e6e9843a:6",
+        "id": "825f1688-6b74-4e19-8b20-e195cbf87acd:4",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -2494,7 +2499,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "f4c2ff0f-de97-4b7e-9a80-7818e6e9843a:7",
+        "id": "825f1688-6b74-4e19-8b20-e195cbf87acd:5",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -2611,7 +2616,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "10",
+        "id": "3438f973-19b1-44ab-ae23-f31263fec2a1:8",
+        "chunk_index": 0,
         "name": "Homebody"
       }
     },
@@ -2955,6 +2961,66 @@
       "size": 20,
       "properties": {
         "student_number": 46
+      }
+    },
+    {
+      "id": 53365,
+      "label": "Student 47",
+      "title": "Student: Student 47",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 47
+      }
+    },
+    {
+      "id": 53406,
+      "label": "Student 48",
+      "title": "Student: Student 48",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 48
+      }
+    },
+    {
+      "id": 53428,
+      "label": "Student 49",
+      "title": "Student: Student 49",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 49
+      }
+    },
+    {
+      "id": 54218,
+      "label": "Student 50",
+      "title": "Student: Student 50",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 50
+      }
+    },
+    {
+      "id": 54260,
+      "label": "Student 51",
+      "title": "Student: Student 51",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 51
       }
     }
   ],
@@ -3839,6 +3905,14 @@
     },
     {
       "from": 77,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 77,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3928,6 +4002,14 @@
     {
       "from": 91,
       "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 91,
+      "to": 44615,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -4823,6 +4905,14 @@
     },
     {
       "from": 643,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
       "to": 44528,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -4976,6 +5066,22 @@
     {
       "from": 973,
       "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 973,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 973,
+      "to": 44615,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -5488,6 +5594,14 @@
     {
       "from": 1779,
       "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1779,
+      "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6751,6 +6865,22 @@
     },
     {
       "from": 8323,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -7084,75 +7214,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44733,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-31T09:00:07.866127",
-    "node_count": 227,
+    "generated_at": "2026-04-07T09:00:10.075473",
+    "node_count": 232,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
