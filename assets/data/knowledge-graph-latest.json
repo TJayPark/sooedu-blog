@@ -13,6 +13,48 @@
       }
     },
     {
+      "id": 36300,
+      "label": "Mispronounced Word or NONE SO FAR",
+      "title": "Word: Mispronounced Word or NONE SO FAR",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "203f1bd3-e2da-482a-ab35-7ea94f03a2cf:4",
+        "chunk_index": 0,
+        "name": "Mispronounced Word or NONE SO FAR"
+      }
+    },
+    {
+      "id": 257,
+      "label": "Word 1",
+      "title": "Word: Word 1",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "f18a3ca2-0f1c-474f-9a53-619ea28f3c20:9",
+        "chunk_index": 0,
+        "name": "Word 1"
+      }
+    },
+    {
+      "id": 14,
+      "label": "Word 2",
+      "title": "Word: Word 2",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "f18a3ca2-0f1c-474f-9a53-619ea28f3c20:10",
+        "chunk_index": 0,
+        "name": "Word 2"
+      }
+    },
+    {
       "id": 44529,
       "label": "Games",
       "title": "Interest: Games",
@@ -94,6 +136,20 @@
       }
     },
     {
+      "id": 44530,
+      "label": "Animals",
+      "title": "Interest: Animals",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_animals_1008",
+        "name": "Animals",
+        "intensity": 2
+      }
+    },
+    {
       "id": 44513,
       "label": "Reading",
       "title": "Interest: Reading",
@@ -130,9 +186,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1011",
+        "id": "interest_fashion_1008",
         "name": "Fashion",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -160,7 +216,7 @@
       "properties": {
         "id": "interest_travel_1009",
         "name": "Travel",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -216,6 +272,76 @@
       "properties": {
         "id": "word_Topsoil",
         "name": "Topsoil"
+      }
+    },
+    {
+      "id": 54383,
+      "label": "brutally",
+      "title": "Word: brutally",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "9b075e9f-562c-455d-8286-054319360ca2:3",
+        "chunk_index": 0,
+        "name": "brutally"
+      }
+    },
+    {
+      "id": 47175,
+      "label": "frustrating",
+      "title": "Word: frustrating",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "9b075e9f-562c-455d-8286-054319360ca2:2",
+        "chunk_index": 0,
+        "name": "frustrating"
+      }
+    },
+    {
+      "id": 24579,
+      "label": "argue",
+      "title": "Word: argue",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "ba6478ae-61d7-4273-96bc-cc4bbd3bcd30:4",
+        "chunk_index": 0,
+        "name": "argue"
+      }
+    },
+    {
+      "id": 6968,
+      "label": "confused",
+      "title": "Word: confused",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "9b075e9f-562c-455d-8286-054319360ca2:4",
+        "chunk_index": 0,
+        "name": "confused"
+      }
+    },
+    {
+      "id": 1159,
+      "label": "changed",
+      "title": "Word: changed",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "5ac8a61b-4d6b-4ca8-8eed-7d2626aff76b:1",
+        "chunk_index": 0,
+        "name": "changed"
       }
     },
     {
@@ -892,20 +1018,6 @@
       }
     },
     {
-      "id": 44530,
-      "label": "Animals",
-      "title": "Interest: Animals",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_animals_1008",
-        "name": "Animals",
-        "intensity": 3
-      }
-    },
-    {
       "id": 44514,
       "label": "Movies",
       "title": "Interest: Movies",
@@ -928,7 +1040,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "767d77b0-9b94-4882-ae60-b260a7823402:11",
+        "id": "cf089ad7-5fae-4fca-a2d3-998c6f0d0b02:12",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1148,7 +1260,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "65e4ecaf-eef4-4368-9993-e8c1c6044754:12",
+        "id": "bb09c111-c232-4d8a-aac4-0de8306bacb9:13",
         "chunk_index": 0,
         "name": "Freeze"
       }
@@ -1162,7 +1274,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "65e4ecaf-eef4-4368-9993-e8c1c6044754:11",
+        "id": "bb09c111-c232-4d8a-aac4-0de8306bacb9:12",
         "chunk_index": 0,
         "name": "Ice"
       }
@@ -2134,7 +2246,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1002",
+        "id": "interest_daily_life_and_culture_1001",
         "name": "daily life and culture",
         "intensity": 2
       }
@@ -2474,34 +2586,6 @@
       "properties": {
         "id": "9",
         "name": "cafeteria"
-      }
-    },
-    {
-      "id": 257,
-      "label": "Word 1",
-      "title": "Word: Word 1",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "825f1688-6b74-4e19-8b20-e195cbf87acd:4",
-        "chunk_index": 0,
-        "name": "Word 1"
-      }
-    },
-    {
-      "id": 14,
-      "label": "Word 2",
-      "title": "Word: Word 2",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "825f1688-6b74-4e19-8b20-e195cbf87acd:5",
-        "chunk_index": 0,
-        "name": "Word 2"
       }
     },
     {
@@ -3027,6 +3111,30 @@
   "edges": [
     {
       "from": 0,
+      "to": 36300,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 257,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
+      "to": 14,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 0,
       "to": 44529,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -3068,6 +3176,14 @@
     {
       "from": 9,
       "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 44530,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -3148,6 +3264,46 @@
     {
       "from": 9,
       "to": 37340,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 54383,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 47175,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 24579,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 6968,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 1159,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -5273,6 +5429,14 @@
     },
     {
       "from": 1670,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 1670,
       "to": 44588,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -7134,91 +7298,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44733,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13050,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13921,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 9813,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-07T09:00:10.075473",
-    "node_count": 232,
+    "generated_at": "2026-04-08T09:00:10.545910",
+    "node_count": 238,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
