@@ -21,7 +21,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "117f198e-a94d-4bbd-9f80-09ea9848ecc5:5",
+        "id": "1e05ba87-6221-4b28-8ec7-13dc0f0d466b:5",
         "chunk_index": 0,
         "name": "Mispronounced Word or NONE SO FAR"
       }
@@ -35,7 +35,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "a2cb64b3-d28a-4e47-9cda-4de491cd0f12:15",
+        "id": "1e05ba87-6221-4b28-8ec7-13dc0f0d466b:6",
         "chunk_index": 0,
         "name": "Word 1"
       }
@@ -49,7 +49,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "a2cb64b3-d28a-4e47-9cda-4de491cd0f12:16",
+        "id": "1e05ba87-6221-4b28-8ec7-13dc0f0d466b:7",
         "chunk_index": 0,
         "name": "Word 2"
       }
@@ -63,9 +63,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1006",
+        "id": "interest_games_1004",
         "name": "Games",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -158,9 +158,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1005",
+        "id": "interest_reading_1003",
         "name": "Reading",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -174,7 +174,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -186,7 +186,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1004",
+        "id": "interest_fashion_1003",
         "name": "Fashion",
         "intensity": 2
       }
@@ -200,9 +200,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1010",
+        "id": "interest_food_1006",
         "name": "Food",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -214,9 +214,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1009",
+        "id": "interest_travel_1004",
         "name": "Travel",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -228,9 +228,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1004",
+        "id": "interest_technology_1002",
         "name": "Technology",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -242,9 +242,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -256,9 +256,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1001",
         "name": "Art",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -1041,7 +1041,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "7c1598cb-e365-49e3-9a24-7a1d9fb9dbea:0",
+        "id": "aae9c83a-a0dd-44b8-8769-d69967bc5760:18",
         "chunk_index": 0,
         "name": "Book Name"
       }
@@ -1833,10 +1833,10 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "06fae802-92a3-43af-84ee-15dfa816eaac:8",
+        "id": "c62d964e-8ca1-4491-b9ca-a2759928a34c:0",
         "chunk_index": 0,
         "name": "Free Talk",
-        "url": "https://www.gamestolearnenglish.com/vocab-game/"
+        "url": "https://www.gamestolearnenglish.com/vocab-game/#game"
       }
     },
     {
@@ -2053,7 +2053,8 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "15",
+        "id": "8dc7176d-f1e3-4bde-87f9-d3e9eeeefd74:2",
+        "chunk_index": 0,
         "name": "skiing"
       }
     },
@@ -2129,7 +2130,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1002",
+        "id": "interest_daily_life_and_culture_1001",
         "name": "daily life and culture",
         "intensity": 2
       }
@@ -7184,7 +7185,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-10T09:00:10.878824",
+    "generated_at": "2026-04-11T09:00:14.571963",
     "node_count": 229,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
