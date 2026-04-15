@@ -63,9 +63,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1005",
+        "id": "interest_games_1004",
         "name": "Games",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -79,7 +79,7 @@
       "properties": {
         "id": "interest_music_1001",
         "name": "Music",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -144,9 +144,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1007",
+        "id": "interest_animals_1005",
         "name": "Animals",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -158,9 +158,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1004",
+        "id": "interest_reading_1003",
         "name": "Reading",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -174,7 +174,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -186,9 +186,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1010",
+        "id": "interest_fashion_1011",
         "name": "Fashion",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -200,9 +200,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1009",
+        "id": "interest_food_1007",
         "name": "Food",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -214,9 +214,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1008",
+        "id": "interest_travel_1006",
         "name": "Travel",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -242,9 +242,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -258,7 +258,7 @@
       "properties": {
         "id": "interest_art_1002",
         "name": "Art",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -272,6 +272,75 @@
       "properties": {
         "id": "word_Topsoil",
         "name": "Topsoil"
+      }
+    },
+    {
+      "id": 56474,
+      "label": "cue ( signal)",
+      "title": "Word: cue ( signal)",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_0_cue_(_signal)",
+        "name": "cue ( signal)"
+      }
+    },
+    {
+      "id": 12463,
+      "label": "conversations",
+      "title": "Word: conversations",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "397cc4f8-65ed-4005-863d-203eaf4edc10:3",
+        "chunk_index": 0,
+        "name": "conversations"
+      }
+    },
+    {
+      "id": 4150,
+      "label": "tuberculosis",
+      "title": "Word: tuberculosis",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "5ac8a61b-4d6b-4ca8-8eed-7d2626aff76b:3",
+        "chunk_index": 0,
+        "name": "tuberculosis"
+      }
+    },
+    {
+      "id": 2879,
+      "label": "accuracy",
+      "title": "Word: accuracy",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "397cc4f8-65ed-4005-863d-203eaf4edc10:2",
+        "chunk_index": 0,
+        "name": "accuracy"
+      }
+    },
+    {
+      "id": 54739,
+      "label": "applicants",
+      "title": "Word: applicants",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "397cc4f8-65ed-4005-863d-203eaf4edc10:1",
+        "chunk_index": 0,
+        "name": "applicants"
       }
     },
     {
@@ -1027,9 +1096,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1006",
+        "id": "interest_movies_1007",
         "name": "Movies",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -1157,7 +1226,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "9383b986-4bff-4e46-8dc2-32f3c3b19337:0",
+        "id": "book_engoo",
         "chunk_index": 0,
         "name": "engoo"
       }
@@ -3160,6 +3229,46 @@
     {
       "from": 9,
       "to": 37340,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 56474,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 12463,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 4150,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 2879,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 54739,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -7154,51 +7263,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10699,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-14T09:00:11.916121",
-    "node_count": 230,
+    "generated_at": "2026-04-15T09:00:20.269016",
+    "node_count": 235,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
