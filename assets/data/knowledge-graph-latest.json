@@ -1034,18 +1034,6 @@
       }
     },
     {
-      "id": 10932,
-      "label": "Student 31",
-      "title": "Student: Student 31",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 31
-      }
-    },
-    {
       "id": 11269,
       "label": "Conversation Question",
       "title": "Book: Conversation Question",
@@ -1295,7 +1283,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "4",
+        "id": "word_0_bite",
         "name": "bite"
       }
     },
@@ -1879,6 +1867,18 @@
     },
     {
       "id": 21019,
+      "label": "Student 31",
+      "title": "Student: Student 31",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 31
+      }
+    },
+    {
+      "id": 22749,
       "label": "Student 32",
       "title": "Student: Student 32",
       "group": "Student",
@@ -1887,18 +1887,6 @@
       "size": 20,
       "properties": {
         "student_number": 32
-      }
-    },
-    {
-      "id": 22749,
-      "label": "Student 33",
-      "title": "Student: Student 33",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 33
       }
     },
     {
@@ -1970,14 +1958,14 @@
     },
     {
       "id": 29793,
-      "label": "Student 34",
-      "title": "Student: Student 34",
+      "label": "Student 33",
+      "title": "Student: Student 33",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 34
+        "student_number": 33
       }
     },
     {
@@ -2101,14 +2089,14 @@
     },
     {
       "id": 38224,
-      "label": "Student 35",
-      "title": "Student: Student 35",
+      "label": "Student 34",
+      "title": "Student: Student 34",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 35
+        "student_number": 34
       }
     },
     {
@@ -2193,14 +2181,14 @@
     },
     {
       "id": 39912,
-      "label": "Student 36",
-      "title": "Student: Student 36",
+      "label": "Student 35",
+      "title": "Student: Student 35",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 36
+        "student_number": 35
       }
     },
     {
@@ -2440,14 +2428,14 @@
     },
     {
       "id": 42758,
-      "label": "Student 37",
-      "title": "Student: Student 37",
+      "label": "Student 36",
+      "title": "Student: Student 36",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 37
+        "student_number": 36
       }
     },
     {
@@ -2564,7 +2552,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -2578,7 +2566,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1004",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2592,7 +2580,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1008",
         "name": "Food",
         "intensity": 2
       }
@@ -2620,7 +2608,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1003",
+        "id": "interest_games_1004",
         "name": "Games",
         "intensity": 2
       }
@@ -2634,7 +2622,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1005",
+        "id": "interest_animals_1006",
         "name": "Animals",
         "intensity": 2
       }
@@ -2648,7 +2636,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1007",
         "name": "Travel",
         "intensity": 2
       }
@@ -2662,7 +2650,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1001",
+        "id": "interest_art_1002",
         "name": "Art",
         "intensity": 2
       }
@@ -2690,7 +2678,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1008",
+        "id": "interest_fashion_1004",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2704,7 +2692,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1002",
+        "id": "interest_science_1000",
         "name": "Science",
         "intensity": 2
       }
@@ -2725,14 +2713,14 @@
     },
     {
       "id": 46336,
-      "label": "Student 38",
-      "title": "Student: Student 38",
+      "label": "Student 37",
+      "title": "Student: Student 37",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 38
+        "student_number": 37
       }
     },
     {
@@ -2751,14 +2739,14 @@
     },
     {
       "id": 47789,
-      "label": "Student 39",
-      "title": "Student: Student 39",
+      "label": "Student 38",
+      "title": "Student: Student 38",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 39
+        "student_number": 38
       }
     },
     {
@@ -2777,6 +2765,18 @@
     },
     {
       "id": 48402,
+      "label": "Student 39",
+      "title": "Student: Student 39",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 39
+      }
+    },
+    {
+      "id": 48675,
       "label": "Student 40",
       "title": "Student: Student 40",
       "group": "Student",
@@ -2788,7 +2788,7 @@
       }
     },
     {
-      "id": 48675,
+      "id": 48687,
       "label": "Student 41",
       "title": "Student: Student 41",
       "group": "Student",
@@ -2797,18 +2797,6 @@
       "size": 20,
       "properties": {
         "student_number": 41
-      }
-    },
-    {
-      "id": 48687,
-      "label": "Student 42",
-      "title": "Student: Student 42",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 42
       }
     },
     {
@@ -2897,14 +2885,14 @@
     },
     {
       "id": 51331,
-      "label": "Student 43",
-      "title": "Student: Student 43",
+      "label": "Student 42",
+      "title": "Student: Student 42",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 43
+        "student_number": 42
       }
     },
     {
@@ -2937,6 +2925,18 @@
     },
     {
       "id": 53365,
+      "label": "Student 43",
+      "title": "Student: Student 43",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 43
+      }
+    },
+    {
+      "id": 53406,
       "label": "Student 44",
       "title": "Student: Student 44",
       "group": "Student",
@@ -2948,7 +2948,7 @@
       }
     },
     {
-      "id": 53406,
+      "id": 53428,
       "label": "Student 45",
       "title": "Student: Student 45",
       "group": "Student",
@@ -2960,7 +2960,7 @@
       }
     },
     {
-      "id": 53428,
+      "id": 54218,
       "label": "Student 46",
       "title": "Student: Student 46",
       "group": "Student",
@@ -2972,7 +2972,7 @@
       }
     },
     {
-      "id": 54218,
+      "id": 54260,
       "label": "Student 47",
       "title": "Student: Student 47",
       "group": "Student",
@@ -2981,18 +2981,6 @@
       "size": 20,
       "properties": {
         "student_number": 47
-      }
-    },
-    {
-      "id": 54260,
-      "label": "Student 48",
-      "title": "Student: Student 48",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 48
       }
     },
     {
@@ -3025,14 +3013,14 @@
     },
     {
       "id": 56353,
-      "label": "Student 49",
-      "title": "Student: Student 49",
+      "label": "Student 48",
+      "title": "Student: Student 48",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 49
+        "student_number": 48
       }
     },
     {
@@ -7242,8 +7230,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-20T08:30:04.606301",
-    "node_count": 233,
+    "generated_at": "2026-04-21T08:30:04.508520",
+    "node_count": 232,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
