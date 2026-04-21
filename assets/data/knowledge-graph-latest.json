@@ -820,7 +820,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "14",
+        "id": "word_5_gym",
         "name": "gym"
       }
     },
@@ -991,7 +991,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "3",
+        "id": "book_easy_link_1",
         "name": "Easy Link 1"
       }
     },
@@ -2650,7 +2650,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1000",
         "name": "Art",
         "intensity": 2
       }
@@ -2678,7 +2678,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1004",
+        "id": "interest_fashion_1003",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2692,7 +2692,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1000",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -2918,7 +2918,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1001",
+        "id": "interest_daily_life_and_culture_1002",
         "name": "daily life and culture",
         "intensity": 2
       }
@@ -7230,7 +7230,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-21T08:30:04.508520",
+    "generated_at": "2026-04-22T08:30:04.572911",
     "node_count": 232,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
