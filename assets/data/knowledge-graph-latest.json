@@ -879,6 +879,20 @@
       }
     },
     {
+      "id": 9126,
+      "label": "tone",
+      "title": "Word: tone",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_2_tone",
+        "chunk_index": 0,
+        "name": "tone"
+      }
+    },
+    {
       "id": 9323,
       "label": "Can you Believe it 1",
       "title": "Book: Can you Believe it 1",
@@ -1761,6 +1775,19 @@
       }
     },
     {
+      "id": 21426,
+      "label": "outcome",
+      "title": "Word: outcome",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_0_outcome",
+        "name": "outcome"
+      }
+    },
+    {
       "id": 22749,
       "label": "Student 30",
       "title": "Student: Student 30",
@@ -2296,6 +2323,32 @@
       }
     },
     {
+      "id": 41680,
+      "label": "interaction",
+      "title": "Word: interaction",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_1_interaction",
+        "name": "interaction"
+      }
+    },
+    {
+      "id": 41682,
+      "label": "cue",
+      "title": "Word: cue",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_0_cue",
+        "name": "cue"
+      }
+    },
+    {
       "id": 42758,
       "label": "Student 34",
       "title": "Student: Student 34",
@@ -2421,7 +2474,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1001",
         "name": "Reading",
         "intensity": 2
       }
@@ -2449,9 +2502,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1004",
         "name": "Food",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2477,9 +2530,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1003",
+        "id": "interest_games_1002",
         "name": "Games",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2505,9 +2558,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1003",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2904,6 +2957,19 @@
         "id": "word_0_cue_(_signal)",
         "name": "cue ( signal)"
       }
+    },
+    {
+      "id": 57536,
+      "label": "text-based",
+      "title": "Word: text-based",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_1_text-based",
+        "name": "text-based"
+      }
     }
   ],
   "edges": [
@@ -3046,6 +3112,14 @@
     },
     {
       "from": 9,
+      "to": 9126,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
       "to": 12443,
       "label": "",
       "title": "USED_IN_MADLIBS",
@@ -3114,6 +3188,14 @@
     {
       "from": 9,
       "to": 20578,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 21426,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -3434,6 +3516,22 @@
     },
     {
       "from": 9,
+      "to": 41680,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 41682,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
       "to": 43028,
       "label": "",
       "title": "USED_IN_MADLIBS",
@@ -3708,6 +3806,14 @@
     {
       "from": 9,
       "to": 56474,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 57536,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -7056,51 +7162,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 21019,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 21019,
-      "to": 44615,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 21019,
-      "to": 44734,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 22749,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-25T08:30:08.880422",
-    "node_count": 222,
+    "generated_at": "2026-04-26T08:30:07.586847",
+    "node_count": 227,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
