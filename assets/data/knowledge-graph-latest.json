@@ -2474,7 +2474,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1000",
         "name": "Reading",
         "intensity": 2
       }
@@ -2502,7 +2502,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1008",
+        "id": "interest_food_1002",
         "name": "Food",
         "intensity": 2
       }
@@ -2516,7 +2516,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1000",
+        "id": "interest_music_1001",
         "name": "Music",
         "intensity": 2
       }
@@ -2544,7 +2544,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1006",
+        "id": "interest_animals_1005",
         "name": "Animals",
         "intensity": 2
       }
@@ -2558,7 +2558,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1007",
+        "id": "interest_travel_1001",
         "name": "Travel",
         "intensity": 2
       }
@@ -2572,7 +2572,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1001",
+        "id": "interest_art_1000",
         "name": "Art",
         "intensity": 2
       }
@@ -2600,7 +2600,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1008",
+        "id": "interest_fashion_1003",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2614,7 +2614,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -2840,7 +2840,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1001",
+        "id": "interest_daily_life_and_culture_1002",
         "name": "daily life and culture",
         "intensity": 2
       }
@@ -2969,6 +2969,18 @@
       "properties": {
         "id": "word_1_text-based",
         "name": "text-based"
+      }
+    },
+    {
+      "id": 58058,
+      "label": "Student 47",
+      "title": "Student: Student 47",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 47
       }
     }
   ],
@@ -7165,8 +7177,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-27T08:30:02.786573",
-    "node_count": 227,
+    "generated_at": "2026-04-28T08:30:02.642937",
+    "node_count": 228,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
