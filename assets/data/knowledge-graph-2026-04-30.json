@@ -542,7 +542,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "5",
+        "id": "word_1_country",
         "name": "country"
       }
     },
@@ -636,18 +636,6 @@
       "properties": {
         "id": "3",
         "name": "Can You Believe it 1"
-      }
-    },
-    {
-      "id": 4028,
-      "label": "Student 26",
-      "title": "Student: Student 26",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 26
       }
     },
     {
@@ -793,7 +781,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "2",
+        "id": "book_everybody_up_6",
         "name": "Everybody Up 6"
       }
     },
@@ -880,14 +868,28 @@
     },
     {
       "id": 8323,
-      "label": "Student 27",
-      "title": "Student: Student 27",
+      "label": "Student 26",
+      "title": "Student: Student 26",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 27
+        "student_number": 26
+      }
+    },
+    {
+      "id": 9126,
+      "label": "tone",
+      "title": "Word: tone",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_2_tone",
+        "chunk_index": 0,
+        "name": "tone"
       }
     },
     {
@@ -901,19 +903,6 @@
       "properties": {
         "id": "2",
         "name": "Can you Believe it 1"
-      }
-    },
-    {
-      "id": 9813,
-      "label": "Teen Talk 1",
-      "title": "Book: Teen Talk 1",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "Teen Talk 1"
       }
     },
     {
@@ -943,27 +932,15 @@
       }
     },
     {
-      "id": 10454,
-      "label": "Student 28",
-      "title": "Student: Student 28",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 28
-      }
-    },
-    {
       "id": 10699,
-      "label": "Student 29",
-      "title": "Student: Student 29",
+      "label": "Student 27",
+      "title": "Student: Student 27",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 29
+        "student_number": 27
       }
     },
     {
@@ -1191,7 +1168,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8",
+        "id": "word_5_shoot",
         "name": "shoot"
       }
     },
@@ -1206,19 +1183,6 @@
       "properties": {
         "id": "2",
         "name": "Grammar Tale: When Comma Came to town"
-      }
-    },
-    {
-      "id": 12666,
-      "label": "Korean News",
-      "title": "Book: Korean News",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "Korean News"
       }
     },
     {
@@ -1284,150 +1248,6 @@
       "properties": {
         "id": "2",
         "name": "Wonder Skills 4"
-      }
-    },
-    {
-      "id": 13025,
-      "label": "Irrigation",
-      "title": "Word: Irrigation",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "4",
-        "name": "Irrigation"
-      }
-    },
-    {
-      "id": 13026,
-      "label": "Warmlight",
-      "title": "Word: Warmlight",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "5",
-        "name": "Warmlight"
-      }
-    },
-    {
-      "id": 13027,
-      "label": "Paperback",
-      "title": "Word: Paperback",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "6",
-        "name": "Paperback"
-      }
-    },
-    {
-      "id": 13028,
-      "label": "Hardbound",
-      "title": "Word: Hardbound",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "7",
-        "name": "Hardbound"
-      }
-    },
-    {
-      "id": 13029,
-      "label": "Dystopian",
-      "title": "Word: Dystopian",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "12",
-        "name": "Dystopian"
-      }
-    },
-    {
-      "id": 13030,
-      "label": "Social Battery",
-      "title": "Word: Social Battery",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "9",
-        "name": "Social Battery"
-      }
-    },
-    {
-      "id": 13031,
-      "label": "Homebody",
-      "title": "Word: Homebody",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "3438f973-19b1-44ab-ae23-f31263fec2a1:8",
-        "chunk_index": 0,
-        "name": "Homebody"
-      }
-    },
-    {
-      "id": 13032,
-      "label": "Secondhand",
-      "title": "Word: Secondhand",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "20",
-        "name": "Secondhand"
-      }
-    },
-    {
-      "id": 13033,
-      "label": "Crease",
-      "title": "Word: Crease",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "12",
-        "name": "Crease"
-      }
-    },
-    {
-      "id": 13034,
-      "label": "Martial Law",
-      "title": "Word: Martial Law",
-      "group": "Word",
-      "color": "#9C27B0",
-      "shape": "diamond",
-      "size": 12,
-      "properties": {
-        "id": "13",
-        "name": "Martial Law"
-      }
-    },
-    {
-      "id": 13050,
-      "label": "Teen Talk",
-      "title": "Book: Teen Talk",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "Teen Talk"
       }
     },
     {
@@ -1524,19 +1344,6 @@
       }
     },
     {
-      "id": 13579,
-      "label": "The Korean Herald News",
-      "title": "Book: The Korean Herald News",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "The Korean Herald News"
-      }
-    },
-    {
       "id": 13726,
       "label": "Grammar Tales: A verb for...",
       "title": "Book: Grammar Tales: A verb for...",
@@ -1616,19 +1423,6 @@
       }
     },
     {
-      "id": 13921,
-      "label": "Ten Talk 1",
-      "title": "Book: Ten Talk 1",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "Ten Talk 1"
-      }
-    },
-    {
       "id": 14141,
       "label": "Guava",
       "title": "Word: Guava",
@@ -1652,19 +1446,6 @@
       "properties": {
         "id": "2",
         "name": "Reading First 3"
-      }
-    },
-    {
-      "id": 14358,
-      "label": "The Korea Herald",
-      "title": "Book: The Korea Herald",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "The Korea Herald"
       }
     },
     {
@@ -1704,19 +1485,6 @@
       "properties": {
         "id": "11",
         "name": "Moist"
-      }
-    },
-    {
-      "id": 14532,
-      "label": "The Korea Herald (News)",
-      "title": "Book: The Korea Herald (News)",
-      "group": "Book",
-      "color": "#F44336",
-      "shape": "star",
-      "size": 12,
-      "properties": {
-        "id": "2",
-        "name": "The Korea Herald (News)"
       }
     },
     {
@@ -1814,26 +1582,39 @@
     },
     {
       "id": 21019,
-      "label": "Student 30",
-      "title": "Student: Student 30",
+      "label": "Student 28",
+      "title": "Student: Student 28",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 30
+        "student_number": 28
+      }
+    },
+    {
+      "id": 21426,
+      "label": "outcome",
+      "title": "Word: outcome",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_0_outcome",
+        "name": "outcome"
       }
     },
     {
       "id": 22749,
-      "label": "Student 31",
-      "title": "Student: Student 31",
+      "label": "Student 29",
+      "title": "Student: Student 29",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 31
+        "student_number": 29
       }
     },
     {
@@ -1905,14 +1686,14 @@
     },
     {
       "id": 29793,
-      "label": "Student 32",
-      "title": "Student: Student 32",
+      "label": "Student 30",
+      "title": "Student: Student 30",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 32
+        "student_number": 30
       }
     },
     {
@@ -2022,14 +1803,14 @@
     },
     {
       "id": 38224,
-      "label": "Student 33",
-      "title": "Student: Student 33",
+      "label": "Student 31",
+      "title": "Student: Student 31",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 33
+        "student_number": 31
       }
     },
     {
@@ -2114,14 +1895,14 @@
     },
     {
       "id": 39912,
-      "label": "Student 34",
-      "title": "Student: Student 34",
+      "label": "Student 32",
+      "title": "Student: Student 32",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 34
+        "student_number": 32
       }
     },
     {
@@ -2360,15 +2141,41 @@
       }
     },
     {
+      "id": 41680,
+      "label": "interaction",
+      "title": "Word: interaction",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_1_interaction",
+        "name": "interaction"
+      }
+    },
+    {
+      "id": 41682,
+      "label": "cue",
+      "title": "Word: cue",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_0_cue",
+        "name": "cue"
+      }
+    },
+    {
       "id": 42758,
-      "label": "Student 35",
-      "title": "Student: Student 35",
+      "label": "Student 33",
+      "title": "Student: Student 33",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 35
+        "student_number": 33
       }
     },
     {
@@ -2485,7 +2292,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1005",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -2499,7 +2306,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1003",
         "name": "Movies",
         "intensity": 2
       }
@@ -2513,7 +2320,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1010",
+        "id": "interest_food_1007",
         "name": "Food",
         "intensity": 2
       }
@@ -2541,7 +2348,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1006",
+        "id": "interest_games_1004",
         "name": "Games",
         "intensity": 2
       }
@@ -2555,7 +2362,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1008",
+        "id": "interest_animals_1005",
         "name": "Animals",
         "intensity": 2
       }
@@ -2569,7 +2376,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1009",
+        "id": "interest_travel_1006",
         "name": "Travel",
         "intensity": 2
       }
@@ -2583,7 +2390,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 2
       }
@@ -2625,7 +2432,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -2639,21 +2446,21 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1004",
+        "id": "interest_technology_1002",
         "name": "Technology",
         "intensity": 2
       }
     },
     {
       "id": 46336,
-      "label": "Student 36",
-      "title": "Student: Student 36",
+      "label": "Student 34",
+      "title": "Student: Student 34",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 36
+        "student_number": 34
       }
     },
     {
@@ -2672,14 +2479,14 @@
     },
     {
       "id": 47789,
-      "label": "Student 37",
-      "title": "Student: Student 37",
+      "label": "Student 35",
+      "title": "Student: Student 35",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 37
+        "student_number": 35
       }
     },
     {
@@ -2698,6 +2505,30 @@
     },
     {
       "id": 48402,
+      "label": "Student 36",
+      "title": "Student: Student 36",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 36
+      }
+    },
+    {
+      "id": 48675,
+      "label": "Student 37",
+      "title": "Student: Student 37",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 37
+      }
+    },
+    {
+      "id": 48687,
       "label": "Student 38",
       "title": "Student: Student 38",
       "group": "Student",
@@ -2706,30 +2537,6 @@
       "size": 20,
       "properties": {
         "student_number": 38
-      }
-    },
-    {
-      "id": 48675,
-      "label": "Student 39",
-      "title": "Student: Student 39",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 39
-      }
-    },
-    {
-      "id": 48687,
-      "label": "Student 40",
-      "title": "Student: Student 40",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 40
       }
     },
     {
@@ -2789,43 +2596,15 @@
       }
     },
     {
-      "id": 50243,
-      "label": "Student Life",
-      "title": "Interest: Student Life",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_student_life_1002",
-        "name": "Student Life",
-        "intensity": 2
-      }
-    },
-    {
-      "id": 50286,
-      "label": "Student Life and Trends",
-      "title": "Interest: Student Life and Trends",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_student_life_and_trends_1002",
-        "name": "Student Life and Trends",
-        "intensity": 2
-      }
-    },
-    {
       "id": 51331,
-      "label": "Student 41",
-      "title": "Student: Student 41",
+      "label": "Student 39",
+      "title": "Student: Student 39",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 41
+        "student_number": 39
       }
     },
     {
@@ -2851,13 +2630,37 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life_and_culture_1002",
+        "id": "interest_daily_life_and_culture_1001",
         "name": "daily life and culture",
         "intensity": 2
       }
     },
     {
       "id": 53365,
+      "label": "Student 40",
+      "title": "Student: Student 40",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 40
+      }
+    },
+    {
+      "id": 53406,
+      "label": "Student 41",
+      "title": "Student: Student 41",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 41
+      }
+    },
+    {
+      "id": 53428,
       "label": "Student 42",
       "title": "Student: Student 42",
       "group": "Student",
@@ -2869,7 +2672,7 @@
       }
     },
     {
-      "id": 53406,
+      "id": 54218,
       "label": "Student 43",
       "title": "Student: Student 43",
       "group": "Student",
@@ -2881,7 +2684,7 @@
       }
     },
     {
-      "id": 53428,
+      "id": 54260,
       "label": "Student 44",
       "title": "Student: Student 44",
       "group": "Student",
@@ -2890,30 +2693,6 @@
       "size": 20,
       "properties": {
         "student_number": 44
-      }
-    },
-    {
-      "id": 54218,
-      "label": "Student 45",
-      "title": "Student: Student 45",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 45
-      }
-    },
-    {
-      "id": 54260,
-      "label": "Student 46",
-      "title": "Student: Student 46",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 46
       }
     },
     {
@@ -2946,14 +2725,14 @@
     },
     {
       "id": 56353,
-      "label": "Student 47",
-      "title": "Student: Student 47",
+      "label": "Student 45",
+      "title": "Student: Student 45",
       "group": "Student",
       "color": "#4CAF50",
       "shape": "dot",
       "size": 20,
       "properties": {
-        "student_number": 47
+        "student_number": 45
       }
     },
     {
@@ -2967,6 +2746,43 @@
       "properties": {
         "id": "word_0_cue_(_signal)",
         "name": "cue ( signal)"
+      }
+    },
+    {
+      "id": 57536,
+      "label": "text-based",
+      "title": "Word: text-based",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_1_text-based",
+        "name": "text-based"
+      }
+    },
+    {
+      "id": 58058,
+      "label": "Student 46",
+      "title": "Student: Student 46",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 46
+      }
+    },
+    {
+      "id": 58496,
+      "label": "Student 47",
+      "title": "Student: Student 47",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 47
       }
     }
   ],
@@ -3110,6 +2926,14 @@
     },
     {
       "from": 9,
+      "to": 9126,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
       "to": 12443,
       "label": "",
       "title": "USED_IN_MADLIBS",
@@ -3178,6 +3002,14 @@
     {
       "from": 9,
       "to": 20578,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 21426,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -3498,6 +3330,22 @@
     },
     {
       "from": 9,
+      "to": 41680,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 41682,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
       "to": 43028,
       "label": "",
       "title": "USED_IN_MADLIBS",
@@ -3772,6 +3620,14 @@
     {
       "from": 9,
       "to": 56474,
+      "label": "",
+      "title": "USED_IN_MADLIBS",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 9,
+      "to": 57536,
       "label": "",
       "title": "USED_IN_MADLIBS",
       "arrows": "to",
@@ -4812,6 +4668,14 @@
     {
       "from": 643,
       "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 643,
+      "to": 44549,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -6586,78 +6450,6 @@
       "properties": {}
     },
     {
-      "from": 4028,
-      "to": 12666,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 12666,
-      "label": "교재",
-      "title": "USED_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 13579,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 13579,
-      "label": "교재",
-      "title": "USED_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 14358,
-      "label": "교재",
-      "title": "USED_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 14532,
-      "label": "교재",
-      "title": "USED_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 4028,
-      "to": 44598,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
       "from": 8323,
       "to": 14,
       "label": "",
@@ -6779,6 +6571,14 @@
     },
     {
       "from": 8323,
+      "to": 44514,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 8323,
       "to": 44515,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6842,183 +6642,7 @@
       "properties": {}
     },
     {
-      "from": 10454,
-      "to": 9813,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13025,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13026,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13027,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13028,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13029,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13030,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13031,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13032,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13033,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13034,
-      "label": "단어",
-      "title": "LEARNED_WORD",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13050,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 13921,
-      "label": "",
-      "title": "HAS_BOOK",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44513,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44514,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44528,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44549,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44588,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 44615,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
+      "from": 8323,
       "to": 44733,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -7026,16 +6650,8 @@
       "properties": {}
     },
     {
-      "from": 10454,
-      "to": 50243,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 10454,
-      "to": 50286,
+      "from": 8323,
+      "to": 44734,
       "label": "관심",
       "title": "INTERESTED_IN",
       "arrows": "to",
@@ -7160,11 +6776,211 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44615,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44733,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
+      "to": 44734,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
+      "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
+      "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44513,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44528,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44529,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44598,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 29793,
+      "to": 44734,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 38224,
+      "to": 12176,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 38224,
+      "to": 44515,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 38224,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 38224,
+      "to": 44549,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-04-23T08:30:04.286677",
-    "node_count": 227,
+    "generated_at": "2026-04-30T08:30:05.550460",
+    "node_count": 213,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
