@@ -593,7 +593,7 @@
       "shape": "star",
       "size": 12,
       "properties": {
-        "id": "c62d964e-8ca1-4491-b9ca-a2759928a34c:0",
+        "id": "book_free_talk",
         "chunk_index": 0,
         "name": "Free Talk",
         "url": "https://www.gamestolearnenglish.com/vocab-game/#game"
@@ -2292,7 +2292,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1001",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -2306,7 +2306,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1005",
+        "id": "interest_movies_1004",
         "name": "Movies",
         "intensity": 2
       }
@@ -2320,7 +2320,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1006",
         "name": "Food",
         "intensity": 2
       }
@@ -2334,7 +2334,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1001",
+        "id": "interest_music_1000",
         "name": "Music",
         "intensity": 2
       }
@@ -2350,7 +2350,7 @@
       "properties": {
         "id": "interest_games_1002",
         "name": "Games",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2378,7 +2378,7 @@
       "properties": {
         "id": "interest_travel_1003",
         "name": "Travel",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -2390,7 +2390,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1000",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 2
       }
@@ -2406,7 +2406,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 3
+        "intensity": 1
       }
     },
     {
@@ -2432,7 +2432,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1000",
         "name": "Science",
         "intensity": 2
       }
@@ -2446,9 +2446,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1002",
         "name": "Technology",
-        "intensity": 3
+        "intensity": 2
       }
     },
     {
@@ -2783,6 +2783,71 @@
       "size": 20,
       "properties": {
         "student_number": 47
+      }
+    },
+    {
+      "id": 58805,
+      "label": "numb Meaning: Unable to feel anything (no sensation) Nuance: Can be physical (body) or emotional (no feelings) Sentence: My fingers went numb because it was so cold. After hearing the news, she felt numb.",
+      "title": "Word: numb Meaning: Unable to feel anything (no sensation) Nuance: Can be physical (body) or emotional (no feelings) Sentence: My fingers went numb because it was so cold. After hearing the news, she felt numb.",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_1_numb_meaning:_unable_to_feel_a",
+        "name": "numb Meaning: Unable to feel anything (no sensation) Nuance: Can be physical (body) or emotional (no feelings) Sentence: My fingers went numb because it was so cold. After hearing the news, she felt numb."
+      }
+    },
+    {
+      "id": 58806,
+      "label": "swollen Meaning: Bigger than normal due to injury, infection, or fluid Nuance: Usually describes body parts (face, ankle, eyes) Sentence: His ankle is swollen after the accident.",
+      "title": "Word: swollen Meaning: Bigger than normal due to injury, infection, or fluid Nuance: Usually describes body parts (face, ankle, eyes) Sentence: His ankle is swollen after the accident.",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_2_swollen_meaning:_bigger_than_n",
+        "name": "swollen Meaning: Bigger than normal due to injury, infection, or fluid Nuance: Usually describes body parts (face, ankle, eyes) Sentence: His ankle is swollen after the accident."
+      }
+    },
+    {
+      "id": 58807,
+      "label": "foreign Meaning: From another country Nuance: Can also mean “unfamiliar” or “strange” Sentence: She studies a foreign language. The idea felt foreign to him.",
+      "title": "Word: foreign Meaning: From another country Nuance: Can also mean “unfamiliar” or “strange” Sentence: She studies a foreign language. The idea felt foreign to him.",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_3_foreign_meaning:_from_another_",
+        "name": "foreign Meaning: From another country Nuance: Can also mean “unfamiliar” or “strange” Sentence: She studies a foreign language. The idea felt foreign to him."
+      }
+    },
+    {
+      "id": 58808,
+      "label": "diagnose Meaning: To identify a disease or problem by examining symptoms Nuance: Commonly used by doctors Sentence: The doctor diagnosed her with the flu.",
+      "title": "Word: diagnose Meaning: To identify a disease or problem by examining symptoms Nuance: Commonly used by doctors Sentence: The doctor diagnosed her with the flu.",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_4_diagnose_meaning:_to_identify_",
+        "name": "diagnose Meaning: To identify a disease or problem by examining symptoms Nuance: Commonly used by doctors Sentence: The doctor diagnosed her with the flu."
+      }
+    },
+    {
+      "id": 58809,
+      "label": "diabetes Meaning: A disease where the body cannot properly control blood sugar Nuance: A long-term (chronic) condition Sentence: My grandfather has diabetes, so he avoids sugary food.",
+      "title": "Word: diabetes Meaning: A disease where the body cannot properly control blood sugar Nuance: A long-term (chronic) condition Sentence: My grandfather has diabetes, so he avoids sugary food.",
+      "group": "Word",
+      "color": "#9C27B0",
+      "shape": "diamond",
+      "size": 12,
+      "properties": {
+        "id": "word_5_diabetes_meaning:_a_disease_wh",
+        "name": "diabetes Meaning: A disease where the body cannot properly control blood sugar Nuance: A long-term (chronic) condition Sentence: My grandfather has diabetes, so he avoids sugary food."
       }
     }
   ],
@@ -6979,8 +7044,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-03T08:30:08.046537",
-    "node_count": 213,
+    "generated_at": "2026-05-11T08:30:08.249188",
+    "node_count": 218,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
