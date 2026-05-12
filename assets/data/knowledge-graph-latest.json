@@ -861,7 +861,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_7_adventure",
+        "id": "word_0_adventure",
         "chunk_index": 0,
         "name": "adventure"
       }
@@ -2292,7 +2292,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1000",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -2306,7 +2306,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2320,7 +2320,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1002",
+        "id": "interest_food_1007",
         "name": "Food",
         "intensity": 2
       }
@@ -2376,7 +2376,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1001",
+        "id": "interest_travel_1006",
         "name": "Travel",
         "intensity": 2
       }
@@ -2390,7 +2390,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1000",
+        "id": "interest_art_1002",
         "name": "Art",
         "intensity": 2
       }
@@ -2418,7 +2418,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1003",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -7044,7 +7044,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-12T08:30:07.773417",
+    "generated_at": "2026-05-13T08:30:07.977427",
     "node_count": 218,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
