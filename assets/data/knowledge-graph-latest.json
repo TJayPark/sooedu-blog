@@ -1640,7 +1640,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "13",
+        "id": "word_2_process",
         "name": "process"
       }
     },
@@ -2278,7 +2278,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "c89a1bbb-694d-4c7d-b94c-45ed3ac4e997:4",
+        "id": "word_4_resilience",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -2292,7 +2292,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1001",
         "name": "Reading",
         "intensity": 2
       }
@@ -2306,7 +2306,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2320,7 +2320,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1003",
         "name": "Food",
         "intensity": 2
       }
@@ -2348,7 +2348,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1004",
+        "id": "interest_games_1003",
         "name": "Games",
         "intensity": 2
       }
@@ -2376,9 +2376,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1002",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2406,7 +2406,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -7044,7 +7044,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-14T08:30:05.212119",
+    "generated_at": "2026-05-15T08:30:04.219584",
     "node_count": 218,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"

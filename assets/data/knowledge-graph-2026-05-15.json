@@ -701,7 +701,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "45eeea4a-252b-4c8a-b947-5a067a2ce765:1",
+        "id": "word_0_kitchen",
         "chunk_index": 0,
         "name": "kitchen"
       }
@@ -820,7 +820,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "9b075e9f-562c-455d-8286-054319360ca2:4",
+        "id": "word_0_confused",
         "chunk_index": 0,
         "name": "confused"
       }
@@ -848,7 +848,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "9",
+        "id": "word_3_cafeteria",
         "name": "cafeteria"
       }
     },
@@ -861,7 +861,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_7_adventure",
+        "id": "word_0_adventure",
         "chunk_index": 0,
         "name": "adventure"
       }
@@ -1640,7 +1640,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "13",
+        "id": "word_2_process",
         "name": "process"
       }
     },
@@ -2278,7 +2278,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "c89a1bbb-694d-4c7d-b94c-45ed3ac4e997:4",
+        "id": "word_4_resilience",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -2292,7 +2292,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1001",
         "name": "Reading",
         "intensity": 2
       }
@@ -2306,7 +2306,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2320,7 +2320,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1006",
+        "id": "interest_food_1003",
         "name": "Food",
         "intensity": 2
       }
@@ -2362,7 +2362,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1004",
+        "id": "interest_animals_1005",
         "name": "Animals",
         "intensity": 2
       }
@@ -2376,9 +2376,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1005",
+        "id": "interest_travel_1002",
         "name": "Travel",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2406,7 +2406,7 @@
       "properties": {
         "id": "interest_sports_1000",
         "name": "Sports",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2432,7 +2432,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -2446,7 +2446,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1002",
         "name": "Technology",
         "intensity": 2
       }
@@ -7044,7 +7044,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-07T08:30:08.140176",
+    "generated_at": "2026-05-15T08:30:04.219584",
     "node_count": 218,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
