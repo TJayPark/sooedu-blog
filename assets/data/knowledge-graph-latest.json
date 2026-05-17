@@ -677,7 +677,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_1_favorite",
+        "id": "word_0_favorite",
         "name": "favorite"
       }
     },
@@ -2159,7 +2159,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1001",
+        "id": "interest_reading_1002",
         "name": "Reading",
         "intensity": 2
       }
@@ -2173,7 +2173,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1003",
         "name": "Movies",
         "intensity": 2
       }
@@ -2201,7 +2201,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1001",
+        "id": "interest_music_1000",
         "name": "Music",
         "intensity": 2
       }
@@ -2229,9 +2229,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1002",
+        "id": "interest_animals_1004",
         "name": "Animals",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -2257,7 +2257,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 2
       }
@@ -2727,6 +2727,18 @@
       "size": 20,
       "properties": {
         "student_number": 46
+      }
+    },
+    {
+      "id": 60216,
+      "label": "Student 47",
+      "title": "Student: Student 47",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 47
       }
     }
   ],
@@ -6923,8 +6935,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-17T08:30:05.802476",
-    "node_count": 209,
+    "generated_at": "2026-05-18T08:30:03.005153",
+    "node_count": 210,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
