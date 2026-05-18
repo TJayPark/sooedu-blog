@@ -2173,7 +2173,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1003",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2189,7 +2189,7 @@
       "properties": {
         "id": "interest_food_1004",
         "name": "Food",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -2201,7 +2201,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_music_1000",
+        "id": "interest_music_1001",
         "name": "Music",
         "intensity": 2
       }
@@ -2215,7 +2215,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1006",
+        "id": "interest_games_1004",
         "name": "Games",
         "intensity": 2
       }
@@ -2229,7 +2229,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1004",
+        "id": "interest_animals_1005",
         "name": "Animals",
         "intensity": 2
       }
@@ -2245,7 +2245,7 @@
       "properties": {
         "id": "interest_travel_1003",
         "name": "Travel",
-        "intensity": 1
+        "intensity": 2
       }
     },
     {
@@ -2257,7 +2257,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1001",
+        "id": "interest_art_1002",
         "name": "Art",
         "intensity": 2
       }
@@ -2299,7 +2299,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1000",
         "name": "Science",
         "intensity": 2
       }
@@ -2313,7 +2313,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1001",
         "name": "Technology",
         "intensity": 2
       }
@@ -6935,7 +6935,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-18T08:30:03.005153",
+    "generated_at": "2026-05-19T08:30:04.639318",
     "node_count": 210,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
