@@ -2251,7 +2251,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_4_resilience",
+        "id": "word_3_resilience",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -2265,7 +2265,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1001",
         "name": "Reading",
         "intensity": 2
       }
@@ -2279,7 +2279,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1006",
+        "id": "interest_movies_1007",
         "name": "Movies",
         "intensity": 2
       }
@@ -2293,7 +2293,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1003",
         "name": "Food",
         "intensity": 2
       }
@@ -2335,7 +2335,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1005",
+        "id": "interest_animals_1008",
         "name": "Animals",
         "intensity": 2
       }
@@ -2349,7 +2349,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1002",
         "name": "Travel",
         "intensity": 2
       }
@@ -2391,7 +2391,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1005",
+        "id": "interest_fashion_1004",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2419,7 +2419,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1000",
         "name": "Technology",
         "intensity": 2
       }
@@ -7041,7 +7041,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-05-22T08:30:03.694809",
+    "generated_at": "2026-05-23T08:30:08.556751",
     "node_count": 218,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
