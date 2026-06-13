@@ -2191,7 +2191,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1005",
+        "id": "interest_food_1006",
         "name": "Food",
         "intensity": 2
       }
@@ -2247,7 +2247,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1004",
+        "id": "interest_travel_1005",
         "name": "Travel",
         "intensity": 2
       }
@@ -2289,7 +2289,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1006",
+        "id": "interest_fashion_1007",
         "name": "Fashion",
         "intensity": 2
       }
@@ -6941,7 +6941,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-13T08:30:07.927928",
+    "generated_at": "2026-06-14T08:30:04.944707",
     "node_count": 210,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
