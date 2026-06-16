@@ -439,6 +439,14 @@
     const KAIP_CS_BASE_URL = "https://cs.soo-edu.com";  // ← 활성화 전 반드시 치환
     const ENDPOINT = `${KAIP_CS_BASE_URL}/api/lead/capture`;
 
+    /** URL ?src= 파라미터로 채널 귀속 source 결정
+     *  sanitize: 영숫자·하이픈·언더스코어만 허용, 최대 64자.
+     *  없거나 빈 값이면 기본값 유지(하위호환). */
+    const _DEFAULT_SOURCE = "landing-english-mistakes-7";
+    const _rawSrc = new URLSearchParams(window.location.search).get("src") || "";
+    const _sanitizedSrc = _rawSrc.replace(/[^A-Za-z0-9\-_]/g, "").slice(0, 64);
+    const LEAD_SOURCE = _sanitizedSrc || _DEFAULT_SOURCE;
+
     const form = document.getElementById("lead-capture-form");
     const submitBtn = document.getElementById("submit-btn");
     const successBanner = document.getElementById("success-banner");
@@ -506,7 +514,7 @@
       const payload = {
         email: emailVal,
         hp: hpValue,                           // 서버측 허니팟 검증 통과
-        source: "landing-english-mistakes-7",
+        source: LEAD_SOURCE,
       };
       const name = document.getElementById("name")?.value.trim();
       if (name) payload.name = name;
