@@ -690,7 +690,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "8dc7176d-f1e3-4bde-87f9-d3e9eeeefd74:2",
+        "id": "word_4_skiing",
         "chunk_index": 0,
         "name": "skiing"
       }
@@ -2177,7 +2177,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1006",
+        "id": "interest_movies_1007",
         "name": "Movies",
         "intensity": 2
       }
@@ -2191,7 +2191,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1007",
+        "id": "interest_food_1006",
         "name": "Food",
         "intensity": 2
       }
@@ -2233,7 +2233,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1005",
+        "id": "interest_animals_1002",
         "name": "Animals",
         "intensity": 2
       }
@@ -2247,7 +2247,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1006",
+        "id": "interest_travel_1005",
         "name": "Travel",
         "intensity": 2
       }
@@ -2261,7 +2261,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1001",
         "name": "Art",
         "intensity": 2
       }
@@ -2303,7 +2303,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1003",
         "name": "Science",
         "intensity": 2
       }
@@ -2662,7 +2662,21 @@
       }
     },
     {
-      "id": 60216,
+      "id": 61074,
+      "label": "daily life, news and culture",
+      "title": "Interest: daily life, news and culture",
+      "group": "Interest",
+      "color": "#FF9800",
+      "shape": "box",
+      "size": 12,
+      "properties": {
+        "id": "interest_daily_life,_news_and_culture_1001",
+        "name": "daily life, news and culture",
+        "intensity": 2
+      }
+    },
+    {
+      "id": 61962,
       "label": "Student 39",
       "title": "Student: Student 39",
       "group": "Student",
@@ -2674,21 +2688,7 @@
       }
     },
     {
-      "id": 61074,
-      "label": "daily life, news and culture",
-      "title": "Interest: daily life, news and culture",
-      "group": "Interest",
-      "color": "#FF9800",
-      "shape": "box",
-      "size": 12,
-      "properties": {
-        "id": "interest_daily_life,_news_and_culture_1001",
-        "name": "daily life, news and culture",
-        "intensity": 3
-      }
-    },
-    {
-      "id": 61962,
+      "id": 61987,
       "label": "Student 40",
       "title": "Student: Student 40",
       "group": "Student",
@@ -2700,7 +2700,7 @@
       }
     },
     {
-      "id": 61987,
+      "id": 62374,
       "label": "Student 41",
       "title": "Student: Student 41",
       "group": "Student",
@@ -2712,7 +2712,7 @@
       }
     },
     {
-      "id": 62374,
+      "id": 62395,
       "label": "Student 42",
       "title": "Student: Student 42",
       "group": "Student",
@@ -2721,18 +2721,6 @@
       "size": 20,
       "properties": {
         "student_number": 42
-      }
-    },
-    {
-      "id": 62395,
-      "label": "Student 43",
-      "title": "Student: Student 43",
-      "group": "Student",
-      "color": "#4CAF50",
-      "shape": "dot",
-      "size": 20,
-      "properties": {
-        "student_number": 43
       }
     }
   ],
@@ -6929,8 +6917,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-17T08:30:03.977836",
-    "node_count": 209,
+    "generated_at": "2026-06-18T08:30:04.401373",
+    "node_count": 208,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
