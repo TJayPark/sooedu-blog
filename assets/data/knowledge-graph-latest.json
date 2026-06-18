@@ -2177,7 +2177,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2191,7 +2191,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1006",
+        "id": "interest_food_1005",
         "name": "Food",
         "intensity": 2
       }
@@ -2219,7 +2219,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1004",
+        "id": "interest_games_1002",
         "name": "Games",
         "intensity": 2
       }
@@ -2233,7 +2233,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1002",
+        "id": "interest_animals_1003",
         "name": "Animals",
         "intensity": 2
       }
@@ -2247,7 +2247,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1005",
+        "id": "interest_travel_1004",
         "name": "Travel",
         "intensity": 2
       }
@@ -2289,7 +2289,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1007",
+        "id": "interest_fashion_1006",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2303,7 +2303,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1003",
+        "id": "interest_science_1001",
         "name": "Science",
         "intensity": 2
       }
@@ -2670,7 +2670,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_daily_life,_news_and_culture_1001",
+        "id": "interest_daily_life,_news_and_culture_1002",
         "name": "daily life, news and culture",
         "intensity": 2
       }
@@ -6917,7 +6917,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-18T08:30:04.401373",
+    "generated_at": "2026-06-19T08:30:04.699002",
     "node_count": 208,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
