@@ -2163,9 +2163,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1005",
+        "id": "interest_reading_1001",
         "name": "Reading",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2191,7 +2191,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1010",
+        "id": "interest_food_1003",
         "name": "Food",
         "intensity": 2
       }
@@ -2233,7 +2233,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1008",
+        "id": "interest_animals_1002",
         "name": "Animals",
         "intensity": 2
       }
@@ -2247,7 +2247,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1009",
+        "id": "interest_travel_1004",
         "name": "Travel",
         "intensity": 2
       }
@@ -2261,9 +2261,9 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_art_1002",
+        "id": "interest_art_1000",
         "name": "Art",
-        "intensity": 2
+        "intensity": 1
       }
     },
     {
@@ -2289,7 +2289,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1005",
+        "id": "interest_fashion_1006",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2317,7 +2317,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1004",
+        "id": "interest_technology_1002",
         "name": "Technology",
         "intensity": 2
       }
@@ -6917,7 +6917,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-27T08:30:07.994107",
+    "generated_at": "2026-06-28T08:30:08.010461",
     "node_count": 208,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
