@@ -503,7 +503,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_1_country",
+        "id": "word_0_country",
         "name": "country"
       }
     },
@@ -677,7 +677,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_5_favorite",
+        "id": "word_1_favorite",
         "name": "favorite"
       }
     },
@@ -1404,7 +1404,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_2_scoop",
+        "id": "word_0_scoop",
         "name": "scoop"
       }
     },
@@ -2149,7 +2149,7 @@
       "shape": "diamond",
       "size": 12,
       "properties": {
-        "id": "word_2_resilience",
+        "id": "word_8_resilience",
         "chunk_index": 0,
         "name": "Resilience"
       }
@@ -2163,7 +2163,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1002",
+        "id": "interest_reading_1005",
         "name": "Reading",
         "intensity": 2
       }
@@ -2177,7 +2177,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1006",
+        "id": "interest_movies_1007",
         "name": "Movies",
         "intensity": 2
       }
@@ -2191,7 +2191,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1005",
+        "id": "interest_food_1010",
         "name": "Food",
         "intensity": 2
       }
@@ -2219,7 +2219,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1003",
+        "id": "interest_games_1006",
         "name": "Games",
         "intensity": 2
       }
@@ -2233,7 +2233,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1004",
+        "id": "interest_animals_1008",
         "name": "Animals",
         "intensity": 2
       }
@@ -2289,7 +2289,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1004",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -2317,7 +2317,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1001",
+        "id": "interest_technology_1004",
         "name": "Technology",
         "intensity": 2
       }
@@ -2721,6 +2721,18 @@
       "size": 20,
       "properties": {
         "student_number": 42
+      }
+    },
+    {
+      "id": 64568,
+      "label": "Student 43",
+      "title": "Student: Student 43",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 43
       }
     }
   ],
@@ -5877,6 +5889,14 @@
     },
     {
       "from": 2477,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 2477,
       "to": 44598,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6613,6 +6633,14 @@
     },
     {
       "from": 22749,
+      "to": 44588,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 22749,
       "to": 44598,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6898,27 +6926,11 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 47789,
-      "to": 44529,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
-    },
-    {
-      "from": 47789,
-      "to": 44530,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-26T08:30:04.428214",
-    "node_count": 208,
+    "generated_at": "2026-07-04T08:30:07.980975",
+    "node_count": 209,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
