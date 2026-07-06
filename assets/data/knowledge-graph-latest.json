@@ -1979,7 +1979,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1003",
+        "id": "interest_reading_1005",
         "name": "Reading",
         "intensity": 2
       }
@@ -2007,7 +2007,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1005",
+        "id": "interest_food_1010",
         "name": "Food",
         "intensity": 2
       }
@@ -2049,7 +2049,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1003",
+        "id": "interest_animals_1008",
         "name": "Animals",
         "intensity": 2
       }
@@ -2063,7 +2063,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1004",
+        "id": "interest_travel_1009",
         "name": "Travel",
         "intensity": 2
       }
@@ -2119,7 +2119,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_science_1001",
+        "id": "interest_science_1003",
         "name": "Science",
         "intensity": 2
       }
@@ -2133,7 +2133,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_technology_1002",
+        "id": "interest_technology_1004",
         "name": "Technology",
         "intensity": 2
       }
@@ -2525,6 +2525,18 @@
       "size": 20,
       "properties": {
         "student_number": 40
+      }
+    },
+    {
+      "id": 64973,
+      "label": "Student 41",
+      "title": "Student: Student 41",
+      "group": "Student",
+      "color": "#4CAF50",
+      "shape": "dot",
+      "size": 20,
+      "properties": {
+        "student_number": 41
       }
     }
   ],
@@ -6721,8 +6733,8 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-07-06T08:30:02.930942",
-    "node_count": 193,
+    "generated_at": "2026-07-07T08:30:03.933415",
+    "node_count": 194,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
   }
