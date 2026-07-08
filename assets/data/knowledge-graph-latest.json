@@ -1979,7 +1979,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_reading_1005",
+        "id": "interest_reading_1003",
         "name": "Reading",
         "intensity": 2
       }
@@ -1993,7 +1993,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_movies_1007",
+        "id": "interest_movies_1005",
         "name": "Movies",
         "intensity": 2
       }
@@ -2007,7 +2007,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_food_1010",
+        "id": "interest_food_1008",
         "name": "Food",
         "intensity": 2
       }
@@ -2035,7 +2035,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_games_1006",
+        "id": "interest_games_1004",
         "name": "Games",
         "intensity": 2
       }
@@ -2049,7 +2049,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_animals_1008",
+        "id": "interest_animals_1006",
         "name": "Animals",
         "intensity": 2
       }
@@ -2063,7 +2063,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_travel_1009",
+        "id": "interest_travel_1007",
         "name": "Travel",
         "intensity": 2
       }
@@ -2105,7 +2105,7 @@
       "shape": "box",
       "size": 12,
       "properties": {
-        "id": "interest_fashion_1006",
+        "id": "interest_fashion_1005",
         "name": "Fashion",
         "intensity": 2
       }
@@ -6149,6 +6149,14 @@
     },
     {
       "from": 21019,
+      "to": 44530,
+      "label": "관심",
+      "title": "INTERESTED_IN",
+      "arrows": "to",
+      "properties": {}
+    },
+    {
+      "from": 21019,
       "to": 44549,
       "label": "관심",
       "title": "INTERESTED_IN",
@@ -6722,18 +6730,10 @@
       "title": "INTERESTED_IN",
       "arrows": "to",
       "properties": {}
-    },
-    {
-      "from": 48675,
-      "to": 44515,
-      "label": "관심",
-      "title": "INTERESTED_IN",
-      "arrows": "to",
-      "properties": {}
     }
   ],
   "metadata": {
-    "generated_at": "2026-07-07T08:30:03.933415",
+    "generated_at": "2026-07-09T08:30:03.920936",
     "node_count": 194,
     "edge_count": 500,
     "description": "Soo Edu Knowledge Graph - Student Learning Network (익명화됨)"
